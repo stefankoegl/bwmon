@@ -126,6 +126,7 @@ def parse_ip_conntrack():
         key = ip_hash(src, dst)
         connections[key] = values
 
+    return connections
 
 def ip_hash(src_ip, dest_ip):
     return '%s-%s' % (src_ip, dest_ip)
