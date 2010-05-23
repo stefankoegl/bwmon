@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+
+from __future__ import absolute_import
+
 import os
 import re
 import hashlib
@@ -100,31 +104,22 @@ def get_fd_map():
 
 
 def parse_ip_conntrack():
-
     connections = {}
 
-    f = open('/proc/net/ip_conntrack', 'r')
-    for line in f.readlines():
+    for line in open('/proc/net/ip_conntrack'):
+        parts = line.split()
 
-        values = {}
+        # Reverse the list, so that for duplicate keys (e.g. "src" and "dest")
+        # the first occurence is taken (later values overwrite earlier ones)
+        values = dict(reversed(list(x.split('=', 1) for x in parts if '=' in x)))
 
-        parts = filter(lambda x: x, line.split(' '))
-        for p in parts:
-            if not '=' in p:
-                continue
-            key, value = p.split('=')
-
-            # lines often contain src and dest reversed (for returning traffic)
-            # we are just interested in one-way traffic
-            if key in values:
-                continue
-
-            values[key] = value
-
-        src = '%s:%s' % (values['src'], values['sport'])
-        dst = '%s:%s' % (values['dst'], values['dport'])
-        key = ip_hash(src, dst)
-        connections[key] = values
+        # The first value describes the network protocol used
+        protocol = parts[0]
+        if protocol in ('tcp', 'udp'):
+            src = '%s:%s' % (values['src'], values['sport'])
+            dst = '%s:%s' % (values['dst'], values['dport'])
+            key = ip_hash(src, dst)
+            connections[key] = values
 
     return connections
 
