@@ -106,6 +106,7 @@ def get_fd_map():
 def parse_ip_conntrack():
     connections = {}
 
+    # http://www.faqs.org/docs/iptables/theconntrackentries.html
     for line in open('/proc/net/ip_conntrack'):
         parts = line.split()
 
