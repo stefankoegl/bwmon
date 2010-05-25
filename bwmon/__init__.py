@@ -27,7 +27,6 @@ class Monitor(object):
         self.connections.update(proc.get_connections())
 
     def convert(self):
-        self.tracking.clear()
         for con in self.connections.itervalues():
             inode = con.get('inode', None)
             process = self.fd_map.get(inode, None)
@@ -35,18 +34,16 @@ class Monitor(object):
             if process is None:
                 continue
 
-            key1 = proc.ip_hash(con['local'], con['remote'])
-            key2 = proc.ip_hash(con['remote'], con['local'])
-            key = None
+            key_in  = proc.ip_hash(con['remote'], con['local'])
+            key_out = proc.ip_hash(con['local'], con['remote'])
+            bytes = (0, 0) # (in, out)
 
-            if key1 in self.conntrack:
-                key = key1
-            elif key2 in self.conntrack:
-                key = key2
+            if key_in in self.conntrack:
+                bytes = (int(self.conntrack[key_in]['bytes']), bytes[1])
+            if key_out in self.conntrack:
+                bytes = (bytes[0], int(self.conntrack[key_out]['bytes']))
 
-            if key and 'bytes' in self.conntrack[key]:
-                bytes = int(self.conntrack[key]['bytes'])
-                self.tracking[process['cmd']] += bytes
+            self.tracking[process['cmd']] = bytes
 
     def output(self):
         def compare(a, b):
@@ -56,7 +53,7 @@ class Monitor(object):
         for cmd, bytes in sorted(self.tracking.iteritems(), cmp=compare):
             if len(cmd) > 60:
                 cmd = cmd[:57] + '...'
-            print '%10d -- %s' % (bytes, cmd)
+            print '%10d / %10d -- %s' % (bytes[0], bytes[1], cmd)
 
     def loop(self):
         while True:

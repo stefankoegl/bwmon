@@ -110,19 +110,28 @@ def parse_ip_conntrack():
     for line in open('/proc/net/ip_conntrack'):
         parts = line.split()
 
-        # Reverse the list, so that for duplicate keys (e.g. "src" and "dest")
-        # the first occurence is taken (later values overwrite earlier ones)
-        values = dict(reversed(list(x.split('=', 1) for x in parts if '=' in x)))
+        entry = {}
+        for (k, v) in [x.split('=', 1) for x in parts if '=' in x]:
+            # key-value pairs occur twice per line; if first key occurs
+            # again, we finish the first entry and start the next one
+            if k in entry:
+                key = get_key(entry)
+                connections[key] = entry
+                entry = {}
 
-        # The first value describes the network protocol used
-        protocol = parts[0]
-        if protocol in ('tcp', 'udp'):
-            src = '%s:%s' % (values['src'], values['sport'])
-            dst = '%s:%s' % (values['dst'], values['dport'])
-            key = ip_hash(src, dst)
-            connections[key] = values
+            entry[k] = v
+
+        key = get_key(entry)
+        connections[key] = entry
 
     return connections
+
+
+def get_key(values):
+    src = '%s:%s' % (values['src'], values['sport'])
+    dst = '%s:%s' % (values['dst'], values['dport'])
+    return ip_hash(src, dst)
+
 
 def ip_hash(src_ip, dest_ip):
     return '%s-%s' % (src_ip, dest_ip)
