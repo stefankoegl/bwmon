@@ -95,8 +95,11 @@ def get_fd_map():
             else:
                 continue
 
-            cmd_file = open(os.path.join(d, cmdline), 'r')
+            cmd_file = open(os.path.join(d, cmdline), 'rb')
             cmd = cmd_file.read()
+
+            # Command line arguments are splitted by '\0'
+            cmd = cmd.replace('\0', ' ')
 
             m[inode] = {'inode': inode, 'cmd': cmd, 'pid': int(pid)}
 
