@@ -8,6 +8,7 @@ import collections
 import time
 import sys
 import curses
+import copy
 
 def clear():
     curses.setupterm()
@@ -18,11 +19,13 @@ class Monitor(object):
     def __init__(self):
         self.fd_map = {}
         self.conntrack = {}
+        self.last_conntrack = {}
         self.connections = {}
-        self.tracking = collections.defaultdict(int)
+        self.tracking = {}
 
     def update(self):
         self.fd_map.update(proc.get_fd_map())
+        self.last_conntrack = copy.deepcopy(self.conntrack)
         self.conntrack.update(proc.parse_ip_conntrack())
         self.connections.update(proc.get_connections())
 
@@ -36,14 +39,24 @@ class Monitor(object):
 
             key_in  = proc.ip_hash(con['remote'], con['local'])
             key_out = proc.ip_hash(con['local'], con['remote'])
-            bytes = (0, 0) # (in, out)
+            keys = {'in': key_in, 'out': key_out}
+            new_byte = {'in': 0, 'out': 0}
 
-            if key_in in self.conntrack:
-                bytes = (int(self.conntrack[key_in]['bytes']), bytes[1])
-            if key_out in self.conntrack:
-                bytes = (bytes[0], int(self.conntrack[key_out]['bytes']))
+            for direction in ('in', 'out'):
+                k = keys[direction]
+                if k in self.conntrack:
+                    if key_in in self.last_conntrack:
+                        new_byte[direction] = int(self.conntrack[k]['bytes']) - int(self.last_conntrack[k]['bytes'])
+                    else:
+                        new_byte[direction] = int(self.conntrack[k]['bytes'])
 
-            self.tracking[process['cmd']] = bytes
+            if process['cmd'] in self.tracking:
+                old_in, old_out = self.tracking[process['cmd']]
+            else:
+                old_in = 0
+                old_out = 0
+
+            self.tracking[process['cmd']] = (old_in + new_byte['in'], old_out + new_byte['out'])
 
     def output(self):
         def compare(a, b):
