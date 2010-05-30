@@ -67,6 +67,7 @@ class Monitor(object):
             if len(cmd) > 60:
                 cmd = cmd[:57] + '...'
             print '%10d / %10d -- %s' % (bytes[0], bytes[1], cmd)
+            sys.stdout.flush()
 
     def loop(self):
         while True:

@@ -16,8 +16,7 @@ class Aggregator():
         records = collections.defaultdict(list)
 
         for line in proc.stdout:
-
-            record = self.get_record(line)
+            record, process = self.get_record(line)
 
             if not record:
                 continue
@@ -27,22 +26,24 @@ class Aggregator():
             if len(records[process]) > 1:
                 prev_record = records[process][-2]
                 bw = self.get_bandwidth(prev_record, record)
-                # process bandwidth
+
+                if bw:
+                    print '%10d / %10d B/s -- %s' % (bw[0], bw[1], process)
 
 
     def get_record(self, line):
         match = self.line_regex.match(line)
 
         if not match:
-            return None
+            return None, None
 
         process = match.group('proc').strip()
         bytes_in = int(match.group('in'))
         bytes_out = int(match.group('out'))
         record = {'timestamp': datetime.now(), 'in': bytes_in, 'out': bytes_out}
+        return record, process
 
-
-    def get_bandwidth(rec1, rec2):
+    def get_bandwidth(self, rec1, rec2):
         """
         returns the mean incoming and outgoing bandwidth used between
         the two given records.
@@ -50,8 +51,11 @@ class Aggregator():
         rec1 represents the earlier, rec2 the later record
         """
         date_diff = rec2['timestamp'] - rec1['timestamp']
-        in_diff = rec2['in'] - rec1['diff']
+        in_diff = rec2['in'] - rec1['in']
         out_diff = rec2['out'] - rec1['out']
+
+        if not date_diff.seconds:
+            return None
 
         in_bw = in_diff / date_diff.seconds
         out_bw = out_diff / date_diff.seconds
