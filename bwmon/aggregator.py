@@ -8,9 +8,9 @@ class Aggregator():
 
     def __init__(self, args):
         self.args = args
+        self.line_regex = re.compile('\s*(?P<in>\d+)\s*/\s*(?P<out>\d+)\s*--\s*(?P<proc>.*)')
 
     def run(self):
-        line_regex = re.compile('\s*(?P<in>\d+)\s*/\s*(?P<out>\d+)\s*--\s*(?P<proc>.*)')
 
         proc = Popen(self.args, stdin=PIPE, stdout=PIPE, stderr=PIPE, bufsize=1)
         records = collections.defaultdict(list)
@@ -31,7 +31,7 @@ class Aggregator():
 
 
     def get_record(line):
-        match = line_regex.match(line)
+        match = self.line_regex.match(line)
 
         if not match:
             return None
