@@ -29,6 +29,7 @@ class Aggregator():
         outpipe = self.launch_monitors()
 
         records = collections.defaultdict(list)
+        last_records = {} # records indexed by process; used for comparison
 
         for line in outpipe:
             record, process = self.get_record(line)
@@ -38,14 +39,19 @@ class Aggregator():
 
             records[process].append(record)
 
-            if len(records[process]) <= 1:
+            if not process in last_records:
+                last_records[process] = record
                 continue
 
-            prev_record = records[process][-2]
-            bw = self.get_bandwidth(prev_record, record)
+            if (record['timestamp'] - last_records[process]['timestamp']).seconds <= 0:
+                continue
+
+            bw = self.get_bandwidth(last_records[process], record)
 
             if not bw:
                 continue
+
+            last_records[process] = record
 
             print '%10d / %10d B/s -- %s' % (bw[0], bw[1], process)
 
