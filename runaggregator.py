@@ -11,6 +11,6 @@ sys.path.insert(0, os.path.dirname(__file__) or '.')
 if __name__ == '__main__':
     from bwmon import aggregator
 
-    aggregator = aggregator.Aggregator(['python', 'runmonitor.py'])
+    aggregator = aggregator.Aggregator(['python runmonitor.py'])
     aggregator.run()
 

@@ -2,21 +2,35 @@ from subprocess import Popen, PIPE
 from datetime import datetime
 import re
 import collections
-
+import shlex
 
 class Aggregator():
 
-    def __init__(self, args):
-        self.args = args
+    def __init__(self, monitors):
+        self.monitors = monitors
         self.line_regex = re.compile('\s*(?P<in>\d+)\s*/\s*(?P<out>\d+)\s*--\s*(?P<proc>.*)')
+
+    def launch_monitors(self):
+
+        outpipe = PIPE
+
+        for m in self.monitors:
+            args = shlex.split(m)
+            proc = Popen(args, stdin=PIPE, stdout=outpipe, stderr=PIPE, bufsize=1)
+
+            if outpipe == PIPE:
+                outpipe = proc.stdout
+
+        return outpipe
 
 
     def run(self):
 
-        proc = Popen(self.args, stdin=PIPE, stdout=PIPE, stderr=PIPE, bufsize=1)
+        outpipe = self.launch_monitors()
+
         records = collections.defaultdict(list)
 
-        for line in proc.stdout:
+        for line in outpipe:
             record, process = self.get_record(line)
 
             if not record:
