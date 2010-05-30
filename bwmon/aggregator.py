@@ -30,7 +30,7 @@ class Aggregator():
                 # process bandwidth
 
 
-    def get_record(line):
+    def get_record(self, line):
         match = self.line_regex.match(line)
 
         if not match:
