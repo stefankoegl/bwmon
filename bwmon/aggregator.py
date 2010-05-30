@@ -10,6 +10,7 @@ class Aggregator():
         self.args = args
         self.line_regex = re.compile('\s*(?P<in>\d+)\s*/\s*(?P<out>\d+)\s*--\s*(?P<proc>.*)')
 
+
     def run(self):
 
         proc = Popen(self.args, stdin=PIPE, stdout=PIPE, stderr=PIPE, bufsize=1)
@@ -23,15 +24,24 @@ class Aggregator():
 
             records[process].append(record)
 
-            if len(records[process]) > 1:
-                prev_record = records[process][-2]
-                bw = self.get_bandwidth(prev_record, record)
+            if len(records[process]) <= 1:
+                continue
 
-                if bw:
-                    print '%10d / %10d B/s -- %s' % (bw[0], bw[1], process)
+            prev_record = records[process][-2]
+            bw = self.get_bandwidth(prev_record, record)
+
+            if not bw:
+                continue
+
+            print '%10d / %10d B/s -- %s' % (bw[0], bw[1], process)
 
 
     def get_record(self, line):
+        """
+        parses the given line (output of runmonitor.py) and returns a record
+        which is a dictionary with the keys timestamp, in and out (both in
+        bytes)
+        """
         match = self.line_regex.match(line)
 
         if not match:
@@ -42,6 +52,7 @@ class Aggregator():
         bytes_out = int(match.group('out'))
         record = {'timestamp': datetime.now(), 'in': bytes_in, 'out': bytes_out}
         return record, process
+
 
     def get_bandwidth(self, rec1, rec2):
         """
