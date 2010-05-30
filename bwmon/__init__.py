@@ -9,6 +9,7 @@ import time
 import sys
 import curses
 import copy
+import re
 
 def clear():
     curses.setupterm()
@@ -22,6 +23,8 @@ class Monitor(object):
         self.last_conntrack = {}
         self.connections = {}
         self.tracking = {}
+        self.include_filter = []
+        self.exclude_filter = []
 
     def update(self):
         self.fd_map.update(proc.get_fd_map())
@@ -29,12 +32,22 @@ class Monitor(object):
         self.conntrack.update(proc.parse_ip_conntrack())
         self.connections.update(proc.get_connections())
 
+    def set_filter(self, include_filter, exclude_filter):
+        self.include_filter = [re.compile(f) for f in include_filter] if include_filter else []
+        self.exclude_filter = [re.compile(f) for f in exclude_filter] if exclude_filter else []
+
     def convert(self):
         for con in self.connections.itervalues():
             inode = con.get('inode', None)
             process = self.fd_map.get(inode, None)
 
             if process is None:
+                continue
+
+            if self.include_filter and not any([f.search(process['cmd']) for f in self.include_filter]):
+                continue
+
+            if self.exclude_filter and any([f.search(process['cmd']) for f in self.exclude_filter]):
                 continue
 
             key_in  = proc.ip_hash(con['remote'], con['local'])
