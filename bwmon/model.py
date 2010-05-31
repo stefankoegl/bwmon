@@ -24,21 +24,26 @@ class MonitorEntry(object):
 class MonitorEntryCollection(object):
     TIMEOUT = 60*5
 
-    def __init__(self):
+    def __init__(self, update_frequency):
         self._data = []
         self._latest = {}
+        self.update_frequency = update_frequency
 
     def expire(self):
         cutoff = time.time() - self.TIMEOUT
         self._data = filter(lambda e: e.timestamp >= cutoff, self._data)
+        for key in self._latest.keys():
+            current, previous = self._latest[key]
+            if current is not None and current.timestamp < cutoff:
+                del self._latest[key]
 
     def get_last_bytes(self, cmdline):
         (current, previous) = self._latest.get(cmdline, (None, None))
 
         if current is not None:
-            return (current.inbytes, current.outbytes)
+            return (current.inbytes, current.outbytes, current.timestamp)
 
-        return (0, 0)
+        return (0, 0, 0)
 
     def get_bandwidth(self, cmdline):
         (current, previous) = self._latest.get(cmdline, (None, None))
@@ -46,9 +51,9 @@ class MonitorEntryCollection(object):
             d_time = float(current.timestamp - previous.timestamp)
             d_in = float(current.inbytes - previous.inbytes)
             d_out = float(current.outbytes - previous.outbytes)
-            return (d_in/d_time, d_out/d_time)
+            return (d_in/d_time, d_out/d_time, current.timestamp)
         else:
-            return (0, 0)
+            return (0, 0, 0)
 
     def add(self, entry):
         (current, previous) = self._latest.get(entry.cmdline, (None, None))
@@ -58,11 +63,13 @@ class MonitorEntryCollection(object):
 
     def get_traffic(self):
         for cmdline in self._latest:
-            bytes_in, bytes_out = self.get_last_bytes(cmdline)
+            bytes_in, bytes_out, timestamp = self.get_last_bytes(cmdline)
             yield (bytes_in, bytes_out, cmdline)
 
     def get_usage(self):
+        cutoff = time.time() - self.update_frequency
         for cmdline in self._latest:
-            bytes_in, bytes_out = self.get_bandwidth(cmdline)
-            yield (bytes_in, bytes_out, cmdline)
+            bytes_in, bytes_out, timestamp = self.get_bandwidth(cmdline)
+            if timestamp > cutoff:
+                yield (bytes_in, bytes_out, cmdline)
 

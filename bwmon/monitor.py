@@ -15,13 +15,16 @@ import re
 BANDWIDTH, TRAFFIC = range(2)
 
 class Monitor(object):
+    DEFAULT_UPDATE_FREQUENCY = 1
+
     def __init__(self):
         self.fd_map = {}
         self.sample_time = time.time()
         self.conntrack = {}
         self.last_conntrack = {}
         self.connections = {}
-        self.entries = model.MonitorEntryCollection()
+        self.update_frequency = self.DEFAULT_UPDATE_FREQUENCY
+        self.entries = model.MonitorEntryCollection(self.update_frequency)
         self.include_filter = []
         self.exclude_filter = []
 
@@ -72,7 +75,7 @@ class Monitor(object):
 
         for key in entries:
             new_in, new_out = entries[key]
-            old_in, old_out = self.entries.get_last_bytes(key)
+            old_in, old_out, timestamp = self.entries.get_last_bytes(key)
             entry = model.MonitorEntry(key, old_in + new_in, old_out + new_out, self.sample_time)
             self.entries.add(entry)
 
@@ -84,15 +87,16 @@ class Monitor(object):
             entries = sorted(self.entries.get_usage())
 
         for bytes_in, bytes_out, cmd in entries:
-            if len(cmd) > 60:
-                cmd = cmd[:57] + '...'
-            print '%10d / %10d -- %s' % (bytes_in, bytes_out, cmd)
-            sys.stdout.flush()
+            if bytes_in or bytes_out:
+                if len(cmd) > 60:
+                    cmd = cmd[:57] + '...'
+                print '%10d / %10d -- %s' % (bytes_in, bytes_out, cmd)
+                sys.stdout.flush()
 
     def loop(self, mode):
         while True:
             self.update()
             self.convert()
             self.output(mode)
-            time.sleep(1)
+            time.sleep(self.update_frequency)
 
