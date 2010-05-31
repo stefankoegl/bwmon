@@ -113,6 +113,10 @@ def parse_ip_conntrack():
     for line in open('/proc/net/ip_conntrack'):
         parts = line.split()
 
+        # We only care about TCP and UDP connections
+        if parts[0] not in ('udp', 'tcp'):
+            continue
+
         entry = {}
         for (k, v) in [x.split('=', 1) for x in parts if '=' in x]:
             # key-value pairs occur twice per line; if first key occurs
