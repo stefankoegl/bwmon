@@ -33,7 +33,7 @@ class PipeThread(threading.Thread):
         #        self.sink.getpeername(), self.traffic)
         self.finished = True
 
-class Pinhole(threading.Thread):
+class Pipe(threading.Thread):
     def __init__(self, port, newhost, newport):
         threading.Thread.__init__(self)
         self.closed = False
@@ -89,17 +89,17 @@ class Pinhole(threading.Thread):
     def close(self):
         self.closed = True
 
-class PinholeMonitor(object):
+class PipeMonitor(object):
     DEFAULT_TIMEOUT = 1
 
-    def __init__(self, pinhole):
-        self.pinhole = pinhole
-        self.cmdline = 'pinhole-%d:%s:%d' % (pinhole.port, pinhole.newhost, pinhole.newport)
+    def __init__(self, pipe):
+        self.pipe = pipe
+        self.cmdline = 'pipe-%d:%s:%d' % (pipe.port, pipe.newhost, pipe.newport)
         self.timeout = self.DEFAULT_TIMEOUT
         self.entries = model.MonitorEntryCollection(self.timeout)
 
     def update(self):
-        bytes_in, bytes_out = self.pinhole.update()
+        bytes_in, bytes_out = self.pipe.update()
         entry = model.MonitorEntry(self.cmdline, bytes_in, bytes_out, time.time())
         self.entries.add(entry)
         self.entries.expire()
@@ -128,12 +128,12 @@ if __name__ == '__main__':
         newhost = sys.argv[2]
         if len(sys.argv) == 4:
             newport = int(sys.argv[3])
-        pinhole = Pinhole(port, newhost, newport)
-        monitor = PinholeMonitor(pinhole)
-        pinhole.start()
+        pipe = Pipe(port, newhost, newport)
+        monitor = PipeMonitor(pipe)
+        pipe.start()
         try:
             monitor.run()
         except KeyboardInterrupt:
-            pinhole.close()
+            pipe.close()
             print 'Waiting for threads to finish...'
 
