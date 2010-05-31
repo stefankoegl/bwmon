@@ -1,95 +1,37 @@
-from subprocess import Popen, PIPE
-from datetime import datetime
-import re
-import collections
-import shlex
+# -*- coding: utf-8 -*-
 
-class Aggregator():
+from __future__ import absolute_import
 
-    def __init__(self, monitors):
-        self.monitors = monitors
-        self.line_regex = re.compile('\s*(?P<in>\d+)\s*/\s*(?P<out>\d+)\s*--\s*(?P<proc>.*)')
+import time
+import sys
 
-    def launch_monitors(self):
+from bwmon import util
+from bwmon import model
 
-        outpipe = PIPE
+class Aggregator(object):
+    def __init__(self):
+        self.monitors = []
+        self.update_frequency = 1
+        self.entries = model.MonitorEntryCollection(self.update_frequency)
 
-        for m in self.monitors:
-            args = shlex.split(m)
-            proc = Popen(args, stdin=PIPE, stdout=outpipe, stderr=PIPE, bufsize=1)
-
-            if outpipe == PIPE:
-                outpipe = proc.stdout
-
-        return outpipe
-
+    def add_monitor(self, monitor):
+        self.monitors.append(monitor)
 
     def run(self):
+        while True:
+            for monitor in self.monitors:
+                monitor.update(self.entries)
+            self.output()
+            time.sleep(self.update_frequency)
 
-        outpipe = self.launch_monitors()
+    def output(self):
+        util.clear()
+        entries = sorted(self.entries.get_usage())
 
-        records = collections.defaultdict(list)
-        last_records = {} # records indexed by process; used for comparison
-
-        for line in outpipe:
-            record, process = self.get_record(line)
-
-            if not record:
-                continue
-
-            records[process].append(record)
-
-            if not process in last_records:
-                last_records[process] = record
-                continue
-
-            if (record['timestamp'] - last_records[process]['timestamp']).seconds <= 0:
-                continue
-
-            bw = self.get_bandwidth(last_records[process], record)
-
-            if not bw:
-                continue
-
-            last_records[process] = record
-
-            print '%10d / %10d B/s -- %s' % (bw[0], bw[1], process)
-
-
-    def get_record(self, line):
-        """
-        parses the given line (output of runmonitor.py) and returns a record
-        which is a dictionary with the keys timestamp, in and out (both in
-        bytes)
-        """
-        match = self.line_regex.match(line)
-
-        if not match:
-            return None, None
-
-        process = match.group('proc').strip()
-        bytes_in = int(match.group('in'))
-        bytes_out = int(match.group('out'))
-        record = {'timestamp': datetime.now(), 'in': bytes_in, 'out': bytes_out}
-        return record, process
-
-
-    def get_bandwidth(self, rec1, rec2):
-        """
-        returns the mean incoming and outgoing bandwidth used between
-        the two given records.
-
-        rec1 represents the earlier, rec2 the later record
-        """
-        date_diff = rec2['timestamp'] - rec1['timestamp']
-        in_diff = rec2['in'] - rec1['in']
-        out_diff = rec2['out'] - rec1['out']
-
-        if not date_diff.seconds:
-            return None
-
-        in_bw = in_diff / date_diff.seconds
-        out_bw = out_diff / date_diff.seconds
-
-        return (in_bw, out_bw)
+        for bytes_in, bytes_out, cmd in entries:
+            if bytes_in > 1024. or bytes_out > 1024.:
+                if len(cmd) > 60:
+                    cmd = cmd[:57] + '...'
+                print '%10.2f KiB / %10.2f KiB -- %s' % (bytes_in/1024., bytes_out/1024., cmd)
+                sys.stdout.flush()
 

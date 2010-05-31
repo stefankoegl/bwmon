@@ -98,11 +98,11 @@ class PipeMonitor(object):
         self.timeout = self.DEFAULT_TIMEOUT
         self.entries = model.MonitorEntryCollection(self.timeout)
 
-    def update(self):
+    def update(self, entry_collection):
         bytes_in, bytes_out = self.pipe.update()
         entry = model.MonitorEntry(self.cmdline, bytes_in, bytes_out, time.time())
-        self.entries.add(entry)
-        self.entries.expire()
+        entry_collection.add(entry)
+        entry_collection.expire()
 
     def output(self):
         util.clear()
@@ -117,7 +117,7 @@ class PipeMonitor(object):
 
     def run(self):
         while True:
-            self.update()
+            self.update(self.entries)
             self.output()
             time.sleep(self.timeout)
 

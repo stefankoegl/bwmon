@@ -28,19 +28,20 @@ class Monitor(object):
         self.include_filter = []
         self.exclude_filter = []
 
-    def update(self):
+    def update(self, entry_collection):
         self.fd_map.update(proc.get_fd_map())
         self.last_conntrack = copy.deepcopy(self.conntrack)
         self.conntrack.update(proc.parse_ip_conntrack())
         self.connections.update(proc.get_connections())
-        self.entries.expire()
+        entry_collection.expire()
         self.sample_time = time.time()
+        self.convert(entry_collection)
 
     def set_filter(self, include_filter, exclude_filter):
         self.include_filter = [re.compile(f) for f in include_filter] if include_filter else []
         self.exclude_filter = [re.compile(f) for f in exclude_filter] if exclude_filter else []
 
-    def convert(self):
+    def convert(self, entry_collection):
         entries = collections.defaultdict(lambda: (0, 0))
         for con in self.connections.itervalues():
             inode = con.get('inode', None)
@@ -75,9 +76,9 @@ class Monitor(object):
 
         for key in entries:
             new_in, new_out = entries[key]
-            old_in, old_out, timestamp = self.entries.get_last_bytes(key)
+            old_in, old_out, timestamp = entry_collection.get_last_bytes(key)
             entry = model.MonitorEntry(key, old_in + new_in, old_out + new_out, self.sample_time)
-            self.entries.add(entry)
+            entry_collection.add(entry)
 
     def output(self, mode=TRAFFIC):
         util.clear()
@@ -95,8 +96,7 @@ class Monitor(object):
 
     def loop(self, mode):
         while True:
-            self.update()
-            self.convert()
+            self.update(self.entries)
             self.output(mode)
             time.sleep(self.update_frequency)
 
