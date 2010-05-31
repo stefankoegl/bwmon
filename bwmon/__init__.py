@@ -3,18 +3,13 @@
 from __future__ import absolute_import
 
 from bwmon import proc
+from bwmon import util
 
 import collections
 import time
 import sys
-import curses
 import copy
 import re
-
-def clear():
-    curses.setupterm()
-    sys.stdout.write(curses.tigetstr("clear"))
-    sys.stdout.flush()
 
 class Monitor(object):
     def __init__(self):
@@ -75,7 +70,7 @@ class Monitor(object):
         def compare(a, b):
             return cmp(a[1], b[1])
 
-        clear()
+        util.clear()
         for cmd, bytes in sorted(self.tracking.iteritems(), cmp=compare):
             if len(cmd) > 60:
                 cmd = cmd[:57] + '...'
