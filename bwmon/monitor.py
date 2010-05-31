@@ -4,6 +4,7 @@ from __future__ import absolute_import
 
 from bwmon import proc
 from bwmon import util
+from bwmon import model
 
 import collections
 import time
@@ -11,13 +12,16 @@ import sys
 import copy
 import re
 
+BANDWIDTH, TRAFFIC = range(2)
+
 class Monitor(object):
     def __init__(self):
         self.fd_map = {}
+        self.sample_time = time.time()
         self.conntrack = {}
         self.last_conntrack = {}
         self.connections = {}
-        self.tracking = {}
+        self.entries = model.MonitorEntryCollection()
         self.include_filter = []
         self.exclude_filter = []
 
@@ -26,12 +30,15 @@ class Monitor(object):
         self.last_conntrack = copy.deepcopy(self.conntrack)
         self.conntrack.update(proc.parse_ip_conntrack())
         self.connections.update(proc.get_connections())
+        self.entries.expire()
+        self.sample_time = time.time()
 
     def set_filter(self, include_filter, exclude_filter):
         self.include_filter = [re.compile(f) for f in include_filter] if include_filter else []
         self.exclude_filter = [re.compile(f) for f in exclude_filter] if exclude_filter else []
 
     def convert(self):
+        entries = collections.defaultdict(lambda: (0, 0))
         for con in self.connections.itervalues():
             inode = con.get('inode', None)
             process = self.fd_map.get(inode, None)
@@ -58,29 +65,34 @@ class Monitor(object):
                     else:
                         new_byte[direction] = int(self.conntrack[k]['bytes'])
 
-            if process['cmd'] in self.tracking:
-                old_in, old_out = self.tracking[process['cmd']]
-            else:
-                old_in = 0
-                old_out = 0
+            current_in, current_out = entries[process['cmd']]
+            new_in, new_out = (new_byte['in'], new_byte['out'])
 
-            self.tracking[process['cmd']] = (old_in + new_byte['in'], old_out + new_byte['out'])
+            entries[process['cmd']] = (current_in + new_in, current_out + new_out)
 
-    def output(self):
-        def compare(a, b):
-            return cmp(a[1], b[1])
+        for key in entries:
+            new_in, new_out = entries[key]
+            old_in, old_out = self.entries.get_last_bytes(key)
+            entry = model.MonitorEntry(key, old_in + new_in, old_out + new_out, self.sample_time)
+            self.entries.add(entry)
 
+    def output(self, mode=TRAFFIC):
         util.clear()
-        for cmd, bytes in sorted(self.tracking.iteritems(), cmp=compare):
+        if mode == TRAFFIC:
+            entries = sorted(self.entries.get_traffic())
+        else:
+            entries = sorted(self.entries.get_usage())
+
+        for bytes_in, bytes_out, cmd in entries:
             if len(cmd) > 60:
                 cmd = cmd[:57] + '...'
-            print '%10d / %10d -- %s' % (bytes[0], bytes[1], cmd)
+            print '%10d / %10d -- %s' % (bytes_in, bytes_out, cmd)
             sys.stdout.flush()
 
-    def loop(self):
+    def loop(self, mode):
         while True:
             self.update()
             self.convert()
-            self.output()
+            self.output(mode)
             time.sleep(1)
 
