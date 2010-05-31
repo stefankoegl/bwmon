@@ -1,92 +1,139 @@
-"""
-usage 'pinhole port host [newport]'
+# -*- coding: utf-8 -*-
 
-Pinhole forwards the port to the host specified.
-The optional newport parameter may be used to
-redirect to a different port.
-
-eg. pinhole 80 webserver
-    Forward all incoming WWW sessions to webserver.
-
-    pinhole 23 localhost 2323
-    Forward all telnet sessions to port 2323 on localhost.
-"""
+from __future__ import absolute_import
 
 import sys
-from socket import *
-from threading import Thread
+import socket
+import threading
 import time
 
-LOGGING = 1
+from bwmon import model
+from bwmon import util
 
-def log( s ):
-    if LOGGING:
-        print '%s:%s' % ( time.ctime(), s )
-        sys.stdout.flush()
-
-class PipeThread( Thread ):
-    pipes = []
-    def __init__( self, source, sink ):
-        Thread.__init__( self )
+class PipeThread(threading.Thread):
+    def __init__(self, source, sink):
+        threading.Thread.__init__(self)
         self.source = source
         self.sink = sink
         self.traffic = 0
+        self.finished = False
 
-        log( 'Creating new pipe thread  %s ( %s -> %s )' % \
-            ( self, source.getpeername(), sink.getpeername() ))
-        PipeThread.pipes.append( self )
-        log( '%s pipes active' % len( PipeThread.pipes ))
-
-    def run( self ):
-        while 1:
+    def run(self):
+        while True:
             try:
-                data = self.source.recv( 1024 )
-                if not data: break
+                data = self.source.recv(1024)
+                if not data:
+                    break
                 self.traffic += len(data)
-                print >>sys.stderr, ' %20d (%s -> %s)' % (self.traffic,
-                        self.source.getpeername(),
-                        self.sink.getpeername())
-                self.sink.send( data )
+                self.sink.send(data)
             except:
                 break
 
-        log( '%s terminating' % self )
-        print >>sys.stderr, 'Closing: (%s->%s) with total traffic %d' % (self.source.getpeername(),
-                self.sink.getpeername(), self.traffic)
-        PipeThread.pipes.remove( self )
-        log( '%s pipes active' % len( PipeThread.pipes ))
-        
-class Pinhole( Thread ):
-    def __init__( self, port, newhost, newport ):
-        Thread.__init__( self )
-        log( 'Redirecting: localhost:%s -> %s:%s' % ( port, newhost, newport ))
+        #print >>sys.stderr, 'Closing: (%s->%s) with total traffic %d' % (self.source.getpeername(),
+        #        self.sink.getpeername(), self.traffic)
+        self.finished = True
+
+class Pinhole(threading.Thread):
+    def __init__(self, port, newhost, newport):
+        threading.Thread.__init__(self)
+        self.closed = False
+        self.port = port
         self.newhost = newhost
         self.newport = newport
-        self.sock = socket( AF_INET, SOCK_STREAM )
-        self.sock.bind(( '', port ))
+        self.pipes_in = []
+        self.pipes_out = []
+        self.total_in = 0
+        self.total_out = 0
+        self.setup()
+
+    def setup(self):
+        self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.sock.bind(('', self.port))
+        self.sock.settimeout(5)
         self.sock.listen(5)
-    
-    def run( self ):
-        while 1:
-            newsock, address = self.sock.accept()
-            log( 'Creating new session for %s %s ' % address )
-            fwd = socket( AF_INET, SOCK_STREAM )
-            fwd.connect(( self.newhost, self.newport ))
-            PipeThread( newsock, fwd ).start()
-            PipeThread( fwd, newsock ).start()
-       
+
+    def update(self):
+        sum_in, sum_out = self.total_in, self.total_out
+
+        # Calculate input traffic + retire finished sessions
+        for pipe in list(self.pipes_in):
+            sum_in += pipe.traffic
+            if pipe.finished:
+                self.total_in += pipe.traffic
+                self.pipes_in.remove(pipe)
+
+        # Calculate output traffic + retire finished sessions
+        for pipe in list(self.pipes_out):
+            sum_out += pipe.traffic
+            if pipe.finished:
+                self.total_out += pipe.traffic
+                self.pipes_out.remove(pipe)
+
+        return sum_in, sum_out
+
+    def run(self):
+        while not self.closed:
+            try:
+                newsock, address = self.sock.accept()
+            except socket.timeout:
+                continue
+            fwd = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            fwd.connect((self.newhost, self.newport))
+            in_pipe = PipeThread(newsock, fwd)
+            out_pipe = PipeThread(fwd, newsock)
+            self.pipes_in.append(in_pipe)
+            self.pipes_out.append(out_pipe)
+            in_pipe.start()
+            out_pipe.start()
+
+    def close(self):
+        self.closed = True
+
+class PinholeMonitor(object):
+    DEFAULT_TIMEOUT = 1
+
+    def __init__(self, pinhole):
+        self.pinhole = pinhole
+        self.cmdline = 'pinhole-%d:%s:%d' % (pinhole.port, pinhole.newhost, pinhole.newport)
+        self.timeout = self.DEFAULT_TIMEOUT
+        self.entries = model.MonitorEntryCollection(self.timeout)
+
+    def update(self):
+        bytes_in, bytes_out = self.pinhole.update()
+        entry = model.MonitorEntry(self.cmdline, bytes_in, bytes_out, time.time())
+        self.entries.add(entry)
+        self.entries.expire()
+
+    def output(self):
+        util.clear()
+        entries = sorted(self.entries.get_traffic())
+
+        for bytes_in, bytes_out, cmd in entries:
+            if bytes_in or bytes_out:
+                if len(cmd) > 60:
+                    cmd = cmd[:57] + '...'
+                print '%10d / %10d -- %s' % (bytes_in, bytes_out, cmd)
+                sys.stdout.flush()
+
+    def run(self):
+        while True:
+            self.update()
+            self.output()
+            time.sleep(self.timeout)
+
+
 if __name__ == '__main__':
-
-    print 'Starting Pinhole'
-
-    import sys
-    sys.stdout = open( 'pinhole.log', 'w' )
-    
-    if len( sys.argv ) > 1:
-        port = newport = int( sys.argv[1] )
+    if len(sys.argv) > 1:
+        port = newport = int(sys.argv[1])
         newhost = sys.argv[2]
-        if len( sys.argv ) == 4: newport = int( sys.argv[3] )
-        Pinhole( port, newhost, newport ).start()
-    else:
-        Pinhole( 80, 'hydrogen', 80 ).start()
-        Pinhole( 23, 'hydrogen', 23 ).start()
+        if len(sys.argv) == 4:
+            newport = int(sys.argv[3])
+        pinhole = Pinhole(port, newhost, newport)
+        monitor = PinholeMonitor(pinhole)
+        pinhole.start()
+        try:
+            monitor.run()
+        except KeyboardInterrupt:
+            pinhole.close()
+            print 'Waiting for threads to finish...'
+
