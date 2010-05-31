@@ -22,7 +22,7 @@ class MonitorEntry(object):
                 int(self.timestamp),)
 
 class MonitorEntryCollection(object):
-    TIMEOUT = 60*5
+    TIMEOUT = 60
 
     def __init__(self, update_frequency):
         self._data = []
@@ -31,7 +31,8 @@ class MonitorEntryCollection(object):
 
     def expire(self):
         cutoff = time.time() - self.TIMEOUT
-        self._data = filter(lambda e: e.timestamp >= cutoff, self._data)
+        d = filter(lambda e: e.timestamp >= cutoff, self._data)
+        self._data = d
         for key in self._latest.keys():
             current, previous = self._latest[key]
             if current is not None and current.timestamp < cutoff:
@@ -60,6 +61,28 @@ class MonitorEntryCollection(object):
 
         self._latest[entry.cmdline] = (entry, current)
         self._data.append(entry)
+
+    def get_history(self, cmdline):
+        x = []
+        last_inbytes = -1
+        for e in self._data:
+            if e.cmdline == cmdline:
+                if last_inbytes == -1:
+                    last_inbytes = e.inbytes
+                x.append(e.inbytes-last_inbytes)
+                last_inbytes = e.inbytes
+        return x
+
+    def get_datapoints(self):
+        items = [self.get_history(cmdline) for bin, bout, cmdline in self.get_usage()]
+        if not items:
+            return [], []
+
+        def check_items(l):
+            return max(l) > 20.
+        items = filter(check_items, items)
+
+        return range(len(min(items, key=len))), items
 
     def get_traffic(self):
         for cmdline in self._latest:
