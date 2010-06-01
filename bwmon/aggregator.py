@@ -6,6 +6,8 @@ import time
 import sys
 import threading
 import re
+import shlex
+import os.path
 import BaseHTTPServer
 
 from bwmon import util
@@ -18,6 +20,7 @@ class Aggregator(object):
         self.update_frequency = 1
         self.entries = model.MonitorEntryCollection(self.update_frequency)
         self.app_configs = {}
+        self.auto_group = False
         http.RequestHandler.monitor = self.entries
 
     def add_monitor(self, monitor):
@@ -47,6 +50,10 @@ class Aggregator(object):
         for app, regex in self.app_configs.iteritems():
             if any([re.search(x, cmd) for x in regex]):
                 return app
+
+        if self.auto_group:
+            cmds = shlex.split(cmd)
+            return os.path.basename(cmds[0])
 
         return cmd
 

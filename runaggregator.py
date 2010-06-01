@@ -17,6 +17,7 @@ if __name__ == '__main__':
 
     parser = OptionParser()
     parser.add_option('--app-config', dest='appconfig', type='string', action='store', default=None, help='set the file from which the app-grouping information is read')
+    parser.add_option('--auto-group', dest='autogroup', action='store_true', default=False, help='automatically group processes by their apllication basename')
     (options, args) = parser.parse_args()
 
 
@@ -31,6 +32,7 @@ if __name__ == '__main__':
         for app in config.sections():
             agg.set_app_config(app, [o[1] for o in config.items(app)])
 
+    agg.auto_group = options.autogroup
 
     # Pipe monitors (port based)
     pipes = []
