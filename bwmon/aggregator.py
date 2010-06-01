@@ -5,6 +5,7 @@ from __future__ import absolute_import
 import time
 import sys
 import threading
+import re
 import BaseHTTPServer
 
 from bwmon import util
@@ -15,11 +16,17 @@ class Aggregator(object):
     def __init__(self):
         self.monitors = []
         self.update_frequency = 1
-        self.entries = model.MonitorEntryCollection(self.update_frequency)
+        self.entries = model.MonitorEntryCollection(self.update_frequency, self.get_app)
+        self.app_configs = {}
         http.RequestHandler.monitor = self.entries
 
     def add_monitor(self, monitor):
         self.monitors.append(monitor)
+
+
+    def set_app_config(self, app, regex_list):
+        self.app_configs[app] = regex_list
+
 
     def run(self):
         def thread_proc():
@@ -36,6 +43,13 @@ class Aggregator(object):
             self.output()
             time.sleep(self.update_frequency)
 
+    def get_app(self, cmd):
+        for app, regex in self.app_configs.iteritems():
+            if any([re.search(x, cmd) for x in regex]):
+                return app
+
+        return cmd
+
     def output(self):
         #util.clear()
         entries = sorted(self.entries.get_usage())
@@ -46,6 +60,4 @@ class Aggregator(object):
                     cmd = cmd[:57] + '...'
                 print '%10.2f KiB / %10.2f KiB -- %s' % (bytes_in/1024., bytes_out/1024., cmd)
                 sys.stdout.flush()
-
-        print self.entries.get_datapoints()
 

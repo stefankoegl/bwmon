@@ -24,10 +24,11 @@ class MonitorEntry(object):
 class MonitorEntryCollection(object):
     TIMEOUT = 60
 
-    def __init__(self, update_frequency):
+    def __init__(self, update_frequency, get_app=lambda x: x):
         self._data = []
         self._latest = {}
         self.update_frequency = update_frequency
+        self.get_app = get_app
 
     def expire(self):
         cutoff = time.time() - self.TIMEOUT
@@ -57,7 +58,12 @@ class MonitorEntryCollection(object):
             return (0, 0, 0)
 
     def add(self, entry):
+        entry.cmdline = self.get_app(entry.cmdline)
         (current, previous) = self._latest.get(entry.cmdline, (None, None))
+
+        # throttle comparison; don't always take the lastest two
+        #prev = current if current and (entry.timestamp - current.timestamp) else previous
+        #self._latest[entry.cmdline] = (entry, prev)
 
         self._latest[entry.cmdline] = (entry, current)
         self._data.append(entry)
