@@ -16,7 +16,7 @@ class Aggregator(object):
     def __init__(self):
         self.monitors = []
         self.update_frequency = 1
-        self.entries = model.MonitorEntryCollection(self.update_frequency, self.get_app)
+        self.entries = model.MonitorEntryCollection(self.update_frequency)
         self.app_configs = {}
         http.RequestHandler.monitor = self.entries
 
@@ -53,8 +53,15 @@ class Aggregator(object):
     def output(self):
         #util.clear()
         entries = sorted(self.entries.get_usage())
+        apps = {}
 
         for bytes_in, bytes_out, cmd in entries:
+            cmd = self.get_app(cmd)
+            (bin, bout) = apps[cmd] if cmd in apps else (0, 0)
+
+            apps[cmd] = (bin + bytes_in, bout + bytes_out)
+
+        for (cmd, (bytes_in, bytes_out)) in apps.iteritems():
             if bytes_in > 1024. or bytes_out > 1024.:
                 if len(cmd) > 60:
                     cmd = cmd[:57] + '...'
