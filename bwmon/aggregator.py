@@ -58,7 +58,7 @@ class Aggregator(object):
         return cmd
 
     def output(self):
-        #util.clear()
+        util.clear()
         entries = sorted(self.entries.get_usage())
         apps = {}
 
