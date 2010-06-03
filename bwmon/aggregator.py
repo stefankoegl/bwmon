@@ -75,3 +75,7 @@ class Aggregator(object):
                 print '%10.2f KiB / %10.2f KiB -- %s' % (bytes_in/1024., bytes_out/1024., cmd)
                 sys.stdout.flush()
 
+    def close(self):
+        for mon in self.monitors:
+            mon.close()
+

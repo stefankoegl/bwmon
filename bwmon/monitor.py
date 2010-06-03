@@ -100,3 +100,5 @@ class Monitor(object):
             self.output(mode)
             time.sleep(self.update_frequency)
 
+    def close(self):
+        pass

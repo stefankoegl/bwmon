@@ -121,6 +121,8 @@ class PipeMonitor(object):
             self.output()
             time.sleep(self.timeout)
 
+    def close(self):
+        self.pipe.close()
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:
