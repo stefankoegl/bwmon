@@ -17,11 +17,12 @@ BANDWIDTH, TRAFFIC = range(2)
 class Monitor(object):
     DEFAULT_UPDATE_FREQUENCY = 1
 
-    def __init__(self):
+    def __init__(self, lookback=True):
         self.fd_map = {}
         self.sample_time = time.time()
         self.conntrack = {}
         self.last_conntrack = {}
+        self.init_conntrack = {} if lookback else proc.parse_ip_conntrack()
         self.connections = {}
         self.update_frequency = self.DEFAULT_UPDATE_FREQUENCY
         self.entries = model.MonitorEntryCollection(self.update_frequency)
@@ -31,11 +32,21 @@ class Monitor(object):
     def update(self, entry_collection):
         self.fd_map.update(proc.get_fd_map())
         self.last_conntrack = copy.deepcopy(self.conntrack)
-        self.conntrack.update(proc.parse_ip_conntrack())
+        self.conntrack.update( self.sub_conntrack(proc.parse_ip_conntrack(), self.init_conntrack) )
         self.connections.update(proc.get_connections())
         entry_collection.expire()
         self.sample_time = time.time()
         self.convert(entry_collection)
+
+    def sub_conntrack(self, conntrack_current, conntrack_init):
+        for (k, v_init) in conntrack_init.iteritems():
+            if k in conntrack_current:
+                v_current = conntrack_current[k]
+                v_current['bytes'] = int(v_current['bytes']) - int(v_init['bytes'])
+                v_current['packets'] = int(v_current['packets']) - int(v_init['packets'])
+                conntrack_current[k] = v_current
+
+        return conntrack_current
 
     def set_filter(self, include_filter, exclude_filter):
         self.include_filter = [re.compile(f) for f in include_filter] if include_filter else []
