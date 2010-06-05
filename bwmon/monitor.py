@@ -17,7 +17,7 @@ BANDWIDTH, TRAFFIC = range(2)
 class Monitor(object):
     DEFAULT_UPDATE_FREQUENCY = 1
 
-    def __init__(self, lookback=True):
+    def __init__(self, lookback=True, ignorelocal=False):
         self.fd_map = {}
         self.sample_time = time.time()
         self.conntrack = {}
@@ -28,6 +28,7 @@ class Monitor(object):
         self.entries = model.MonitorEntryCollection(self.update_frequency)
         self.include_filter = []
         self.exclude_filter = []
+        self.ignorelocal = ignorelocal
 
     def update(self, entry_collection):
         self.fd_map.update(proc.get_fd_map())
@@ -65,6 +66,9 @@ class Monitor(object):
                 continue
 
             if self.exclude_filter and any([f.search(process['cmd']) for f in self.exclude_filter]):
+                continue
+
+            if self.ignorelocal and islocal(con['remote']) and islocal(con['local']):
                 continue
 
             key_in  = proc.ip_hash(con['remote'], con['local'])
@@ -113,3 +117,8 @@ class Monitor(object):
 
     def close(self):
         pass
+
+
+def islocal(ip):
+    return ip.startswith('127.0.0.') or ip.startswith('0.0.0.0')
+

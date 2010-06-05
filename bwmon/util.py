@@ -16,8 +16,9 @@ def read_monitor_config(configfile):
         c = dict(config.items(section))
 
         if c['type'] == 'monitor':
+            ignorelocal = parse_bool(c.get('ignorelocal', False))
             import monitor
-            mon = monitor.Monitor()
+            mon = monitor.Monitor(ignorelocal=ignorelocal)
             inc = [c.get('include', '')]
             exc = [c.get('exclude', '')]
             mon.set_filter(inc, exc)
@@ -37,6 +38,15 @@ def read_monitor_config(configfile):
 
         if mon:
             yield mon
+
+
+def parse_bool(string):
+    string = repr(string)
+
+    if string.lower() == 'true':
+        return True
+
+    return False
 
 
 def read_notification_config(configfile):
