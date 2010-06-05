@@ -40,8 +40,9 @@ def read_monitor_config(configfile):
             yield mon
 
 
-def parse_bool(string):
-    string = repr(string)
+def parse_bool(val):
+    if isinstance(val, bool):
+        return val
 
     if string.lower() == 'true':
         return True
