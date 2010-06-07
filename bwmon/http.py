@@ -22,9 +22,16 @@ HTML = """
 """
 
 class RequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
+    """HTTP Request handler (returns monitoring data)
+
+    This is a simple request handler used by the built-in
+    HTTP server to visualize the monitoring data.
+    """
     monitor = None
 
     def do_GET(self):
+        """Handler for HTTP GET requests
+        """
         self.send_response(200)
         self.send_header('Content-type', 'text/html')
         self.send_header('Refresh', '5')

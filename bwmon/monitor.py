@@ -15,9 +15,26 @@ import re
 BANDWIDTH, TRAFFIC = range(2)
 
 class Monitor(object):
+    """The ip_conntrack-based, system-wide bandwidth monitor
+
+    This object implements the higher-level management functions
+    for the ip_conntrack-based monitoring method (system-wide,
+    non-shaping, Linux-specific).
+
+    The monitor has a default update frequency of 1 second.
+    """
     DEFAULT_UPDATE_FREQUENCY = 1
 
     def __init__(self, lookback=True, ignorelocal=False):
+        """Create a new Monitor object
+
+        This initializes the monitor object. In case the
+        lookback value is False, this call already takes
+        the first measurement from ip_conntrack.
+
+        @param lookback: TODO
+        @param ignorelocal: TODO
+        """
         self.fd_map = {}
         self.sample_time = time.time()
         self.conntrack = {}
@@ -31,6 +48,15 @@ class Monitor(object):
         self.ignorelocal = ignorelocal
 
     def update(self, entry_collection):
+        """Update this monitor from a MonitorEntryCollection
+
+        This function gets a file descriptor to process name
+        mapping, and re-parses the ip_conntrack data. The
+        current time is saved as sample time, and the data is
+        then converted into an aggregated monitoring value.
+
+        @param entry_collection: The collection from where to take data
+        """
         self.fd_map.update(proc.get_fd_map())
         self.last_conntrack = copy.deepcopy(self.conntrack)
         self.conntrack.update( self.sub_conntrack(proc.parse_ip_conntrack(), self.init_conntrack) )
@@ -40,6 +66,12 @@ class Monitor(object):
         self.convert(entry_collection)
 
     def sub_conntrack(self, conntrack_current, conntrack_init):
+        """Subtract inital conntrack data from a measurement
+
+        @param conntrack_current: The current measurement
+        @param conntrack_init: The initally measured data
+        @return: The converted conntrack data
+        """
         for (k, v_init) in conntrack_init.iteritems():
             if k in conntrack_current:
                 v_current = conntrack_current[k]
@@ -50,10 +82,27 @@ class Monitor(object):
         return conntrack_current
 
     def set_filter(self, include_filter, exclude_filter):
+        """Apply inclusive and exclusive filters on this Monitor
+
+        This function takes two lists of regular expression strings,
+        and will compile them into regular expression objects. The
+        filters will be used to exclude and include commands from
+        the monitoring output (see the config file docs for details).
+
+        @param include_filter: A list of regular expressions to include
+        @param exclude_filter: A list of regular expressions to exclude
+        """
         self.include_filter = [re.compile(f) for f in include_filter] if include_filter else []
         self.exclude_filter = [re.compile(f) for f in exclude_filter] if exclude_filter else []
 
     def convert(self, entry_collection):
+        """Apply a per-process merge of a MonitorEntryCollection
+
+        This function takes a MonitorEntryCollection object
+        and merges new connections into it.
+
+        @param entry_collection: A MonitorEntryCollection object
+        """
         entries = collections.defaultdict(lambda: (0, 0))
         for con in self.connections.itervalues():
             inode = con.get('inode', None)
@@ -96,6 +145,10 @@ class Monitor(object):
             entry_collection.add(entry)
 
     def output(self, mode=TRAFFIC):
+        """Print the current status to standard output
+
+        @param mode: Monitoring mode (BANDWIDTH or TRAFFIC [=default])
+        """
         util.clear()
         if mode == TRAFFIC:
             entries = sorted(self.entries.get_traffic())
@@ -110,15 +163,24 @@ class Monitor(object):
                 sys.stdout.flush()
 
     def loop(self, mode):
+        """The mainloop of a standalone monitor
+
+        @param mode: Monitoring mode (BANDWIDTH or TRAFFIC [=default])
+        """
         while True:
             self.update(self.entries)
             self.output(mode)
             time.sleep(self.update_frequency)
 
     def close(self):
+        """Close this bandwidth monitor"""
         pass
 
 
 def islocal(ip):
+    """Check if an IP is the local host
+
+    @return: True if the IP is in the loopback interface
+    """
     return ip.startswith('127.0.0.') or ip.startswith('0.0.0.0')
 

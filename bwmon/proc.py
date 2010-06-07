@@ -7,9 +7,12 @@ import re
 import hashlib
 
 def get_connections(conn_type='tcp'):
-    """
-    returns the connections from /proc/net/tcp indexed by their id (first 
-    column).
+    """Get connections from /proc/net/
+
+    Read the currently-running connections from the
+    /proc/ filesystem.
+
+    @param conn_type: The connection type ('tcp' or 'udp')
     """
     f = open('/proc/net/%s' % conn_type, 'r')
     connections = {}
@@ -40,9 +43,10 @@ def get_connections(conn_type='tcp'):
 
 
 def ip_repr(ip):
-    """
-    returns the dotted-decimal representation of an IP addresse when given
-    the formated used in /proc/net/tcp
+    """Get the dotted-decimal representation of an IP
+
+    @param ip: The IP as formatted in /proc/net/tcp
+    @return: the dotted-decimal representation of an IP
 
     >>> ip_repr('C8BCED82:1A0B')
     '130.237.188.200:6667'
@@ -61,7 +65,10 @@ def ip_repr(ip):
 
 
 def get_fd_map():
-    """ returns a dictionary mapping filedescriptors to process information"""
+    """Get a filedescriptor-to-process mapping
+
+    @return: A dictionary mapping file descriptors to process infos
+    """
 
     proc = '/proc/'
     fd = 'fd'
@@ -107,6 +114,10 @@ def get_fd_map():
 
 
 def parse_ip_conntrack():
+    """Get a parsed representation of /proc/net/ip_conntrack
+
+    @return: A dictionary of connections
+    """
     connections = {}
 
     # http://www.faqs.org/docs/iptables/theconntrackentries.html
@@ -135,11 +146,25 @@ def parse_ip_conntrack():
 
 
 def get_key(values):
+    """Build a hashed key out of a ip_conntrack connection
+
+    This takes the source IP, source port and destination
+    IP and destination port and returns a unique key.
+
+    @param values: An entry from the ip_conntrack table
+    @return: The hashed key for this connection pair
+    """
     src = '%s:%s' % (values['src'], values['sport'])
     dst = '%s:%s' % (values['dst'], values['dport'])
     return ip_hash(src, dst)
 
 
 def ip_hash(src_ip, dest_ip):
+    """Hash an IP pair
+
+    @param src_ip: The IP address of the source
+    @param dest_ip: The IP address of the destination
+    @return: A string that combines both parameters
+    """
     return '%s-%s' % (src_ip, dest_ip)
 
