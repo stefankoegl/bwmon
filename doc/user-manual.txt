@@ -1,0 +1,217 @@
+
+
+
+                                   bwmon
+                                User Manual
+
+
+
+bwmon is a per-application bandwith monitoring framework written in Python. It
+can monitor generated traffic and bandwidth (traffic over time) per process or
+application (group of processes).
+
+bwmon has two different means of monitoring: the Monitor which relies on data
+gathered from the /proc filesystem and and Pipe which accounts data passed
+through it.
+
+Both monitoring types can be used standalone or be combined through the
+Aggregator. The Aggregator can group processes to applications and issue
+notifications if one process/application passes its configured threshold.
+
+
+
+   The Monitor
+=================
+
+The Monitor is used for general-purpose traffic and bandwith monitoring. It
+uses data from the /proc filesystem, especially from /proc/net/ip_conntrack
+which is provided by the Kernel module ip_conntrack. If this file does not
+exist, try to run
+
+  sudo modprobe ip_conntrack
+
+
+
+Using the Monitor
+~~~~~~~~~~~~~~~~~
+
+The Monitor can be used standalone by running
+
+  sudo python runmonitor.py [--no-lookback] [--bandwidth] [--ignore-local]
+      [--include=<regex> [--include=<regex> ...] [--exclude=<regex> [...]]
+
+When started without arguments, Monitor displays the accumulated traffic since
+monitoring for the process was started by ip_conntrack. However this timespan
+can vary between processes and can (currently) not be determined. To display
+only traffic generated after the start of the Monitor, use the --no-lookback
+switch.
+
+
+To display bandwith usage instead of accumulated traffic, you can use
+--bandwidth switch. Monitor will then calculate the bandwidth usage per second.
+
+
+By default Monitor also includes traffic via the loopback interface. By using
+the --ignore-local switch loopback traffic can be ignored.
+
+
+To select the processes that are monitored by Monitor you can use the --include
+and --exclude options to pass regular expressions. Both flags can be combined
+and each can be used multiple times.
+
+When --include is used, only processes that match at least one of the "include"
+regular expressions are monitored. When --exclude is used, processes that match
+the "exclude" regular expressions are excluded. Exclude overrides include.
+
+
+
+   The Pipe
+==============
+
+The Pipe opens a local port and connects to a remote host. It them forwards and
+accounts all traffic passed through it.
+
+
+
+Using the Pipe
+~~~~~~~~~~~~~~
+
+The Pipe is started with
+
+    python runpipe.py <port> <remote-host>
+    python runpipe.py <local-port> <remote-host> <remote-port>
+
+
+When started with two arguments, Pipe opens <port> locally and establishes a
+connection to <remote-host> on the same port. When started with three
+arguments, different local and remote ports can be used.
+
+
+
+   The Aggregator
+====================
+
+The aggregator combines multiple instances of Monitor and Pipe to provide a
+consistant configuration and notification interface.
+
+Multiple processes (even with traffic data coming from different monitors) can
+be grouped to applications. Notification thresholds can then be assigned to
+applications instead of simple processes.
+
+
+
+Using the Aggregator
+~~~~~~~~~~~~~~~~~~~~
+
+The aggregator is started with
+
+    python runaggregator.py [--app-config=<file>] [--monitor-config=<file>]
+        [--notification-config=<file>] [--auto-group]
+
+
+It then prints one line per application that has used bandwidth during the last
+interval (1 second). The output can be divided into three columns. The first
+containins the incoming and the second the bandwidth. The third columns is used
+to distinguish the processes and contains the commandline (for processes) or
+the application name (for grouped processes).
+
+
+Specifying Monitors
+~~~~~~~~~~~~~~~~~~~
+
+By default the Aggregator starts one Monitor and no Pipes. To override this
+behaviour, the switch --monitor-cfg can be used to specify a monitor
+configuration file.
+
+The configuration file is expected to have the following format.
+
+[Monitor Name]
+type=<monitor-type>
+<parameter>=<value>
+
+Monitor Name is a description of the monitoring instance and is not processed
+by the Aggregator. The type can either be "monitor" or pipe. The available
+parameters depend on the type.
+
+
+Paramters for Monitors:
+ * include
+ * exclude
+ * ignorelocal
+
+The parameters correspond to the commandline switches of the standalone
+monitor. Only one include and exclude regular expression can be given per
+Monitor instance.
+
+
+Parameters for Pipes
+ * port
+ * newhost
+ * newport
+
+The parameters correspond to the commandline switches of the standalone pipe.
+
+A sample configuration can be found in monitors.sample.cfg
+
+
+
+Grouping Processes
+~~~~~~~~~~~~~~~~~~
+
+The Aggregator can aggregate the bandwidth usage for a group of processes. The
+grouping can either happen automatically or through a supplied configuration.
+
+The switch --auto-group activates automatic grouping based on the basename of
+the processes. Grouping is tried for all processes without exceptions. If only
+some processes shall be grouped or different rules shall be applied, a
+configuration file can be specified with the --app-config switch.
+
+The supplied configuration file is expected to have the following format:
+
+[Application Name]
+shortname=regex
+
+Where Application Name is the name under which the aggregated bandwidth of the
+matched processes will be shown. Each application section can have multiple
+rules labeled with a "shortname" each with a regular expression that is matched
+against the processes' commandline. The shortname is used to describe the rule
+and is not used by the Aggregator.
+
+A sample configuration file can be found in group.sample.cfg
+
+
+
+Notifications
+~~~~~~~~~~~~~
+
+The Aggregator can issue notifications if a process or application exceeds its
+configured bandwidth threshold. Aggregator does not use default thresholds and
+does therefor not issue notifications unless explicitly configured.
+
+The configuration file is provided via the parameter --notification-config and
+is expected to have the following format.
+
+[Application Name]
+process_filter=<regex>
+notification_threshold=<bandwidth in kB/s>
+interval=<average timestamp in s>
+notification_command=<cmd>
+
+Application Name is a label that is used to describe the following entry and is
+not processed by the Aggregator.
+
+process_filter specifies a regular expression that is used to limit the scope
+of the rule. The regular expression is matched against
+* the process commandline for processes that are not grouped
+* the application name for grouped processes
+
+The rule is only valid for matching processes/groups.
+
+Incoming and outgoing bandwidth thresholds are specified in kB/s.
+
+Notifications are triggered if the average bandwidth over the given interval
+(in seconds) exceeds the configured threshold.
+
+A triggered notification writes its information to stderr. If a
+notification_command is configured, the given program is started.
+
