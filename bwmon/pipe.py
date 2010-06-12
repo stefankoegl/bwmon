@@ -199,18 +199,3 @@ class PipeMonitor(object):
         """Close the underlying pipe"""
         self.pipe.close()
 
-if __name__ == '__main__':
-    if len(sys.argv) > 1:
-        port = newport = int(sys.argv[1])
-        newhost = sys.argv[2]
-        if len(sys.argv) == 4:
-            newport = int(sys.argv[3])
-        pipe = Pipe(port, newhost, newport)
-        monitor = PipeMonitor(pipe)
-        pipe.start()
-        try:
-            monitor.run()
-        except KeyboardInterrupt:
-            pipe.close()
-            print 'Waiting for threads to finish...'
-
