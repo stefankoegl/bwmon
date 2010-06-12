@@ -25,8 +25,6 @@ def read_monitor_config(configfile):
         c = dict(config.items(section))
 
         if c['type'] == 'monitor':
-
-            This utility function simply cleans the console.
             ignorelocal = parse_bool(c.get('ignorelocal', False))
             import monitor
             mon = monitor.Monitor(ignorelocal=ignorelocal)
