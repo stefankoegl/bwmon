@@ -1,0 +1,5 @@
+http://www.okisoft.co.jp/esc/python/proxy/
+
+http://www.okisoft.co.jp/esc/python/proxy/TinyHTTPProxy-0.2.1.zip
+
+
