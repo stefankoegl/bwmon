@@ -1,0 +1,998 @@
+17:52:52
+  332 time python runmonitor.py
+24016 python runmonitor.py
+17:52:53
+  332 time python runmonitor.py
+25556 python runmonitor.py
+17:52:54
+  332 time python runmonitor.py
+24036 python runmonitor.py
+17:52:55
+  332 time python runmonitor.py
+25576 python runmonitor.py
+17:52:56
+  332 time python runmonitor.py
+24036 python runmonitor.py
+17:52:57
+  332 time python runmonitor.py
+24036 python runmonitor.py
+17:52:58
+  332 time python runmonitor.py
+25576 python runmonitor.py
+17:52:59
+  332 time python runmonitor.py
+24036 python runmonitor.py
+17:53:00
+  332 time python runmonitor.py
+25576 python runmonitor.py
+17:53:01
+  332 time python runmonitor.py
+24036 python runmonitor.py
+17:53:02
+  332 time python runmonitor.py
+25576 python runmonitor.py
+17:53:04
+  332 time python runmonitor.py
+24036 python runmonitor.py
+17:53:05
+  332 time python runmonitor.py
+24036 python runmonitor.py
+17:53:06
+  332 time python runmonitor.py
+24036 python runmonitor.py
+17:53:07
+  332 time python runmonitor.py
+24036 python runmonitor.py
+17:53:08
+  332 time python runmonitor.py
+25576 python runmonitor.py
+17:53:09
+  332 time python runmonitor.py
+24036 python runmonitor.py
+17:53:10
+  332 time python runmonitor.py
+25576 python runmonitor.py
+17:53:11
+  332 time python runmonitor.py
+24036 python runmonitor.py
+17:53:12
+  332 time python runmonitor.py
+24036 python runmonitor.py
+17:53:13
+  332 time python runmonitor.py
+25576 python runmonitor.py
+17:53:14
+  332 time python runmonitor.py
+24072 python runmonitor.py
+17:53:15
+  332 time python runmonitor.py
+25612 python runmonitor.py
+17:53:17
+  332 time python runmonitor.py
+24160 python runmonitor.py
+17:53:18
+  332 time python runmonitor.py
+25700 python runmonitor.py
+17:53:19
+  332 time python runmonitor.py
+24160 python runmonitor.py
+17:53:20
+  332 time python runmonitor.py
+24160 python runmonitor.py
+17:53:21
+  332 time python runmonitor.py
+25700 python runmonitor.py
+17:53:22
+  332 time python runmonitor.py
+24160 python runmonitor.py
+17:53:23
+  332 time python runmonitor.py
+25700 python runmonitor.py
+17:53:24
+  332 time python runmonitor.py
+24160 python runmonitor.py
+17:53:25
+  332 time python runmonitor.py
+24160 python runmonitor.py
+17:53:26
+  332 time python runmonitor.py
+27236 python runmonitor.py
+17:53:27
+  332 time python runmonitor.py
+24160 python runmonitor.py
+17:53:28
+  332 time python runmonitor.py
+25700 python runmonitor.py
+17:53:30
+  332 time python runmonitor.py
+24160 python runmonitor.py
+17:53:31
+  332 time python runmonitor.py
+25700 python runmonitor.py
+17:53:32
+  332 time python runmonitor.py
+24160 python runmonitor.py
+17:53:33
+  332 time python runmonitor.py
+24160 python runmonitor.py
+17:53:34
+  332 time python runmonitor.py
+25700 python runmonitor.py
+17:53:35
+  332 time python runmonitor.py
+24160 python runmonitor.py
+17:53:36
+  332 time python runmonitor.py
+25700 python runmonitor.py
+17:53:37
+  332 time python runmonitor.py
+24160 python runmonitor.py
+17:53:38
+  332 time python runmonitor.py
+25700 python runmonitor.py
+17:53:39
+  332 time python runmonitor.py
+24160 python runmonitor.py
+17:53:40
+  332 time python runmonitor.py
+24160 python runmonitor.py
+17:53:42
+  332 time python runmonitor.py
+25700 python runmonitor.py
+17:53:43
+  332 time python runmonitor.py
+24160 python runmonitor.py
+17:53:44
+  332 time python runmonitor.py
+25700 python runmonitor.py
+17:53:45
+  332 time python runmonitor.py
+24160 python runmonitor.py
+17:53:46
+  332 time python runmonitor.py
+24160 python runmonitor.py
+17:53:47
+  332 time python runmonitor.py
+24160 python runmonitor.py
+17:53:48
+  332 time python runmonitor.py
+24160 python runmonitor.py
+17:53:49
+  332 time python runmonitor.py
+25700 python runmonitor.py
+17:53:50
+  332 time python runmonitor.py
+24176 python runmonitor.py
+17:53:51
+  332 time python runmonitor.py
+25716 python runmonitor.py
+17:53:52
+  332 time python runmonitor.py
+24176 python runmonitor.py
+17:53:53
+  332 time python runmonitor.py
+24176 python runmonitor.py
+17:53:55
+  332 time python runmonitor.py
+24580 python runmonitor.py
+17:53:56
+  332 time python runmonitor.py
+24576 python runmonitor.py
+17:53:57
+  332 time python runmonitor.py
+26116 python runmonitor.py
+17:53:58
+  332 time python runmonitor.py
+24576 python runmonitor.py
+17:53:59
+  332 time python runmonitor.py
+26116 python runmonitor.py
+17:54:00
+  332 time python runmonitor.py
+24576 python runmonitor.py
+17:54:01
+  332 time python runmonitor.py
+24576 python runmonitor.py
+17:54:02
+  332 time python runmonitor.py
+24576 python runmonitor.py
+17:54:03
+  332 time python runmonitor.py
+24576 python runmonitor.py
+17:54:04
+  332 time python runmonitor.py
+26116 python runmonitor.py
+17:54:05
+  332 time python runmonitor.py
+24576 python runmonitor.py
+17:54:06
+  332 time python runmonitor.py
+26116 python runmonitor.py
+17:54:08
+  332 time python runmonitor.py
+24576 python runmonitor.py
+17:54:09
+  332 time python runmonitor.py
+26116 python runmonitor.py
+17:54:10
+  332 time python runmonitor.py
+24576 python runmonitor.py
+17:54:11
+  332 time python runmonitor.py
+24576 python runmonitor.py
+17:54:12
+  332 time python runmonitor.py
+26116 python runmonitor.py
+17:54:13
+  332 time python runmonitor.py
+24576 python runmonitor.py
+17:54:14
+  332 time python runmonitor.py
+26116 python runmonitor.py
+17:54:15
+  332 time python runmonitor.py
+24592 python runmonitor.py
+17:54:16
+  332 time python runmonitor.py
+24592 python runmonitor.py
+17:54:17
+  332 time python runmonitor.py
+26132 python runmonitor.py
+17:54:19
+  332 time python runmonitor.py
+24592 python runmonitor.py
+17:54:20
+  332 time python runmonitor.py
+26132 python runmonitor.py
+17:54:21
+  332 time python runmonitor.py
+24612 python runmonitor.py
+17:54:22
+  332 time python runmonitor.py
+24612 python runmonitor.py
+17:54:23
+  332 time python runmonitor.py
+27688 python runmonitor.py
+17:54:24
+  332 time python runmonitor.py
+24612 python runmonitor.py
+17:54:25
+  332 time python runmonitor.py
+26152 python runmonitor.py
+17:54:26
+  332 time python runmonitor.py
+24640 python runmonitor.py
+17:54:27
+  332 time python runmonitor.py
+26180 python runmonitor.py
+17:54:28
+  332 time python runmonitor.py
+24640 python runmonitor.py
+17:54:29
+  332 time python runmonitor.py
+24640 python runmonitor.py
+17:54:30
+  332 time python runmonitor.py
+24640 python runmonitor.py
+17:54:31
+  332 time python runmonitor.py
+24640 python runmonitor.py
+17:54:33
+  332 time python runmonitor.py
+26180 python runmonitor.py
+17:54:34
+  332 time python runmonitor.py
+24640 python runmonitor.py
+17:54:35
+  332 time python runmonitor.py
+24640 python runmonitor.py
+17:54:36
+  332 time python runmonitor.py
+24728 python runmonitor.py
+17:54:37
+  332 time python runmonitor.py
+24724 python runmonitor.py
+17:54:38
+  332 time python runmonitor.py
+26340 python runmonitor.py
+17:54:39
+  332 time python runmonitor.py
+24544 python runmonitor.py
+17:54:40
+  332 time python runmonitor.py
+26084 python runmonitor.py
+17:54:41
+  332 time python runmonitor.py
+25180 python runmonitor.py
+17:54:42
+  332 time python runmonitor.py
+25176 python runmonitor.py
+17:54:43
+  332 time python runmonitor.py
+26716 python runmonitor.py
+17:54:45
+  332 time python runmonitor.py
+25560 python runmonitor.py
+17:54:46
+  332 time python runmonitor.py
+25560 python runmonitor.py
+17:54:47
+  332 time python runmonitor.py
+27100 python runmonitor.py
+17:54:48
+  332 time python runmonitor.py
+24928 python runmonitor.py
+17:54:49
+  332 time python runmonitor.py
+26468 python runmonitor.py
+17:54:50
+  332 time python runmonitor.py
+25560 python runmonitor.py
+17:54:51
+  332 time python runmonitor.py
+25560 python runmonitor.py
+17:54:52
+  332 time python runmonitor.py
+27100 python runmonitor.py
+17:54:53
+  332 time python runmonitor.py
+24928 python runmonitor.py
+17:54:55
+  332 time python runmonitor.py
+26468 python runmonitor.py
+17:54:56
+  332 time python runmonitor.py
+25564 python runmonitor.py
+17:54:57
+  332 time python runmonitor.py
+25564 python runmonitor.py
+17:54:58
+  332 time python runmonitor.py
+27104 python runmonitor.py
+17:54:59
+  332 time python runmonitor.py
+24928 python runmonitor.py
+17:55:00
+  332 time python runmonitor.py
+26468 python runmonitor.py
+17:55:01
+  332 time python runmonitor.py
+25564 python runmonitor.py
+17:55:02
+  332 time python runmonitor.py
+25564 python runmonitor.py
+17:55:03
+  332 time python runmonitor.py
+27104 python runmonitor.py
+17:55:04
+  332 time python runmonitor.py
+24928 python runmonitor.py
+17:55:05
+  332 time python runmonitor.py
+26468 python runmonitor.py
+17:55:06
+  332 time python runmonitor.py
+28260 python runmonitor.py
+17:55:08
+  332 time python runmonitor.py
+25564 python runmonitor.py
+17:55:09
+  332 time python runmonitor.py
+27104 python runmonitor.py
+17:55:10
+  332 time python runmonitor.py
+24928 python runmonitor.py
+17:55:11
+  332 time python runmonitor.py
+26468 python runmonitor.py
+17:55:12
+  332 time python runmonitor.py
+25660 python runmonitor.py
+17:55:13
+  332 time python runmonitor.py
+25660 python runmonitor.py
+17:55:14
+  332 time python runmonitor.py
+27200 python runmonitor.py
+17:55:15
+  332 time python runmonitor.py
+25024 python runmonitor.py
+17:55:16
+  332 time python runmonitor.py
+26564 python runmonitor.py
+17:55:17
+  332 time python runmonitor.py
+25660 python runmonitor.py
+17:55:18
+  332 time python runmonitor.py
+25660 python runmonitor.py
+17:55:19
+  332 time python runmonitor.py
+28736 python runmonitor.py
+17:55:21
+  332 time python runmonitor.py
+25024 python runmonitor.py
+17:55:22
+  332 time python runmonitor.py
+26564 python runmonitor.py
+17:55:23
+  332 time python runmonitor.py
+25660 python runmonitor.py
+17:55:24
+  332 time python runmonitor.py
+27200 python runmonitor.py
+17:55:25
+  332 time python runmonitor.py
+28736 python runmonitor.py
+17:55:26
+  332 time python runmonitor.py
+25024 python runmonitor.py
+17:55:27
+  332 time python runmonitor.py
+26564 python runmonitor.py
+17:55:28
+  332 time python runmonitor.py
+25664 python runmonitor.py
+17:55:29
+  332 time python runmonitor.py
+27204 python runmonitor.py
+17:55:30
+  332 time python runmonitor.py
+26048 python runmonitor.py
+17:55:31
+  332 time python runmonitor.py
+26048 python runmonitor.py
+17:55:32
+  332 time python runmonitor.py
+27588 python runmonitor.py
+17:55:34
+  332 time python runmonitor.py
+25408 python runmonitor.py
+17:55:35
+  332 time python runmonitor.py
+26948 python runmonitor.py
+17:55:36
+  332 time python runmonitor.py
+26048 python runmonitor.py
+17:55:37
+  332 time python runmonitor.py
+26048 python runmonitor.py
+17:55:38
+  332 time python runmonitor.py
+27588 python runmonitor.py
+17:55:39
+  332 time python runmonitor.py
+25408 python runmonitor.py
+17:55:40
+  332 time python runmonitor.py
+26948 python runmonitor.py
+17:55:41
+  332 time python runmonitor.py
+29124 python runmonitor.py
+17:55:42
+  332 time python runmonitor.py
+26048 python runmonitor.py
+17:55:43
+  332 time python runmonitor.py
+27588 python runmonitor.py
+17:55:45
+  332 time python runmonitor.py
+25408 python runmonitor.py
+17:55:46
+  332 time python runmonitor.py
+26948 python runmonitor.py
+17:55:47
+  332 time python runmonitor.py
+26052 python runmonitor.py
+17:55:48
+  332 time python runmonitor.py
+26052 python runmonitor.py
+17:55:49
+  332 time python runmonitor.py
+27592 python runmonitor.py
+17:55:50
+  332 time python runmonitor.py
+25408 python runmonitor.py
+17:55:51
+  332 time python runmonitor.py
+27204 python runmonitor.py
+17:55:52
+  332 time python runmonitor.py
+26052 python runmonitor.py
+17:55:53
+  332 time python runmonitor.py
+26052 python runmonitor.py
+17:55:54
+  332 time python runmonitor.py
+27592 python runmonitor.py
+17:55:55
+  332 time python runmonitor.py
+25408 python runmonitor.py
+17:55:57
+  332 time python runmonitor.py
+27204 python runmonitor.py
+17:55:58
+  332 time python runmonitor.py
+26056 python runmonitor.py
+17:55:59
+  332 time python runmonitor.py
+26056 python runmonitor.py
+17:56:00
+  332 time python runmonitor.py
+27596 python runmonitor.py
+17:56:01
+  332 time python runmonitor.py
+25408 python runmonitor.py
+17:56:02
+  332 time python runmonitor.py
+27204 python runmonitor.py
+17:56:03
+  332 time python runmonitor.py
+26056 python runmonitor.py
+17:56:04
+  332 time python runmonitor.py
+26056 python runmonitor.py
+17:56:05
+  332 time python runmonitor.py
+27596 python runmonitor.py
+17:56:06
+  332 time python runmonitor.py
+25408 python runmonitor.py
+17:56:07
+  332 time python runmonitor.py
+27204 python runmonitor.py
+17:56:09
+  332 time python runmonitor.py
+26384 python runmonitor.py
+17:56:10
+  332 time python runmonitor.py
+26384 python runmonitor.py
+17:56:11
+  332 time python runmonitor.py
+27924 python runmonitor.py
+17:56:12
+  332 time python runmonitor.py
+25732 python runmonitor.py
+17:56:13
+  332 time python runmonitor.py
+27528 python runmonitor.py
+17:56:14
+  332 time python runmonitor.py
+29428 python runmonitor.py
+17:56:15
+  332 time python runmonitor.py
+26384 python runmonitor.py
+17:56:16
+  332 time python runmonitor.py
+27924 python runmonitor.py
+17:56:17
+  332 time python runmonitor.py
+25732 python runmonitor.py
+17:56:18
+  332 time python runmonitor.py
+25732 python runmonitor.py
+17:56:19
+  332 time python runmonitor.py
+27904 python runmonitor.py
+17:56:20
+  332 time python runmonitor.py
+26432 python runmonitor.py
+17:56:22
+  332 time python runmonitor.py
+27972 python runmonitor.py
+17:56:23
+  332 time python runmonitor.py
+25780 python runmonitor.py
+17:56:24
+  332 time python runmonitor.py
+26036 python runmonitor.py
+17:56:25
+  332 time python runmonitor.py
+30996 python runmonitor.py
+17:56:26
+  332 time python runmonitor.py
+26432 python runmonitor.py
+17:56:27
+  332 time python runmonitor.py
+27972 python runmonitor.py
+17:56:28
+  332 time python runmonitor.py
+25780 python runmonitor.py
+17:56:29
+  332 time python runmonitor.py
+25780 python runmonitor.py
+17:56:30
+  332 time python runmonitor.py
+27576 python runmonitor.py
+17:56:31
+  332 time python runmonitor.py
+26432 python runmonitor.py
+17:56:32
+  332 time python runmonitor.py
+27972 python runmonitor.py
+17:56:33
+  332 time python runmonitor.py
+25780 python runmonitor.py
+17:56:34
+  332 time python runmonitor.py
+25780 python runmonitor.py
+17:56:36
+  332 time python runmonitor.py
+27576 python runmonitor.py
+17:56:37
+  332 time python runmonitor.py
+26432 python runmonitor.py
+17:56:38
+  332 time python runmonitor.py
+27972 python runmonitor.py
+17:56:39
+  332 time python runmonitor.py
+25536 python runmonitor.py
+17:56:40
+  332 time python runmonitor.py
+25536 python runmonitor.py
+17:56:41
+  332 time python runmonitor.py
+27332 python runmonitor.py
+17:56:42
+  332 time python runmonitor.py
+26516 python runmonitor.py
+17:56:43
+  332 time python runmonitor.py
+26516 python runmonitor.py
+17:56:44
+  332 time python runmonitor.py
+28056 python runmonitor.py
+17:56:46
+  332 time python runmonitor.py
+29592 python runmonitor.py
+17:56:47
+  332 time python runmonitor.py
+25860 python runmonitor.py
+17:56:48
+  332 time python runmonitor.py
+27656 python runmonitor.py
+17:56:49
+  332 time python runmonitor.py
+27656 python runmonitor.py
+17:56:50
+  332 time python runmonitor.py
+26516 python runmonitor.py
+17:56:51
+  332 time python runmonitor.py
+26516 python runmonitor.py
+17:56:52
+  332 time python runmonitor.py
+28056 python runmonitor.py
+17:56:54
+  332 time python runmonitor.py
+25620 python runmonitor.py
+17:56:55
+  332 time python runmonitor.py
+25876 python runmonitor.py
+17:56:56
+  332 time python runmonitor.py
+29656 python runmonitor.py
+17:56:57
+  332 time python runmonitor.py
+26604 python runmonitor.py
+17:56:58
+  332 time python runmonitor.py
+28144 python runmonitor.py
+17:56:59
+  332 time python runmonitor.py
+25948 python runmonitor.py
+17:57:00
+  332 time python runmonitor.py
+25944 python runmonitor.py
+17:57:01
+  332 time python runmonitor.py
+27740 python runmonitor.py
+17:57:02
+  332 time python runmonitor.py
+29660 python runmonitor.py
+17:57:04
+  332 time python runmonitor.py
+26604 python runmonitor.py
+17:57:05
+  332 time python runmonitor.py
+28144 python runmonitor.py
+17:57:06
+  332 time python runmonitor.py
+29680 python runmonitor.py
+17:57:07
+  332 time python runmonitor.py
+25692 python runmonitor.py
+17:57:08
+  332 time python runmonitor.py
+27488 python runmonitor.py
+17:57:09
+  332 time python runmonitor.py
+29752 python runmonitor.py
+17:57:10
+  332 time python runmonitor.py
+26676 python runmonitor.py
+17:57:11
+  332 time python runmonitor.py
+28216 python runmonitor.py
+17:57:12
+  332 time python runmonitor.py
+29752 python runmonitor.py
+17:57:14
+  332 time python runmonitor.py
+26016 python runmonitor.py
+17:57:15
+  332 time python runmonitor.py
+27812 python runmonitor.py
+17:57:16
+  332 time python runmonitor.py
+29712 python runmonitor.py
+17:57:17
+  332 time python runmonitor.py
+26680 python runmonitor.py
+17:57:18
+  332 time python runmonitor.py
+28220 python runmonitor.py
+17:57:19
+  332 time python runmonitor.py
+29756 python runmonitor.py
+17:57:20
+  332 time python runmonitor.py
+26016 python runmonitor.py
+17:57:21
+  332 time python runmonitor.py
+27592 python runmonitor.py
+17:57:23
+  332 time python runmonitor.py
+27592 python runmonitor.py
+17:57:24
+  332 time python runmonitor.py
+26784 python runmonitor.py
+17:57:25
+  332 time python runmonitor.py
+26784 python runmonitor.py
+17:57:26
+  332 time python runmonitor.py
+28324 python runmonitor.py
+17:57:27
+  332 time python runmonitor.py
+27172 python runmonitor.py
+17:57:28
+  332 time python runmonitor.py
+27172 python runmonitor.py
+17:57:29
+  332 time python runmonitor.py
+28712 python runmonitor.py
+17:57:30
+  332 time python runmonitor.py
+31788 python runmonitor.py
+17:57:32
+  332 time python runmonitor.py
+26504 python runmonitor.py
+17:57:33
+  332 time python runmonitor.py
+27324 python runmonitor.py
+17:57:34
+  332 time python runmonitor.py
+28300 python runmonitor.py
+17:57:35
+  332 time python runmonitor.py
+27172 python runmonitor.py
+17:57:36
+  332 time python runmonitor.py
+27172 python runmonitor.py
+17:57:37
+  332 time python runmonitor.py
+28712 python runmonitor.py
+17:57:38
+  332 time python runmonitor.py
+26504 python runmonitor.py
+17:57:39
+  332 time python runmonitor.py
+26504 python runmonitor.py
+17:57:41
+  332 time python runmonitor.py
+28044 python runmonitor.py
+17:57:42
+  332 time python runmonitor.py
+30248 python runmonitor.py
+17:57:43
+  332 time python runmonitor.py
+27172 python runmonitor.py
+17:57:44
+  332 time python runmonitor.py
+28712 python runmonitor.py
+17:57:45
+  332 time python runmonitor.py
+31788 python runmonitor.py
+17:57:46
+  332 time python runmonitor.py
+26504 python runmonitor.py
+17:57:47
+  332 time python runmonitor.py
+26504 python runmonitor.py
+17:57:48
+  332 time python runmonitor.py
+28044 python runmonitor.py
+17:57:49
+  332 time python runmonitor.py
+27176 python runmonitor.py
+17:57:51
+  332 time python runmonitor.py
+27176 python runmonitor.py
+17:57:52
+  332 time python runmonitor.py
+28716 python runmonitor.py
+17:57:53
+  332 time python runmonitor.py
+26504 python runmonitor.py
+17:57:54
+  332 time python runmonitor.py
+26504 python runmonitor.py
+17:57:55
+  332 time python runmonitor.py
+28044 python runmonitor.py
+17:57:56
+  332 time python runmonitor.py
+29836 python runmonitor.py
+17:57:57
+  332 time python runmonitor.py
+27180 python runmonitor.py
+17:57:58
+  332 time python runmonitor.py
+27180 python runmonitor.py
+17:58:00
+  332 time python runmonitor.py
+28720 python runmonitor.py
+17:58:01
+  332 time python runmonitor.py
+27564 python runmonitor.py
+17:58:02
+  332 time python runmonitor.py
+27564 python runmonitor.py
+17:58:03
+  332 time python runmonitor.py
+29104 python runmonitor.py
+17:58:04
+  332 time python runmonitor.py
+30640 python runmonitor.py
+17:58:05
+  332 time python runmonitor.py
+26888 python runmonitor.py
+17:58:06
+  332 time python runmonitor.py
+27144 python runmonitor.py
+17:58:07
+  332 time python runmonitor.py
+28684 python runmonitor.py
+17:58:09
+  332 time python runmonitor.py
+27568 python runmonitor.py
+17:58:10
+  332 time python runmonitor.py
+27564 python runmonitor.py
+17:58:11
+  332 time python runmonitor.py
+29104 python runmonitor.py
+17:58:12
+  332 time python runmonitor.py
+30640 python runmonitor.py
+17:58:13
+  332 time python runmonitor.py
+26888 python runmonitor.py
+17:58:14
+  332 time python runmonitor.py
+28684 python runmonitor.py
+17:58:15
+  332 time python runmonitor.py
+28684 python runmonitor.py
+17:58:16
+  332 time python runmonitor.py
+27564 python runmonitor.py
+17:58:17
+  332 time python runmonitor.py
+27564 python runmonitor.py
+17:58:19
+  332 time python runmonitor.py
+29104 python runmonitor.py
+17:58:20
+  332 time python runmonitor.py
+26888 python runmonitor.py
+17:58:21
+  332 time python runmonitor.py
+26888 python runmonitor.py
+17:58:22
+  332 time python runmonitor.py
+28684 python runmonitor.py
+17:58:23
+  332 time python runmonitor.py
+30644 python runmonitor.py
+17:58:24
+  332 time python runmonitor.py
+27568 python runmonitor.py
+17:58:25
+  332 time python runmonitor.py
+29108 python runmonitor.py
+17:58:26
+  332 time python runmonitor.py
+30644 python runmonitor.py
+17:58:28
+  332 time python runmonitor.py
+26888 python runmonitor.py
+17:58:29
+  332 time python runmonitor.py
+28684 python runmonitor.py
+17:58:30
+  332 time python runmonitor.py
+28684 python runmonitor.py
+17:58:31
+  332 time python runmonitor.py
+27568 python runmonitor.py
+17:58:32
+  332 time python runmonitor.py
+27568 python runmonitor.py
+17:58:33
+  332 time python runmonitor.py
+29108 python runmonitor.py
+17:58:34
+  332 time python runmonitor.py
+26888 python runmonitor.py
+17:58:35
+  332 time python runmonitor.py
+26888 python runmonitor.py
+17:58:36
+  332 time python runmonitor.py
+28428 python runmonitor.py
+17:58:37
+  332 time python runmonitor.py
+27568 python runmonitor.py
+17:58:39
+  332 time python runmonitor.py
+27568 python runmonitor.py
+17:58:40
+  332 time python runmonitor.py
+29108 python runmonitor.py
+17:58:41
+  332 time python runmonitor.py
+30644 python runmonitor.py
+17:58:42
+  332 time python runmonitor.py
+26888 python runmonitor.py
+17:58:43
+  332 time python runmonitor.py
+28428 python runmonitor.py
+17:58:44
+  332 time python runmonitor.py
+30600 python runmonitor.py
+17:58:45
+  332 time python runmonitor.py
+27568 python runmonitor.py
+17:58:46
+  332 time python runmonitor.py
+27568 python runmonitor.py
+17:58:47
+  332 time python runmonitor.py
+29108 python runmonitor.py
+17:58:49
+  332 time python runmonitor.py
+27952 python runmonitor.py
+17:58:50
+  332 time python runmonitor.py
+27952 python runmonitor.py
+17:58:51
+  332 time python runmonitor.py
+29492 python runmonitor.py
+17:58:52
+  332 time python runmonitor.py
+27272 python runmonitor.py
+17:58:53
+  332 time python runmonitor.py
+27272 python runmonitor.py
+17:58:54
+  332 time python runmonitor.py
+28812 python runmonitor.py
+17:58:55
+  332 time python runmonitor.py
+30608 python runmonitor.py
+17:58:56
+17:58:57
