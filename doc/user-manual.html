@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <title>bwmon: Application-level bandwidth monitoring (thpinfo.com)</title>
+  <style type="text/css">
+            body { margin: 0px; background-color: rgb( 30%, 30%, 30%); font-family: sans-serif; font-size: 10pt; }
+            h1 { font-size: 16px; }
+            h2 { font-size: 15px; }
+            h3 { font-size: 14px; }
+            a { text-decoration: none; color: rgb( 24%, 24%, 24%); }
+            a:hover { text-decoration: underline; color: #333; background-color: rgb( 95%, 95%, 95%); }
+            img { border-width: 0px; }
+            .nav { padding: 10px; margin: 0px; background-color: rgb( 10%, 10%, 10%); color: rgb( 80%, 80%, 80%); letter-spacing: 3px; font-size: 11px; border-bottom: 1px rgb( 10%, 10%, 10%) solid; font-family: sans-serif; }
+            .nav a { color: rgb( 40%, 40%, 40%); background-color: inherit; font-weight: bold; }
+            .taglinks a { color: gray; }
+            address { text-align: right; color: #666; }
+            code, pre { background-color: rgb( 95%, 95%, 95%); }
+            pre { overflow: auto; max-height: 500px; }
+            hr { border: 0px; height: 1px; background-image: url(/2007/archive/dotted.gif); margin-top: 6px; margin-bottom: 6px; clear: both; }
+            table.main { z-index: 200; margin-top: 20px; margin-left: auto; margin-right: auto; border-width: 0px; }
+            table.main td { z-index: 200; padding: 10px; vertical-align: top;}
+            table.main div.cont, table.main div.sidebar { background-color: rgb(98%, 98%, 98%); border: 1px rgb( 20%, 20%, 20%) solid; padding: 5px; }
+            table.main div.cont { width: 660px; }
+            div.important { border: 3px green solid; background-color: lightgreen; margin: 10px; padding: 10px; }
+            p.quote { font-style: italic; text-align: center; padding-left: 20%; padding-right: 20%; color: rgb( 20%, 0%, 20%); }
+            p.quote:after { font-size: 8pt; font-style: normal; content: attr(title); display: block; text-align: right; padding-right: 10%; padding-top: 5px; }
+
+            p { text-align: justify; }
+        </style>
+</head>
+<body>
+<p style="text-align: right;" class="nav"> <a href="/" rel="home">home</a>
+&#8226; <a href="/about">contact</a> &#8226; thpinfo.com </p>
+<table class="main">
+  <tbody>
+    <tr>
+      <td>
+      <div class="cont">
+      <div style="padding: 0px 30px 15px;">
+      <p style="font-size: 10px; color: rgb(204, 204, 204);"> <a
+ href="/2010/">2010</a> / <a href="/2010/bwmon/"><strong>bwmon: Application-level bandwidth monitoring</strong></a> </p>
+<!-- BEGIN CONTENT -->
+      <div style="text-align: center;">
+          <img src="http://thpinfo.com/2010/bwmon/bwmon.png" alt="" width="320" height="100"/>
+      </div>
+      <h1>bwmon User Manual</h1>
+
+<p>bwmon is a per-application bandwith monitoring framework written in Python.
+It can monitor generated traffic and bandwidth (traffic over time) per process
+or application (group of processes).</p>
+
+<p>bwmon has two different means of monitoring: the Monitor which relies on
+data gathered from the /proc filesystem and and Pipe which accounts data passed
+through it.</p>
+
+<p>Both monitoring types can be used standalone or be combined through the
+Aggregator. The Aggregator can group processes to applications and issue
+notifications if one process/application passes its configured threshold.</p>
+
+
+<h2>The Monitor</h2>
+
+<p>The Monitor is used for general-purpose traffic and bandwith monitoring. It
+uses data from the /proc filesystem, especially from /proc/net/ip_conntrack
+which is provided by the Kernel module ip_conntrack. If this file does not
+exist, try to run</p>
+
+<pre>
+  sudo modprobe ip_conntrack
+</pre>
+
+
+<h3>Using the Monitor</h3>
+
+<p>The Monitor can be used standalone by running</p>
+
+<pre>
+  sudo python runmonitor.py [--no-lookback] [--bandwidth] [--ignore-local]
+      [--include=<regex> [--include=<regex> ...] [--exclude=<regex> [...]]
+</pre>
+
+<p>When started without arguments, Monitor displays the accumulated traffic
+since monitoring for the process was started by ip_conntrack. However this
+timespan can vary between processes and can (currently) not be determined. To
+display only traffic generated after the start of the Monitor, use the
+<strong>--no-lookback</strong> switch.</p>
+
+
+<p>To display bandwith usage instead of accumulated traffic, you can use
+<strong>--bandwidth</strong> switch. Monitor will then calculate the bandwidth
+usage per second.</p>
+
+
+<p>By default Monitor also includes traffic via the loopback interface. By
+using the <strong>--ignore-local</strong> switch loopback traffic can be
+ignored.</p>
+
+
+<p>To select the processes that are monitored by Monitor you can use the
+<strong>--include</strong> and <strong>--exclude</strong> options to pass
+regular expressions. Both flags can be combined and each can be used multiple
+times. When --include is used, only processes that match at least one of the
+"include" regular expressions are monitored. When --exclude is used, processes
+that match the "exclude" regular expressions are excluded. Exclude overrides
+include.</p>
+
+
+
+<h2>The Pipe</h2>
+
+<p>The Pipe opens a local port and connects to a remote host. It them forwards
+and accounts all traffic passed through it.</p>
+
+
+<h3>Using the Pipe</h3>
+
+<p>The Pipe is started with</p>
+
+<pre>
+    python runpipe.py <em>port</em> <em>remote-host</em>
+    python runpipe.py <em>local-port</em> <em>remote-host</em> <em>remote-port</em>
+</pre>
+
+<p>When started with two arguments, Pipe opens <em>port</em> locally and
+establishes a connection to <em>remote-host</em> on the same port. When started
+with three arguments, different local and remote ports can be used.</p>
+
+
+<h2>The Aggregator</h2>
+
+<p>The aggregator combines multiple instances of Monitor and Pipe to provide a
+consistant configuration and notification interface.</p>
+
+<p>Multiple processes (even with traffic data coming from different monitors)
+can be grouped to applications. Notification thresholds can then be assigned to
+applications instead of simple processes.</p>
+
+
+<h3>Using the Aggregator</h3>
+
+<p>The aggregator is started with</p>
+
+<pre>
+    python runaggregator.py [--app-config=<file>] [--monitor-config=<file>]
+        [--notification-config=<file>] [--auto-group]
+</pre>
+
+<p>It then prints one line per application that has used bandwidth during the
+last interval (1 second). The output can be divided into three columns. The
+first containins the incoming and the second the bandwidth. The third columns
+is used to distinguish the processes and contains the commandline (for
+processes) or the application name (for grouped processes).</p>
+
+
+<h3>Specifying Monitors</h3>
+
+<p>By default the Aggregator starts one Monitor and no Pipes. To override this
+behaviour, the switch <strong>--monitor-config</strong> can be used to specify
+a monitor configuration file.</p>
+
+<p>The configuration file is expected to have the following format.</p>
+
+<pre>
+[Monitor Name]
+type=<em>monitor-type</em>
+<em>parameter</em>=<em>value</em>
+</pre>
+
+<p><em>Monitor Name</em> is a description of the monitoring instance and is not
+processed by the Aggregator. The type can either be "monitor" or pipe. The
+available parameters depend on the type.
+
+<p>Paramters for Monitors:
+ <ul>
+  <li>include</li>
+  <li>exclude</li>
+  <li>ignorelocal</li>
+ </ul>
+</p>
+
+<p>The parameters correspond to the commandline switches of the standalone
+monitor. Only one include and exclude regular expression can be given per
+Monitor instance.</p>
+
+
+<p>Parameters for Pipes
+ <ul>
+  <li>port</li>
+  <li>newhost</li>
+  <li>newport</li>
+ </ul>
+</p>
+
+<p>The parameters correspond to the commandline switches of the standalone
+pipe.</p>
+
+<p>A sample configuration can be found in <a
+href="http://repo.or.cz/w/bwmon.git/blob_plain/HEAD:/monitors.sample.cfg">monitors.sample.cfg</a></p>
+
+
+<h3>Grouping Processes</h3>
+
+<p>The Aggregator can aggregate the bandwidth usage for a group of processes.
+The grouping can either happen automatically or through a supplied
+configuration.</p>
+
+<p>The switch <strong>--auto-group</strong> activates automatic grouping based
+on the basename of the processes. Grouping is tried for all processes without
+exceptions. If only some processes shall be grouped or different rules shall be
+applied, a configuration file can be specified with the
+<strong>--app-config</strong> switch.</p>
+
+<p>The supplied configuration file is expected to have the following format:</p>
+
+<pre>
+[<em>Application Name</em>]
+<em>shortname1</em>=<em>regex</em>
+<em>shortname2</em>=<em>regex</em>
+</pre>
+
+<p>Where <em>Application Name</em> is the name under which the aggregated
+bandwidth of the matched processes will be shown. Each application section can
+have multiple rules labeled with a "shortname" each with a regular expression
+that is matched against the processes' commandline. The shortname is used to
+describe the rule and is not used by the Aggregator.</p>
+
+<p>A sample configuration file can be found in <a
+href="http://repo.or.cz/w/bwmon.git/blob_plain/HEAD:/group.sample.cfg">group.sample.cfg</a>.</p>
+
+
+<h3>Notifications</h3>
+
+<p>The Aggregator can issue notifications if a process or application exceeds
+its configured bandwidth threshold. Aggregator does not use default thresholds
+and does therefor not issue notifications unless explicitly configured.</p>
+
+<p>The configuration file is provided via the parameter
+<strong>--notification-config</strong> and is expected to have the following
+format.</p>
+
+<pre>
+[<em>Application Name</em>]
+process_filter=<em>regex</em>
+notification_threshold=<em>bandwidth in kB/s</em>
+interval=<em>average timestamp in s</em>
+notification_command=<em>cmd</em>
+</pre>
+
+<p><em>Application Name</em> is a label that is used to describe the following
+entry and is not processed by the Aggregator.</p>
+
+<p><em>process_filter</em> specifies a regular expression that is used to limit
+the scope of the rule. The regular expression is matched against
+ <ul>
+  <li>the process commandline for processes that are not grouped</li>
+  <li>the application name for grouped processes</li>
+ </ul>
+</p>
+
+<p>The rule is only valid for matching processes/groups.</p>
+
+<p><em>Incoming</em> and <em>outgoing</em> bandwidth thresholds are specified
+in kB/s.</p>
+
+<p>Notifications are triggered if the average bandwidth over the given
+<em>interval</em> (in seconds) exceeds the configured threshold.</p>
+
+<p>A triggered notification writes its information to stderr. If a
+<em>notification_command</em> is configured, the given program is started.</p>
+
+
+      <br>
+      <address>Thomas Perl (thp at this domain), jabber:
+thp@jabber.org</address>
+      </div>
+      </div>
+      </td>
+      <td> <br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
