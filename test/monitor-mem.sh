@@ -2,8 +2,9 @@
 
 while [ 1 ]
 do
-    date +%T
-    ps ax -o rss,command | grep runmonitor | grep -v grep
+    DATE=`date +%T`
+    MEM=`ps ax -o rss,command | grep runmonitor | grep -v grep | awk '{ print $1 }'`
+    echo $DATE $MEM
     sleep 1
 done
 
