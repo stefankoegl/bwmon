@@ -120,7 +120,7 @@ Specifying Monitors
 ~~~~~~~~~~~~~~~~~~~
 
 By default the Aggregator starts one Monitor and no Pipes. To override this
-behaviour, the switch --monitor-cfg can be used to specify a monitor
+behaviour, the switch --monitor-config can be used to specify a monitor
 configuration file.
 
 The configuration file is expected to have the following format.
