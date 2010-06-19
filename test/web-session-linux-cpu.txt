@@ -1,11 +1,3 @@
-861.40user 91.37system 33:36.61elapsed 47%CPU (0avgtext+0avgdata 130272maxresident)k
-0inputs+3376outputs (0major+417758minor)pagefaults 0swaps
-
-
-Command exited with non-zero status 1
-861.40    user
- 91.37    system
- 33:36.61 elapsed
- 47% CPU (0avgtext+0avgdata 130272maxresident)k
-0inputs+3376outputs (0major+417758minor)pagefaults 0swaps
+303.08user 49.66system 37:29.71elapsed 15%CPU (0avgtext+0avgdata 115504maxresident)k
+0inputs+2760outputs (0major+494640minor)pagefaults 0swaps
 

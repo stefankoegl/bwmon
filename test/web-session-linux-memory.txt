@@ -1,998 +1,2187 @@
-17:52:52
-  332 time python runmonitor.py
-24016 python runmonitor.py
-17:52:53
-  332 time python runmonitor.py
-25556 python runmonitor.py
-17:52:54
-  332 time python runmonitor.py
-24036 python runmonitor.py
-17:52:55
-  332 time python runmonitor.py
-25576 python runmonitor.py
-17:52:56
-  332 time python runmonitor.py
-24036 python runmonitor.py
-17:52:57
-  332 time python runmonitor.py
-24036 python runmonitor.py
-17:52:58
-  332 time python runmonitor.py
-25576 python runmonitor.py
-17:52:59
-  332 time python runmonitor.py
-24036 python runmonitor.py
-17:53:00
-  332 time python runmonitor.py
-25576 python runmonitor.py
-17:53:01
-  332 time python runmonitor.py
-24036 python runmonitor.py
-17:53:02
-  332 time python runmonitor.py
-25576 python runmonitor.py
-17:53:04
-  332 time python runmonitor.py
-24036 python runmonitor.py
-17:53:05
-  332 time python runmonitor.py
-24036 python runmonitor.py
-17:53:06
-  332 time python runmonitor.py
-24036 python runmonitor.py
-17:53:07
-  332 time python runmonitor.py
-24036 python runmonitor.py
-17:53:08
-  332 time python runmonitor.py
-25576 python runmonitor.py
-17:53:09
-  332 time python runmonitor.py
-24036 python runmonitor.py
-17:53:10
-  332 time python runmonitor.py
-25576 python runmonitor.py
-17:53:11
-  332 time python runmonitor.py
-24036 python runmonitor.py
-17:53:12
-  332 time python runmonitor.py
-24036 python runmonitor.py
-17:53:13
-  332 time python runmonitor.py
-25576 python runmonitor.py
-17:53:14
-  332 time python runmonitor.py
-24072 python runmonitor.py
-17:53:15
-  332 time python runmonitor.py
-25612 python runmonitor.py
-17:53:17
-  332 time python runmonitor.py
-24160 python runmonitor.py
-17:53:18
-  332 time python runmonitor.py
-25700 python runmonitor.py
-17:53:19
-  332 time python runmonitor.py
-24160 python runmonitor.py
-17:53:20
-  332 time python runmonitor.py
-24160 python runmonitor.py
-17:53:21
-  332 time python runmonitor.py
-25700 python runmonitor.py
-17:53:22
-  332 time python runmonitor.py
-24160 python runmonitor.py
-17:53:23
-  332 time python runmonitor.py
-25700 python runmonitor.py
-17:53:24
-  332 time python runmonitor.py
-24160 python runmonitor.py
-17:53:25
-  332 time python runmonitor.py
-24160 python runmonitor.py
-17:53:26
-  332 time python runmonitor.py
-27236 python runmonitor.py
-17:53:27
-  332 time python runmonitor.py
-24160 python runmonitor.py
-17:53:28
-  332 time python runmonitor.py
-25700 python runmonitor.py
-17:53:30
-  332 time python runmonitor.py
-24160 python runmonitor.py
-17:53:31
-  332 time python runmonitor.py
-25700 python runmonitor.py
-17:53:32
-  332 time python runmonitor.py
-24160 python runmonitor.py
-17:53:33
-  332 time python runmonitor.py
-24160 python runmonitor.py
-17:53:34
-  332 time python runmonitor.py
-25700 python runmonitor.py
-17:53:35
-  332 time python runmonitor.py
-24160 python runmonitor.py
-17:53:36
-  332 time python runmonitor.py
-25700 python runmonitor.py
-17:53:37
-  332 time python runmonitor.py
-24160 python runmonitor.py
-17:53:38
-  332 time python runmonitor.py
-25700 python runmonitor.py
-17:53:39
-  332 time python runmonitor.py
-24160 python runmonitor.py
-17:53:40
-  332 time python runmonitor.py
-24160 python runmonitor.py
-17:53:42
-  332 time python runmonitor.py
-25700 python runmonitor.py
-17:53:43
-  332 time python runmonitor.py
-24160 python runmonitor.py
-17:53:44
-  332 time python runmonitor.py
-25700 python runmonitor.py
-17:53:45
-  332 time python runmonitor.py
-24160 python runmonitor.py
-17:53:46
-  332 time python runmonitor.py
-24160 python runmonitor.py
-17:53:47
-  332 time python runmonitor.py
-24160 python runmonitor.py
-17:53:48
-  332 time python runmonitor.py
-24160 python runmonitor.py
-17:53:49
-  332 time python runmonitor.py
-25700 python runmonitor.py
-17:53:50
-  332 time python runmonitor.py
-24176 python runmonitor.py
-17:53:51
-  332 time python runmonitor.py
-25716 python runmonitor.py
-17:53:52
-  332 time python runmonitor.py
-24176 python runmonitor.py
-17:53:53
-  332 time python runmonitor.py
-24176 python runmonitor.py
-17:53:55
-  332 time python runmonitor.py
-24580 python runmonitor.py
-17:53:56
-  332 time python runmonitor.py
-24576 python runmonitor.py
-17:53:57
-  332 time python runmonitor.py
-26116 python runmonitor.py
-17:53:58
-  332 time python runmonitor.py
-24576 python runmonitor.py
-17:53:59
-  332 time python runmonitor.py
-26116 python runmonitor.py
-17:54:00
-  332 time python runmonitor.py
-24576 python runmonitor.py
-17:54:01
-  332 time python runmonitor.py
-24576 python runmonitor.py
-17:54:02
-  332 time python runmonitor.py
-24576 python runmonitor.py
-17:54:03
-  332 time python runmonitor.py
-24576 python runmonitor.py
-17:54:04
-  332 time python runmonitor.py
-26116 python runmonitor.py
-17:54:05
-  332 time python runmonitor.py
-24576 python runmonitor.py
-17:54:06
-  332 time python runmonitor.py
-26116 python runmonitor.py
-17:54:08
-  332 time python runmonitor.py
-24576 python runmonitor.py
-17:54:09
-  332 time python runmonitor.py
-26116 python runmonitor.py
-17:54:10
-  332 time python runmonitor.py
-24576 python runmonitor.py
-17:54:11
-  332 time python runmonitor.py
-24576 python runmonitor.py
-17:54:12
-  332 time python runmonitor.py
-26116 python runmonitor.py
-17:54:13
-  332 time python runmonitor.py
-24576 python runmonitor.py
-17:54:14
-  332 time python runmonitor.py
-26116 python runmonitor.py
-17:54:15
-  332 time python runmonitor.py
-24592 python runmonitor.py
-17:54:16
-  332 time python runmonitor.py
-24592 python runmonitor.py
-17:54:17
-  332 time python runmonitor.py
-26132 python runmonitor.py
-17:54:19
-  332 time python runmonitor.py
-24592 python runmonitor.py
-17:54:20
-  332 time python runmonitor.py
-26132 python runmonitor.py
-17:54:21
-  332 time python runmonitor.py
-24612 python runmonitor.py
-17:54:22
-  332 time python runmonitor.py
-24612 python runmonitor.py
-17:54:23
-  332 time python runmonitor.py
-27688 python runmonitor.py
-17:54:24
-  332 time python runmonitor.py
-24612 python runmonitor.py
-17:54:25
-  332 time python runmonitor.py
-26152 python runmonitor.py
-17:54:26
-  332 time python runmonitor.py
-24640 python runmonitor.py
-17:54:27
-  332 time python runmonitor.py
-26180 python runmonitor.py
-17:54:28
-  332 time python runmonitor.py
-24640 python runmonitor.py
-17:54:29
-  332 time python runmonitor.py
-24640 python runmonitor.py
-17:54:30
-  332 time python runmonitor.py
-24640 python runmonitor.py
-17:54:31
-  332 time python runmonitor.py
-24640 python runmonitor.py
-17:54:33
-  332 time python runmonitor.py
-26180 python runmonitor.py
-17:54:34
-  332 time python runmonitor.py
-24640 python runmonitor.py
-17:54:35
-  332 time python runmonitor.py
-24640 python runmonitor.py
-17:54:36
-  332 time python runmonitor.py
-24728 python runmonitor.py
-17:54:37
-  332 time python runmonitor.py
-24724 python runmonitor.py
-17:54:38
-  332 time python runmonitor.py
-26340 python runmonitor.py
-17:54:39
-  332 time python runmonitor.py
-24544 python runmonitor.py
-17:54:40
-  332 time python runmonitor.py
-26084 python runmonitor.py
-17:54:41
-  332 time python runmonitor.py
-25180 python runmonitor.py
-17:54:42
-  332 time python runmonitor.py
-25176 python runmonitor.py
-17:54:43
-  332 time python runmonitor.py
-26716 python runmonitor.py
-17:54:45
-  332 time python runmonitor.py
-25560 python runmonitor.py
-17:54:46
-  332 time python runmonitor.py
-25560 python runmonitor.py
-17:54:47
-  332 time python runmonitor.py
-27100 python runmonitor.py
-17:54:48
-  332 time python runmonitor.py
-24928 python runmonitor.py
-17:54:49
-  332 time python runmonitor.py
-26468 python runmonitor.py
-17:54:50
-  332 time python runmonitor.py
-25560 python runmonitor.py
-17:54:51
-  332 time python runmonitor.py
-25560 python runmonitor.py
-17:54:52
-  332 time python runmonitor.py
-27100 python runmonitor.py
-17:54:53
-  332 time python runmonitor.py
-24928 python runmonitor.py
-17:54:55
-  332 time python runmonitor.py
-26468 python runmonitor.py
-17:54:56
-  332 time python runmonitor.py
-25564 python runmonitor.py
-17:54:57
-  332 time python runmonitor.py
-25564 python runmonitor.py
-17:54:58
-  332 time python runmonitor.py
-27104 python runmonitor.py
-17:54:59
-  332 time python runmonitor.py
-24928 python runmonitor.py
-17:55:00
-  332 time python runmonitor.py
-26468 python runmonitor.py
-17:55:01
-  332 time python runmonitor.py
-25564 python runmonitor.py
-17:55:02
-  332 time python runmonitor.py
-25564 python runmonitor.py
-17:55:03
-  332 time python runmonitor.py
-27104 python runmonitor.py
-17:55:04
-  332 time python runmonitor.py
-24928 python runmonitor.py
-17:55:05
-  332 time python runmonitor.py
-26468 python runmonitor.py
-17:55:06
-  332 time python runmonitor.py
-28260 python runmonitor.py
-17:55:08
-  332 time python runmonitor.py
-25564 python runmonitor.py
-17:55:09
-  332 time python runmonitor.py
-27104 python runmonitor.py
-17:55:10
-  332 time python runmonitor.py
-24928 python runmonitor.py
-17:55:11
-  332 time python runmonitor.py
-26468 python runmonitor.py
-17:55:12
-  332 time python runmonitor.py
-25660 python runmonitor.py
-17:55:13
-  332 time python runmonitor.py
-25660 python runmonitor.py
-17:55:14
-  332 time python runmonitor.py
-27200 python runmonitor.py
-17:55:15
-  332 time python runmonitor.py
-25024 python runmonitor.py
-17:55:16
-  332 time python runmonitor.py
-26564 python runmonitor.py
-17:55:17
-  332 time python runmonitor.py
-25660 python runmonitor.py
-17:55:18
-  332 time python runmonitor.py
-25660 python runmonitor.py
-17:55:19
-  332 time python runmonitor.py
-28736 python runmonitor.py
-17:55:21
-  332 time python runmonitor.py
-25024 python runmonitor.py
-17:55:22
-  332 time python runmonitor.py
-26564 python runmonitor.py
-17:55:23
-  332 time python runmonitor.py
-25660 python runmonitor.py
-17:55:24
-  332 time python runmonitor.py
-27200 python runmonitor.py
-17:55:25
-  332 time python runmonitor.py
-28736 python runmonitor.py
-17:55:26
-  332 time python runmonitor.py
-25024 python runmonitor.py
-17:55:27
-  332 time python runmonitor.py
-26564 python runmonitor.py
-17:55:28
-  332 time python runmonitor.py
-25664 python runmonitor.py
-17:55:29
-  332 time python runmonitor.py
-27204 python runmonitor.py
-17:55:30
-  332 time python runmonitor.py
-26048 python runmonitor.py
-17:55:31
-  332 time python runmonitor.py
-26048 python runmonitor.py
-17:55:32
-  332 time python runmonitor.py
-27588 python runmonitor.py
-17:55:34
-  332 time python runmonitor.py
-25408 python runmonitor.py
-17:55:35
-  332 time python runmonitor.py
-26948 python runmonitor.py
-17:55:36
-  332 time python runmonitor.py
-26048 python runmonitor.py
-17:55:37
-  332 time python runmonitor.py
-26048 python runmonitor.py
-17:55:38
-  332 time python runmonitor.py
-27588 python runmonitor.py
-17:55:39
-  332 time python runmonitor.py
-25408 python runmonitor.py
-17:55:40
-  332 time python runmonitor.py
-26948 python runmonitor.py
-17:55:41
-  332 time python runmonitor.py
-29124 python runmonitor.py
-17:55:42
-  332 time python runmonitor.py
-26048 python runmonitor.py
-17:55:43
-  332 time python runmonitor.py
-27588 python runmonitor.py
-17:55:45
-  332 time python runmonitor.py
-25408 python runmonitor.py
-17:55:46
-  332 time python runmonitor.py
-26948 python runmonitor.py
-17:55:47
-  332 time python runmonitor.py
-26052 python runmonitor.py
-17:55:48
-  332 time python runmonitor.py
-26052 python runmonitor.py
-17:55:49
-  332 time python runmonitor.py
-27592 python runmonitor.py
-17:55:50
-  332 time python runmonitor.py
-25408 python runmonitor.py
-17:55:51
-  332 time python runmonitor.py
-27204 python runmonitor.py
-17:55:52
-  332 time python runmonitor.py
-26052 python runmonitor.py
-17:55:53
-  332 time python runmonitor.py
-26052 python runmonitor.py
-17:55:54
-  332 time python runmonitor.py
-27592 python runmonitor.py
-17:55:55
-  332 time python runmonitor.py
-25408 python runmonitor.py
-17:55:57
-  332 time python runmonitor.py
-27204 python runmonitor.py
-17:55:58
-  332 time python runmonitor.py
-26056 python runmonitor.py
-17:55:59
-  332 time python runmonitor.py
-26056 python runmonitor.py
-17:56:00
-  332 time python runmonitor.py
-27596 python runmonitor.py
-17:56:01
-  332 time python runmonitor.py
-25408 python runmonitor.py
-17:56:02
-  332 time python runmonitor.py
-27204 python runmonitor.py
-17:56:03
-  332 time python runmonitor.py
-26056 python runmonitor.py
-17:56:04
-  332 time python runmonitor.py
-26056 python runmonitor.py
-17:56:05
-  332 time python runmonitor.py
-27596 python runmonitor.py
-17:56:06
-  332 time python runmonitor.py
-25408 python runmonitor.py
-17:56:07
-  332 time python runmonitor.py
-27204 python runmonitor.py
-17:56:09
-  332 time python runmonitor.py
-26384 python runmonitor.py
-17:56:10
-  332 time python runmonitor.py
-26384 python runmonitor.py
-17:56:11
-  332 time python runmonitor.py
-27924 python runmonitor.py
-17:56:12
-  332 time python runmonitor.py
-25732 python runmonitor.py
-17:56:13
-  332 time python runmonitor.py
-27528 python runmonitor.py
-17:56:14
-  332 time python runmonitor.py
-29428 python runmonitor.py
-17:56:15
-  332 time python runmonitor.py
-26384 python runmonitor.py
-17:56:16
-  332 time python runmonitor.py
-27924 python runmonitor.py
-17:56:17
-  332 time python runmonitor.py
-25732 python runmonitor.py
-17:56:18
-  332 time python runmonitor.py
-25732 python runmonitor.py
-17:56:19
-  332 time python runmonitor.py
-27904 python runmonitor.py
-17:56:20
-  332 time python runmonitor.py
-26432 python runmonitor.py
-17:56:22
-  332 time python runmonitor.py
-27972 python runmonitor.py
-17:56:23
-  332 time python runmonitor.py
-25780 python runmonitor.py
-17:56:24
-  332 time python runmonitor.py
-26036 python runmonitor.py
-17:56:25
-  332 time python runmonitor.py
-30996 python runmonitor.py
-17:56:26
-  332 time python runmonitor.py
-26432 python runmonitor.py
-17:56:27
-  332 time python runmonitor.py
-27972 python runmonitor.py
-17:56:28
-  332 time python runmonitor.py
-25780 python runmonitor.py
-17:56:29
-  332 time python runmonitor.py
-25780 python runmonitor.py
-17:56:30
-  332 time python runmonitor.py
-27576 python runmonitor.py
-17:56:31
-  332 time python runmonitor.py
-26432 python runmonitor.py
-17:56:32
-  332 time python runmonitor.py
-27972 python runmonitor.py
-17:56:33
-  332 time python runmonitor.py
-25780 python runmonitor.py
-17:56:34
-  332 time python runmonitor.py
-25780 python runmonitor.py
-17:56:36
-  332 time python runmonitor.py
-27576 python runmonitor.py
-17:56:37
-  332 time python runmonitor.py
-26432 python runmonitor.py
-17:56:38
-  332 time python runmonitor.py
-27972 python runmonitor.py
-17:56:39
-  332 time python runmonitor.py
-25536 python runmonitor.py
-17:56:40
-  332 time python runmonitor.py
-25536 python runmonitor.py
-17:56:41
-  332 time python runmonitor.py
-27332 python runmonitor.py
-17:56:42
-  332 time python runmonitor.py
-26516 python runmonitor.py
-17:56:43
-  332 time python runmonitor.py
-26516 python runmonitor.py
-17:56:44
-  332 time python runmonitor.py
-28056 python runmonitor.py
-17:56:46
-  332 time python runmonitor.py
-29592 python runmonitor.py
-17:56:47
-  332 time python runmonitor.py
-25860 python runmonitor.py
-17:56:48
-  332 time python runmonitor.py
-27656 python runmonitor.py
-17:56:49
-  332 time python runmonitor.py
-27656 python runmonitor.py
-17:56:50
-  332 time python runmonitor.py
-26516 python runmonitor.py
-17:56:51
-  332 time python runmonitor.py
-26516 python runmonitor.py
-17:56:52
-  332 time python runmonitor.py
-28056 python runmonitor.py
-17:56:54
-  332 time python runmonitor.py
-25620 python runmonitor.py
-17:56:55
-  332 time python runmonitor.py
-25876 python runmonitor.py
-17:56:56
-  332 time python runmonitor.py
-29656 python runmonitor.py
-17:56:57
-  332 time python runmonitor.py
-26604 python runmonitor.py
-17:56:58
-  332 time python runmonitor.py
-28144 python runmonitor.py
-17:56:59
-  332 time python runmonitor.py
-25948 python runmonitor.py
-17:57:00
-  332 time python runmonitor.py
-25944 python runmonitor.py
-17:57:01
-  332 time python runmonitor.py
-27740 python runmonitor.py
-17:57:02
-  332 time python runmonitor.py
-29660 python runmonitor.py
-17:57:04
-  332 time python runmonitor.py
-26604 python runmonitor.py
-17:57:05
-  332 time python runmonitor.py
-28144 python runmonitor.py
-17:57:06
-  332 time python runmonitor.py
-29680 python runmonitor.py
-17:57:07
-  332 time python runmonitor.py
-25692 python runmonitor.py
-17:57:08
-  332 time python runmonitor.py
-27488 python runmonitor.py
-17:57:09
-  332 time python runmonitor.py
-29752 python runmonitor.py
-17:57:10
-  332 time python runmonitor.py
-26676 python runmonitor.py
-17:57:11
-  332 time python runmonitor.py
-28216 python runmonitor.py
-17:57:12
-  332 time python runmonitor.py
-29752 python runmonitor.py
-17:57:14
-  332 time python runmonitor.py
-26016 python runmonitor.py
-17:57:15
-  332 time python runmonitor.py
-27812 python runmonitor.py
-17:57:16
-  332 time python runmonitor.py
-29712 python runmonitor.py
-17:57:17
-  332 time python runmonitor.py
-26680 python runmonitor.py
-17:57:18
-  332 time python runmonitor.py
-28220 python runmonitor.py
-17:57:19
-  332 time python runmonitor.py
-29756 python runmonitor.py
-17:57:20
-  332 time python runmonitor.py
-26016 python runmonitor.py
-17:57:21
-  332 time python runmonitor.py
-27592 python runmonitor.py
-17:57:23
-  332 time python runmonitor.py
-27592 python runmonitor.py
-17:57:24
-  332 time python runmonitor.py
-26784 python runmonitor.py
-17:57:25
-  332 time python runmonitor.py
-26784 python runmonitor.py
-17:57:26
-  332 time python runmonitor.py
-28324 python runmonitor.py
-17:57:27
-  332 time python runmonitor.py
-27172 python runmonitor.py
-17:57:28
-  332 time python runmonitor.py
-27172 python runmonitor.py
-17:57:29
-  332 time python runmonitor.py
-28712 python runmonitor.py
-17:57:30
-  332 time python runmonitor.py
-31788 python runmonitor.py
-17:57:32
-  332 time python runmonitor.py
-26504 python runmonitor.py
-17:57:33
-  332 time python runmonitor.py
-27324 python runmonitor.py
-17:57:34
-  332 time python runmonitor.py
-28300 python runmonitor.py
-17:57:35
-  332 time python runmonitor.py
-27172 python runmonitor.py
-17:57:36
-  332 time python runmonitor.py
-27172 python runmonitor.py
-17:57:37
-  332 time python runmonitor.py
-28712 python runmonitor.py
-17:57:38
-  332 time python runmonitor.py
-26504 python runmonitor.py
-17:57:39
-  332 time python runmonitor.py
-26504 python runmonitor.py
-17:57:41
-  332 time python runmonitor.py
-28044 python runmonitor.py
-17:57:42
-  332 time python runmonitor.py
-30248 python runmonitor.py
-17:57:43
-  332 time python runmonitor.py
-27172 python runmonitor.py
-17:57:44
-  332 time python runmonitor.py
-28712 python runmonitor.py
-17:57:45
-  332 time python runmonitor.py
-31788 python runmonitor.py
-17:57:46
-  332 time python runmonitor.py
-26504 python runmonitor.py
-17:57:47
-  332 time python runmonitor.py
-26504 python runmonitor.py
-17:57:48
-  332 time python runmonitor.py
-28044 python runmonitor.py
-17:57:49
-  332 time python runmonitor.py
-27176 python runmonitor.py
-17:57:51
-  332 time python runmonitor.py
-27176 python runmonitor.py
-17:57:52
-  332 time python runmonitor.py
-28716 python runmonitor.py
-17:57:53
-  332 time python runmonitor.py
-26504 python runmonitor.py
-17:57:54
-  332 time python runmonitor.py
-26504 python runmonitor.py
-17:57:55
-  332 time python runmonitor.py
-28044 python runmonitor.py
-17:57:56
-  332 time python runmonitor.py
-29836 python runmonitor.py
-17:57:57
-  332 time python runmonitor.py
-27180 python runmonitor.py
-17:57:58
-  332 time python runmonitor.py
-27180 python runmonitor.py
-17:58:00
-  332 time python runmonitor.py
-28720 python runmonitor.py
-17:58:01
-  332 time python runmonitor.py
-27564 python runmonitor.py
-17:58:02
-  332 time python runmonitor.py
-27564 python runmonitor.py
-17:58:03
-  332 time python runmonitor.py
-29104 python runmonitor.py
-17:58:04
-  332 time python runmonitor.py
-30640 python runmonitor.py
-17:58:05
-  332 time python runmonitor.py
-26888 python runmonitor.py
-17:58:06
-  332 time python runmonitor.py
-27144 python runmonitor.py
-17:58:07
-  332 time python runmonitor.py
-28684 python runmonitor.py
-17:58:09
-  332 time python runmonitor.py
-27568 python runmonitor.py
-17:58:10
-  332 time python runmonitor.py
-27564 python runmonitor.py
-17:58:11
-  332 time python runmonitor.py
-29104 python runmonitor.py
-17:58:12
-  332 time python runmonitor.py
-30640 python runmonitor.py
-17:58:13
-  332 time python runmonitor.py
-26888 python runmonitor.py
-17:58:14
-  332 time python runmonitor.py
-28684 python runmonitor.py
-17:58:15
-  332 time python runmonitor.py
-28684 python runmonitor.py
-17:58:16
-  332 time python runmonitor.py
-27564 python runmonitor.py
-17:58:17
-  332 time python runmonitor.py
-27564 python runmonitor.py
-17:58:19
-  332 time python runmonitor.py
-29104 python runmonitor.py
-17:58:20
-  332 time python runmonitor.py
-26888 python runmonitor.py
-17:58:21
-  332 time python runmonitor.py
-26888 python runmonitor.py
-17:58:22
-  332 time python runmonitor.py
-28684 python runmonitor.py
-17:58:23
-  332 time python runmonitor.py
-30644 python runmonitor.py
-17:58:24
-  332 time python runmonitor.py
-27568 python runmonitor.py
-17:58:25
-  332 time python runmonitor.py
-29108 python runmonitor.py
-17:58:26
-  332 time python runmonitor.py
-30644 python runmonitor.py
-17:58:28
-  332 time python runmonitor.py
-26888 python runmonitor.py
-17:58:29
-  332 time python runmonitor.py
-28684 python runmonitor.py
-17:58:30
-  332 time python runmonitor.py
-28684 python runmonitor.py
-17:58:31
-  332 time python runmonitor.py
-27568 python runmonitor.py
-17:58:32
-  332 time python runmonitor.py
-27568 python runmonitor.py
-17:58:33
-  332 time python runmonitor.py
-29108 python runmonitor.py
-17:58:34
-  332 time python runmonitor.py
-26888 python runmonitor.py
-17:58:35
-  332 time python runmonitor.py
-26888 python runmonitor.py
-17:58:36
-  332 time python runmonitor.py
-28428 python runmonitor.py
-17:58:37
-  332 time python runmonitor.py
-27568 python runmonitor.py
-17:58:39
-  332 time python runmonitor.py
-27568 python runmonitor.py
-17:58:40
-  332 time python runmonitor.py
-29108 python runmonitor.py
-17:58:41
-  332 time python runmonitor.py
-30644 python runmonitor.py
-17:58:42
-  332 time python runmonitor.py
-26888 python runmonitor.py
-17:58:43
-  332 time python runmonitor.py
-28428 python runmonitor.py
-17:58:44
-  332 time python runmonitor.py
-30600 python runmonitor.py
-17:58:45
-  332 time python runmonitor.py
-27568 python runmonitor.py
-17:58:46
-  332 time python runmonitor.py
-27568 python runmonitor.py
-17:58:47
-  332 time python runmonitor.py
-29108 python runmonitor.py
-17:58:49
-  332 time python runmonitor.py
-27952 python runmonitor.py
-17:58:50
-  332 time python runmonitor.py
-27952 python runmonitor.py
-17:58:51
-  332 time python runmonitor.py
-29492 python runmonitor.py
-17:58:52
-  332 time python runmonitor.py
-27272 python runmonitor.py
-17:58:53
-  332 time python runmonitor.py
-27272 python runmonitor.py
-17:58:54
-  332 time python runmonitor.py
-28812 python runmonitor.py
-17:58:55
-  332 time python runmonitor.py
-30608 python runmonitor.py
-17:58:56
-17:58:57
+11:48:31 328 5060
+11:48:32 328 5060
+11:48:33 328 5064
+11:48:34 328 5076
+11:48:35 328 5088
+11:48:36 328 5096
+11:48:37 328 5128
+11:48:38 328 5164
+11:48:39 328 5172
+11:48:40 328 5172
+11:48:41 328 5172
+11:48:42 328 5184
+11:48:43 328 5192
+11:48:44 328 5192
+11:48:45 328 5208
+11:48:46 328 5208
+11:48:47 328 5236
+11:48:48 328 5236
+11:48:49 328 5244
+11:48:50 328 5244
+11:48:51 328 5256
+11:48:52 328 5256
+11:48:53 328 5260
+11:48:54 328 5268
+11:48:55 328 5280
+11:48:56 328 5280
+11:48:57 328 5284
+11:48:58 328 5292
+11:48:59 328 5296
+11:49:00 328 5304
+11:49:01 328 5308
+11:49:02 328 5316
+11:49:03 328 5316
+11:49:04 328 5320
+11:49:05 328 5336
+11:49:06 328 5344
+11:49:07 328 5356
+11:49:09 328 5356
+11:49:10 328 5360
+11:49:11 328 5364
+11:49:12 328 5368
+11:49:13 328 5396
+11:49:14 328 5404
+11:49:15 328 5424
+11:49:16 328 5428
+11:49:17 328 5428
+11:49:18 328 5436
+11:49:19 328 5436
+11:49:20 328 5444
+11:49:21 328 5452
+11:49:22 328 5456
+11:49:23 328 5472
+11:49:24 328 5476
+11:49:25 328 5488
+11:49:26 328 5492
+11:49:27 328 5504
+11:49:28 328 5508
+11:49:29 328 5516
+11:49:30 328 5520
+11:49:31 328 5536
+11:49:32 328 5540
+11:49:33 328 5544
+11:49:34 328 5552
+11:49:35 328 5556
+11:49:36 328 5668
+11:49:37 328 5700
+11:49:38 328 5768
+11:49:39 328 5812
+11:49:40 328 5840
+11:49:41 328 5844
+11:49:42 328 5852
+11:49:43 328 5856
+11:49:44 328 5856
+11:49:46 328 5860
+11:49:47 328 5868
+11:49:48 328 5868
+11:49:49 328 5900
+11:49:50 328 5900
+11:49:51 328 6008
+11:49:52 328 6028
+11:49:53 328 6028
+11:49:54 328 6036
+11:49:55 328 6036
+11:49:56 328 6036
+11:49:57 328 6040
+11:49:58 328 6052
+11:49:59 328 6052
+11:50:00 328 6060
+11:50:01 328 6084
+11:50:02 328 6084
+11:50:03 328 6084
+11:50:04 328 6084
+11:50:05 328 6092
+11:50:06 328 6104
+11:50:07 328 6104
+11:50:08 328 6104
+11:50:09 328 6124
+11:50:10 328 6124
+11:50:11 328 6124
+11:50:12 328 6124
+11:50:13 328 6124
+11:50:14 328 6136
+11:50:15 328 6136
+11:50:16 328 6148
+11:50:17 328 6148
+11:50:18 328 6152
+11:50:19 328 6160
+11:50:20 328 6160
+11:50:21 328 6168
+11:50:22 328 6168
+11:50:23 328 6168
+11:50:25 328 6176
+11:50:26 328 6184
+11:50:27 328 6184
+11:50:28 328 6196
+11:50:29 328 6196
+11:50:30 328 6208
+11:50:31 328 6224
+11:50:32 328 6252
+11:50:33 328 6276
+11:50:34 328 6300
+11:50:35 328 6324
+11:50:36 328 6324
+11:50:37 328 6324
+11:50:38 328 6324
+11:50:39 328 6324
+11:50:40 328 6324
+11:50:41 328 6332
+11:50:42 328 6340
+11:50:43 328 6344
+11:50:44 328 6460
+11:50:45 328 6460
+11:50:46 328 6460
+11:50:47 328 6460
+11:50:48 328 6460
+11:50:49 328 6460
+11:50:50 328 6460
+11:50:51 328 6460
+11:50:52 328 6460
+11:50:53 328 6460
+11:50:54 328 6468
+11:50:55 328 6492
+11:50:56 328 6496
+11:50:57 328 6508
+11:50:58 328 6508
+11:50:59 328 6536
+11:51:00 328 6564
+11:51:01 328 6684
+11:51:03 328 6684
+11:51:04 328 6688
+11:51:05 328 6688
+11:51:06 328 6700
+11:51:07 328 6700
+11:51:08 328 6700
+11:51:09 328 6700
+11:51:10 328 6700
+11:51:11 328 6724
+11:51:12 328 6724
+11:51:13 328 6744
+11:51:14 328 7128
+11:51:15 328 7208
+11:51:16 328 7208
+11:51:17 328 7208
+11:51:18 328 7208
+11:51:19 328 7216
+11:51:20 328 7216
+11:51:21 328 7216
+11:51:22 328 7216
+11:51:23 328 7216
+11:51:24 328 7216
+11:51:25 328 7496
+11:51:26 328 7496
+11:51:27 328 7496
+11:51:28 328 7520
+11:51:29 328 7520
+11:51:30 328 7544
+11:51:31 328 7568
+11:51:32 328 7592
+11:51:33 328 7592
+11:51:34 328 7592
+11:51:35 328 7592
+11:51:36 328 7664
+11:51:37 328 7664
+11:51:38 328 7664
+11:51:39 328 7664
+11:51:40 328 7664
+11:51:42 328 7672
+11:51:43 328 7672
+11:51:44 328 7672
+11:51:45 328 7672
+11:51:46 328 7672
+11:51:47 328 7672
+11:51:48 328 7672
+11:51:49 328 7720
+11:51:50 328 7720
+11:51:51 328 7720
+11:51:52 328 7720
+11:51:53 328 7720
+11:51:54 328 7720
+11:51:55 328 7720
+11:51:56 328 7720
+11:51:57 328 7720
+11:51:58 328 7720
+11:51:59 328 7720
+11:52:00 328 7720
+11:52:01 328 7720
+11:52:02 328 7720
+11:52:03 328 7720
+11:52:04 328 7720
+11:52:05 328 7724
+11:52:06 328 7768
+11:52:07 328 7768
+11:52:08 328 7768
+11:52:09 328 7768
+11:52:10 328 7812
+11:52:11 328 7812
+11:52:12 328 7812
+11:52:13 328 7812
+11:52:14 328 7812
+11:52:15 328 7836
+11:52:16 328 7836
+11:52:17 328 7860
+11:52:18 328 7860
+11:52:19 328 7860
+11:52:20 328 7860
+11:52:22 328 7860
+11:52:23 328 7876
+11:52:24 328 7876
+11:52:25 328 7896
+11:52:26 328 7896
+11:52:27 328 7920
+11:52:28 328 7920
+11:52:29 328 7920
+11:52:30 328 7920
+11:52:31 328 7928
+11:52:32 328 7952
+11:52:33 328 7952
+11:52:34 328 7952
+11:52:35 328 7952
+11:52:36 328 7952
+11:52:37 328 7952
+11:52:38 328 7952
+11:52:39 328 7952
+11:52:40 328 7968
+11:52:41 328 7968
+11:52:42 328 7968
+11:52:43 328 7968
+11:52:44 328 7968
+11:52:45 328 8036
+11:52:46 328 8036
+11:52:47 328 8036
+11:52:48 328 8036
+11:52:49 328 8060
+11:52:50 328 8060
+11:52:51 328 8060
+11:52:52 328 8060
+11:52:53 328 8060
+11:52:54 328 8060
+11:52:55 328 8084
+11:52:56 328 8084
+11:52:57 328 8084
+11:52:58 328 8084
+11:52:59 328 8104
+11:53:00 328 8104
+11:53:01 328 8104
+11:53:02 328 8104
+11:53:04 328 8128
+11:53:05 328 8128
+11:53:06 328 8200
+11:53:07 328 8200
+11:53:08 328 8200
+11:53:09 328 8200
+11:53:10 328 8200
+11:53:11 328 8200
+11:53:12 328 8200
+11:53:13 328 8200
+11:53:14 328 8200
+11:53:15 328 8200
+11:53:16 328 8204
+11:53:17 328 8204
+11:53:18 328 8204
+11:53:19 328 8204
+11:53:20 328 8204
+11:53:21 328 8204
+11:53:22 328 8204
+11:53:23 328 8204
+11:53:24 328 8228
+11:53:25 328 8252
+11:53:26 328 8276
+11:53:27 328 8276
+11:53:28 328 8276
+11:53:29 328 8276
+11:53:30 328 8276
+11:53:31 328 8276
+11:53:32 328 8276
+11:53:33 328 8276
+11:53:34 328 8276
+11:53:35 328 8296
+11:53:36 328 8296
+11:53:37 328 8296
+11:53:38 328 8296
+11:53:39 328 8296
+11:53:41 328 8320
+11:53:42 328 8344
+11:53:43 328 8368
+11:53:44 328 8368
+11:53:45 328 8368
+11:53:46 328 8392
+11:53:47 328 8392
+11:53:48 328 8392
+11:53:49 328 8392
+11:53:50 328 8392
+11:53:51 328 8392
+11:53:52 328 8392
+11:53:53 328 8392
+11:53:54 328 8392
+11:53:55 328 8392
+11:53:56 328 8424
+11:53:57 328 8440
+11:53:58 328 8456
+11:53:59 328 8456
+11:54:00 328 8468
+11:54:01 328 8468
+11:54:02 328 8148
+11:54:03 328 8436
+11:54:04 328 8144
+11:54:05 328 8144
+11:54:06 328 8144
+11:54:07 328 8144
+11:54:08 328 8144
+11:54:09 328 8144
+11:54:10 328 8144
+11:54:11 328 8144
+11:54:12 328 8144
+11:54:13 328 8572
+11:54:14 328 8596
+11:54:15 328 8820
+11:54:16 328 8264
+11:54:17 328 8144
+11:54:18 328 8568
+11:54:19 328 8820
+11:54:21 328 8820
+11:54:22 328 8820
+11:54:23 328 8844
+11:54:24 328 8872
+11:54:25 328 8868
+11:54:26 328 8868
+11:54:27 328 8868
+11:54:28 328 8892
+11:54:29 328 8892
+11:54:30 328 8892
+11:54:31 328 8892
+11:54:32 328 8892
+11:54:33 328 8892
+11:54:34 328 8892
+11:54:35 328 8892
+11:54:36 328 8892
+11:54:37 328 8892
+11:54:38 328 8892
+11:54:39 328 8892
+11:54:40 328 8892
+11:54:41 328 8892
+11:54:42 328 8892
+11:54:43 328 8892
+11:54:44 328 8892
+11:54:45 328 8892
+11:54:46 328 8892
+11:54:47 328 8892
+11:54:48 328 8892
+11:54:49 328 8904
+11:54:50 328 8904
+11:54:51 328 8904
+11:54:52 328 8904
+11:54:53 328 8904
+11:54:54 328 8928
+11:54:55 328 8952
+11:54:56 328 8952
+11:54:57 328 8976
+11:54:58 328 8976
+11:55:00 328 8976
+11:55:01 328 8976
+11:55:02 328 8976
+11:55:03 328 8976
+11:55:04 328 8996
+11:55:05 328 9020
+11:55:06 328 9020
+11:55:07 328 9020
+11:55:08 328 9020
+11:55:09 328 9020
+11:55:10 328 9020
+11:55:11 328 9020
+11:55:12 328 9044
+11:55:13 328 9044
+11:55:14 328 9068
+11:55:15 328 9092
+11:55:16 328 9092
+11:55:17 328 9092
+11:55:18 328 9092
+11:55:19 328 9092
+11:55:20 328 9092
+11:55:21 328 9164
+11:55:22 328 9164
+11:55:23 328 9164
+11:55:24 328 9164
+11:55:25 328 9164
+11:55:26 328 9164
+11:55:27 328 9164
+11:55:28 328 9164
+11:55:29 328 9164
+11:55:30 328 9164
+11:55:31 328 9164
+11:55:32 328 9164
+11:55:33 328 9164
+11:55:34 328 9164
+11:55:35 328 9164
+11:55:36 328 9212
+11:55:38 328 9212
+11:55:39 328 9212
+11:55:40 328 9212
+11:55:41 328 9212
+11:55:42 328 9212
+11:55:43 328 9212
+11:55:44 328 9212
+11:55:45 328 9212
+11:55:46 328 9244
+11:55:47 328 9244
+11:55:48 328 9244
+11:55:49 328 9244
+11:55:50 328 9244
+11:55:51 328 9244
+11:55:52 328 9244
+11:55:53 328 9268
+11:55:54 328 9292
+11:55:55 328 9316
+11:55:56 328 9316
+11:55:57 328 9316
+11:55:58 328 9316
+11:55:59 328 9388
+11:56:00 328 9388
+11:56:01 328 9388
+11:56:02 328 9388
+11:56:03 328 9388
+11:56:04 328 9388
+11:56:05 328 9388
+11:56:06 328 9388
+11:56:07 328 9388
+11:56:08 328 9388
+11:56:09 328 9388
+11:56:10 328 9388
+11:56:11 328 9388
+11:56:12 328 9388
+11:56:13 328 9388
+11:56:14 328 9388
+11:56:16 328 9388
+11:56:17 328 9388
+11:56:18 328 9408
+11:56:19 328 9408
+11:56:20 328 9480
+11:56:21 328 9480
+11:56:22 328 9480
+11:56:23 328 9480
+11:56:24 328 9480
+11:56:25 328 9480
+11:56:26 328 9480
+11:56:27 328 9480
+11:56:28 328 9480
+11:56:29 328 9480
+11:56:30 328 9480
+11:56:31 328 9480
+11:56:32 328 9480
+11:56:33 328 9480
+11:56:34 328 9480
+11:56:35 328 9480
+11:56:36 328 9480
+11:56:37 328 9480
+11:56:38 328 9480
+11:56:39 328 9480
+11:56:40 328 9496
+11:56:41 328 9496
+11:56:42 328 9496
+11:56:43 328 9496
+11:56:44 328 9496
+11:56:45 328 9496
+11:56:46 328 9496
+11:56:47 328 9496
+11:56:48 328 9496
+11:56:49 328 9496
+11:56:50 328 9508
+11:56:51 328 9508
+11:56:52 328 9508
+11:56:53 328 9532
+11:56:54 328 9532
+11:56:56 328 9604
+11:56:57 328 9604
+11:56:58 328 9604
+11:56:59 328 9628
+11:57:00 328 9628
+11:57:01 328 9628
+11:57:02 328 9628
+11:57:03 328 9628
+11:57:04 328 9628
+11:57:05 328 9628
+11:57:06 328 9628
+11:57:07 328 9628
+11:57:08 328 9628
+11:57:09 328 9628
+11:57:10 328 9628
+11:57:11 328 9632
+11:57:12 328 10016
+11:57:13 328 10016
+11:57:14 328 10016
+11:57:15 328 10016
+11:57:16 328 10016
+11:57:17 328 10016
+11:57:18 328 10016
+11:57:19 328 10016
+11:57:20 328 10016
+11:57:21 328 10016
+11:57:22 328 10016
+11:57:23 328 10016
+11:57:24 328 10016
+11:57:25 328 10016
+11:57:26 328 10016
+11:57:27 328 10016
+11:57:28 328 10016
+11:57:29 328 10016
+11:57:30 328 10016
+11:57:31 328 10016
+11:57:32 328 10016
+11:57:33 328 10016
+11:57:34 328 10016
+11:57:36 328 10016
+11:57:37 328 10016
+11:57:38 328 10016
+11:57:39 328 10016
+11:57:40 328 10016
+11:57:41 328 10016
+11:57:42 328 10016
+11:57:43 328 10016
+11:57:44 328 10020
+11:57:45 328 10032
+11:57:46 328 10032
+11:57:47 328 10032
+11:57:48 328 10032
+11:57:49 328 10036
+11:57:50 328 10036
+11:57:51 328 10044
+11:57:52 328 10044
+11:57:53 328 10048
+11:57:54 328 10048
+11:57:55 328 10052
+11:57:56 328 10052
+11:57:57 328 10052
+11:57:58 328 10052
+11:57:59 328 10052
+11:58:00 328 10060
+11:58:01 328 10060
+11:58:02 328 10080
+11:58:03 328 10080
+11:58:04 328 10080
+11:58:05 328 10080
+11:58:06 328 10080
+11:58:07 328 10080
+11:58:08 328 10080
+11:58:09 328 10080
+11:58:10 328 10080
+11:58:11 328 10080
+11:58:12 328 10080
+11:58:13 328 10080
+11:58:14 328 10080
+11:58:16 328 10088
+11:58:17 328 10088
+11:58:18 328 10088
+11:58:19 328 10088
+11:58:20 328 10088
+11:58:21 328 10088
+11:58:22 328 10088
+11:58:23 328 10088
+11:58:24 328 10088
+11:58:25 328 10112
+11:58:26 328 10112
+11:58:27 328 10112
+11:58:28 328 10112
+11:58:29 328 10112
+11:58:30 328 10112
+11:58:31 328 10116
+11:58:32 328 10116
+11:58:33 328 10116
+11:58:34 328 10188
+11:58:35 328 10192
+11:58:36 328 10192
+11:58:37 328 10192
+11:58:38 328 10192
+11:58:39 328 10192
+11:58:40 328 10192
+11:58:41 328 10192
+11:58:42 328 10200
+11:58:43 328 10200
+11:58:44 328 10216
+11:58:45 328 10240
+11:58:46 328 10272
+11:58:47 328 10272
+11:58:48 328 10384
+11:58:49 328 10384
+11:58:50 328 10400
+11:58:51 328 10420
+11:58:52 328 10444
+11:58:53 328 10444
+11:58:54 328 10444
+11:58:56 328 10460
+11:58:57 328 10484
+11:58:58 328 10484
+11:58:59 328 10484
+11:59:00 328 10508
+11:59:01 328 10508
+11:59:02 328 10580
+11:59:03 328 10580
+11:59:04 328 10580
+11:59:05 328 10580
+11:59:06 328 10580
+11:59:07 328 10580
+11:59:08 328 10580
+11:59:09 328 10580
+11:59:10 328 10580
+11:59:11 328 10580
+11:59:12 328 10596
+11:59:13 328 10596
+11:59:14 328 10596
+11:59:15 328 10596
+11:59:16 328 10596
+11:59:17 328 10596
+11:59:18 328 10596
+11:59:19 328 10596
+11:59:20 328 10596
+11:59:21 328 10596
+11:59:22 328 10596
+11:59:23 328 10596
+11:59:24 328 10604
+11:59:25 328 10604
+11:59:26 328 10668
+11:59:27 328 10668
+11:59:28 328 10668
+11:59:29 328 10668
+11:59:30 328 10688
+11:59:31 328 11088
+11:59:32 328 11108
+11:59:33 328 11120
+11:59:35 328 11120
+11:59:36 328 11136
+11:59:37 328 11136
+11:59:38 328 11168
+11:59:39 328 11168
+11:59:40 328 11168
+11:59:41 328 11168
+11:59:42 328 11176
+11:59:43 328 11176
+11:59:44 328 11176
+11:59:45 328 11176
+11:59:46 328 11176
+11:59:47 328 11200
+11:59:48 328 11200
+11:59:49 328 11204
+11:59:50 328 11204
+11:59:51 328 11204
+11:59:52 328 11204
+11:59:53 328 11204
+11:59:54 328 11204
+11:59:55 328 11208
+11:59:56 328 11208
+11:59:57 328 11208
+11:59:58 328 11208
+11:59:59 328 11208
+12:00:00 328 11208
+12:00:01 328 11208
+12:00:02 328 11208
+12:00:03 328 11208
+12:00:04 328 11208
+12:00:05 328 11292
+12:00:06 328 11292
+12:00:07 328 11292
+12:00:08 328 11296
+12:00:09 328 11392
+12:00:10 328 11392
+12:00:11 328 11404
+12:00:12 328 11404
+12:00:13 328 11404
+12:00:15 328 11404
+12:00:16 328 11404
+12:00:17 328 11404
+12:00:18 328 11404
+12:00:19 328 11404
+12:00:20 328 11408
+12:00:21 328 11408
+12:00:22 328 11424
+12:00:23 328 11456
+12:00:24 328 11456
+12:00:25 328 11460
+12:00:26 328 11460
+12:00:27 328 11460
+12:00:28 328 11460
+12:00:29 328 11460
+12:00:30 328 11460
+12:00:31 328 11460
+12:00:32 328 11460
+12:00:33 328 11460
+12:00:34 328 11460
+12:00:35 328 11544
+12:00:36 328 11556
+12:00:37 328 11584
+12:00:38 328 11688
+12:00:39 328 11776
+12:00:40 328 11976
+12:00:41 328 11976
+12:00:42 328 11976
+12:00:43 328 11976
+12:00:44 328 11976
+12:00:45 328 11976
+12:00:46 328 11976
+12:00:47 328 11976
+12:00:48 328 11976
+12:00:49 328 11980
+12:00:51 328 11980
+12:00:52 328 11980
+12:00:53 328 11980
+12:00:54 328 11980
+12:00:55 328 11980
+12:00:56 328 11996
+12:00:57 328 11996
+12:00:58 328 11996
+12:00:59 328 12012
+12:01:00 328 12012
+12:01:01 328 12016
+12:01:02 328 12016
+12:01:03 328 12016
+12:01:04 328 12016
+12:01:05 328 12016
+12:01:06 328 12028
+12:01:07 328 12028
+12:01:08 328 12088
+12:01:09 328 12088
+12:01:10 328 12212
+12:01:11 328 12212
+12:01:12 328 12212
+12:01:13 328 12212
+12:01:14 328 12212
+12:01:15 328 12212
+12:01:16 328 12224
+12:01:17 328 12224
+12:01:18 328 12224
+12:01:19 328 12228
+12:01:20 328 12228
+12:01:21 328 12228
+12:01:22 328 12324
+12:01:23 328 12324
+12:01:24 328 12324
+12:01:25 328 12056
+12:01:26 328 12408
+12:01:27 328 12408
+12:01:28 328 12408
+12:01:29 328 12408
+12:01:31 328 12408
+12:01:32 328 12696
+12:01:33 328 12068
+12:01:34 328 12516
+12:01:35 328 12516
+12:01:36 328 12520
+12:01:37 328 12520
+12:01:38 328 12520
+12:01:39 328 12520
+12:01:40 328 12520
+12:01:41 328 12520
+12:01:42 328 12520
+12:01:43 328 12520
+12:01:44 328 12520
+12:01:45 328 12804
+12:01:46 328 12804
+12:01:47 328 12804
+12:01:48 328 12804
+12:01:49 328 12804
+12:01:50 328 12804
+12:01:51 328 12804
+12:01:52 328 12804
+12:01:53 328 12804
+12:01:54 328 12804
+12:01:55 328 12804
+12:01:56 328 12804
+12:01:57 328 12804
+12:01:58 328 12804
+12:01:59 328 12884
+12:02:00 328 12884
+12:02:01 328 12884
+12:02:02 328 12604
+12:02:03 328 12964
+12:02:04 328 12964
+12:02:05 328 12964
+12:02:06 328 12964
+12:02:07 328 12980
+12:02:08 328 12980
+12:02:10 328 12980
+12:02:11 328 12980
+12:02:12 328 12980
+12:02:13 328 12980
+12:02:14 328 12688
+12:02:15 328 12944
+12:02:16 328 12944
+12:02:17 328 12944
+12:02:18 328 12944
+12:02:19 328 12944
+12:02:20 328 12944
+12:02:21 328 12944
+12:02:22 328 12944
+12:02:23 328 12944
+12:02:24 328 12944
+12:02:25 328 12944
+12:02:26 328 12944
+12:02:27 328 12944
+12:02:28 328 13028
+12:02:29 328 13052
+12:02:30 328 13052
+12:02:31 328 13052
+12:02:32 328 13052
+12:02:33 328 13052
+12:02:34 328 13052
+12:02:35 328 13052
+12:02:36 328 13052
+12:02:37 328 13052
+12:02:38 328 13052
+12:02:39 328 13052
+12:02:40 328 13152
+12:02:41 328 13152
+12:02:42 328 13152
+12:02:43 328 13152
+12:02:44 328 13152
+12:02:45 328 12848
+12:02:46 328 13104
+12:02:47 328 13104
+12:02:49 328 13104
+12:02:50 328 13104
+12:02:51 328 13104
+12:02:52 328 13104
+12:02:53 328 13104
+12:02:54 328 13104
+12:02:55 328 13104
+12:02:56 328 13104
+12:02:57 328 13104
+12:02:58 328 13104
+12:02:59 328 13104
+12:03:00 328 13104
+12:03:01 328 13104
+12:03:02 328 13104
+12:03:03 328 13216
+12:03:04 328 13216
+12:03:05 328 13216
+12:03:06 328 13216
+12:03:07 328 13216
+12:03:08 328 13216
+12:03:09 328 12916
+12:03:10 328 13172
+12:03:11 328 13172
+12:03:12 328 13172
+12:03:13 328 13172
+12:03:14 328 13172
+12:03:15 328 13172
+12:03:16 328 14712
+12:03:17 328 13172
+12:03:18 328 13172
+12:03:19 328 13172
+12:03:20 328 13196
+12:03:21 328 13196
+12:03:22 328 12940
+12:03:23 328 13308
+12:03:24 328 13308
+12:03:25 328 13336
+12:03:26 328 13336
+12:03:27 328 13336
+12:03:28 328 13624
+12:03:30 328 13624
+12:03:31 328 13624
+12:03:32 328 13624
+12:03:33 328 13624
+12:03:34 328 13624
+12:03:35 328 13624
+12:03:36 328 15164
+12:03:37 328 13624
+12:03:38 328 13020
+12:03:39 328 13372
+12:03:40 328 13372
+12:03:41 328 12940
+12:03:42 328 13292
+12:03:43 328 13292
+12:03:44 328 13292
+12:03:45 328 13292
+12:03:46 328 13292
+12:03:47 328 13292
+12:03:48 328 13292
+12:03:49 328 13388
+12:03:50 328 13388
+12:03:51 328 13388
+12:03:52 328 13388
+12:03:53 328 13476
+12:03:54 328 13596
+12:03:55 328 13596
+12:03:56 328 13600
+12:03:57 328 13684
+12:03:58 328 13948
+12:03:59 328 13948
+12:04:00 328 13948
+12:04:01 328 13948
+12:04:02 328 13948
+12:04:03 328 13948
+12:04:04 328 14596
+12:04:05 328 13948
+12:04:07 328 13948
+12:04:08 328 13948
+12:04:09 328 13948
+12:04:10 328 13948
+12:04:11 328 13948
+12:04:12 328 13948
+12:04:13 328 13952
+12:04:14 328 14208
+12:04:15 328 14208
+12:04:16 328 14400
+12:04:17 328 14400
+12:04:18 328 14400
+12:04:19 328 14496
+12:04:20 328 14496
+12:04:21 328 14496
+12:04:22 328 14496
+12:04:23 328 14496
+12:04:24 328 14136
+12:04:25 328 14488
+12:04:26 328 14488
+12:04:27 328 14488
+12:04:28 328 14488
+12:04:29 328 14488
+12:04:30 328 16028
+12:04:31 328 14488
+12:04:32 328 14488
+12:04:33 328 14488
+12:04:34 328 14488
+12:04:35 328 14488
+12:04:36 328 14488
+12:04:37 328 14488
+12:04:38 328 14488
+12:04:39 328 14488
+12:04:40 328 14488
+12:04:41 328 14488
+12:04:42 328 14488
+12:04:43 328 14488
+12:04:44 328 14488
+12:04:45 328 14584
+12:04:47 328 14584
+12:04:48 328 14584
+12:04:49 328 14584
+12:04:50 328 14584
+12:04:51 328 14584
+12:04:52 328 14584
+12:04:53 328 14308
+12:04:54 328 14660
+12:04:55 328 14660
+12:04:56 328 16200
+12:04:57 328 14660
+12:04:58 328 14660
+12:04:59 328 14660
+12:05:00 328 14660
+12:05:01 328 14660
+12:05:02 328 14660
+12:05:03 328 14660
+12:05:04 328 16200
+12:05:05 328 14660
+12:05:06 328 14660
+12:05:07 328 14756
+12:05:08 328 14756
+12:05:09 328 14756
+12:05:10 328 14756
+12:05:11 328 14756
+12:05:12 328 14756
+12:05:13 328 14756
+12:05:14 328 15028
+12:05:15 328 15028
+12:05:16 328 15028
+12:05:17 328 15092
+12:05:18 328 15188
+12:05:19 328 15284
+12:05:20 328 16824
+12:05:21 328 15284
+12:05:22 328 15572
+12:05:23 328 15572
+12:05:24 328 15572
+12:05:26 328 15572
+12:05:27 328 15572
+12:05:28 328 15572
+12:05:29 328 17112
+12:05:30 328 15572
+12:05:31 328 15572
+12:05:32 328 15572
+12:05:33 328 15572
+12:05:34 328 15572
+12:05:35 328 15572
+12:05:36 328 15572
+12:05:37 328 15776
+12:05:38 328 15776
+12:05:39 328 15776
+12:05:40 328 15872
+12:05:41 328 15872
+12:05:42 328 15872
+12:05:43 328 15872
+12:05:44 328 17508
+12:05:45 328 15968
+12:05:46 328 16064
+12:05:47 328 16064
+12:05:48 328 16064
+12:05:49 328 16064
+12:05:50 328 16064
+12:05:51 328 16064
+12:05:52 328 16064
+12:05:53 328 16064
+12:05:54 328 16064
+12:05:55 328 16064
+12:05:56 328 16064
+12:05:57 328 16064
+12:05:58 328 16064
+12:05:59 328 16064
+12:06:00 328 16064
+12:06:01 328 16136
+12:06:03 328 16232
+12:06:04 328 16232
+12:06:05 328 16232
+12:06:06 328 16232
+12:06:07 328 16232
+12:06:08 328 16232
+12:06:09 328 16328
+12:06:10 328 16328
+12:06:11 328 16328
+12:06:12 328 16328
+12:06:13 328 16328
+12:06:14 328 17868
+12:06:15 328 16328
+12:06:16 328 16328
+12:06:17 328 16328
+12:06:18 328 16328
+12:06:19 328 16328
+12:06:20 328 16328
+12:06:21 328 16332
+12:06:22 328 16328
+12:06:23 328 16328
+12:06:24 328 16328
+12:06:25 328 16328
+12:06:26 328 16328
+12:06:27 328 16328
+12:06:28 328 16328
+12:06:29 328 16328
+12:06:30 328 16328
+12:06:31 328 16328
+12:06:32 328 16392
+12:06:33 328 16392
+12:06:34 328 16680
+12:06:35 328 16680
+12:06:36 328 18220
+12:06:37 328 16680
+12:06:38 328 16680
+12:06:39 328 16680
+12:06:40 328 16680
+12:06:41 328 16680
+12:06:43 328 16680
+12:06:44 328 18220
+12:06:45 328 16680
+12:06:46 328 16680
+12:06:47 328 16680
+12:06:48 328 16840
+12:06:49 328 16840
+12:06:50 328 16840
+12:06:51 328 16840
+12:06:52 328 16840
+12:06:53 328 16840
+12:06:54 328 16840
+12:06:55 328 16840
+12:06:56 328 16840
+12:06:57 328 16840
+12:06:58 328 16840
+12:06:59 328 16840
+12:07:00 328 16840
+12:07:01 328 16840
+12:07:02 328 16840
+12:07:03 328 16840
+12:07:04 328 16840
+12:07:05 328 16840
+12:07:06 328 16840
+12:07:07 328 16840
+12:07:08 328 16840
+12:07:09 328 16840
+12:07:10 328 16840
+12:07:11 328 16840
+12:07:12 328 16840
+12:07:13 328 16840
+12:07:14 328 16840
+12:07:15 328 16840
+12:07:16 328 16840
+12:07:17 328 16840
+12:07:18 328 16840
+12:07:19 328 16840
+12:07:20 328 18380
+12:07:22 328 16840
+12:07:23 328 16840
+12:07:24 328 16840
+12:07:25 328 16840
+12:07:26 328 16840
+12:07:27 328 16840
+12:07:28 328 16840
+12:07:29 328 16840
+12:07:30 328 16840
+12:07:31 328 16840
+12:07:32 328 16840
+12:07:33 328 16840
+12:07:34 328 16840
+12:07:35 328 16840
+12:07:36 328 16840
+12:07:37 328 16840
+12:07:38 328 16840
+12:07:39 328 16840
+12:07:40 328 16840
+12:07:41 328 16840
+12:07:42 328 16840
+12:07:43 328 16840
+12:07:44 328 16840
+12:07:45 328 16936
+12:07:46 328 17032
+12:07:47 328 17032
+12:07:48 328 16768
+12:07:49 328 16768
+12:07:50 328 17024
+12:07:51 328 17032
+12:07:52 328 17032
+12:07:53 328 17032
+12:07:54 328 17128
+12:07:55 328 18764
+12:07:56 328 17224
+12:07:57 328 17224
+12:07:58 328 17224
+12:08:00 328 17224
+12:08:01 328 17224
+12:08:02 328 17224
+12:08:03 328 17224
+12:08:04 328 17224
+12:08:05 328 17224
+12:08:06 328 17224
+12:08:07 328 17224
+12:08:08 328 17224
+12:08:09 328 18764
+12:08:10 328 17224
+12:08:11 328 17224
+12:08:12 328 16916
+12:08:13 328 17268
+12:08:14 328 17268
+12:08:15 328 17268
+12:08:16 328 18808
+12:08:17 328 17268
+12:08:18 328 17268
+12:08:19 328 17268
+12:08:20 328 17268
+12:08:21 328 17268
+12:08:22 328 17268
+12:08:23 328 17268
+12:08:24 328 17268
+12:08:25 328 17268
+12:08:26 328 17268
+12:08:27 328 17268
+12:08:28 328 17268
+12:08:29 328 17536
+12:08:30 328 17536
+12:08:31 328 17536
+12:08:32 328 17540
+12:08:33 328 17540
+12:08:34 328 17540
+12:08:35 328 17540
+12:08:36 328 19080
+12:08:38 328 17540
+12:08:39 328 17924
+12:08:40 328 17924
+12:08:41 328 17924
+12:08:42 328 17924
+12:08:43 328 17924
+12:08:44 328 17924
+12:08:45 328 17924
+12:08:46 328 17924
+12:08:47 328 17924
+12:08:48 328 17924
+12:08:49 328 17924
+12:08:50 328 17924
+12:08:51 328 17924
+12:08:52 328 17924
+12:08:53 328 17924
+12:08:54 328 17924
+12:08:55 328 17924
+12:08:56 328 17924
+12:08:57 328 19464
+12:08:58 328 17924
+12:08:59 328 17924
+12:09:00 328 17924
+12:09:01 328 17924
+12:09:02 328 17924
+12:09:03 328 17924
+12:09:04 328 17924
+12:09:05 328 17924
+12:09:06 328 17924
+12:09:07 328 17924
+12:09:08 328 18020
+12:09:09 328 18020
+12:09:10 328 18020
+12:09:11 328 18020
+12:09:12 328 18020
+12:09:13 328 18020
+12:09:14 328 18020
+12:09:15 328 18020
+12:09:17 328 18020
+12:09:18 328 19560
+12:09:19 328 18020
+12:09:20 328 18020
+12:09:21 328 18020
+12:09:22 328 18020
+12:09:23 328 18020
+12:09:24 328 18020
+12:09:25 328 18020
+12:09:26 328 18020
+12:09:27 328 18020
+12:09:28 328 18020
+12:09:29 328 18020
+12:09:30 328 18020
+12:09:31 328 18020
+12:09:32 328 18020
+12:09:33 328 18020
+12:09:34 328 18020
+12:09:35 328 18020
+12:09:36 328 18020
+12:09:37 328 18020
+12:09:38 328 19560
+12:09:39 328 18020
+12:09:40 328 18020
+12:09:41 328 18020
+12:09:42 328 18020
+12:09:43 328 18020
+12:09:44 328 18020
+12:09:45 328 18020
+12:09:46 328 18020
+12:09:47 328 18020
+12:09:48 328 18020
+12:09:49 328 18020
+12:09:50 328 18020
+12:09:51 328 19560
+12:09:52 328 18020
+12:09:53 328 18020
+12:09:54 328 18020
+12:09:55 328 18020
+12:09:57 328 18020
+12:09:58 328 19560
+12:09:59 328 18024
+12:10:00 328 18024
+12:10:01 328 18024
+12:10:02 328 18024
+12:10:03 328 18120
+12:10:04 328 18120
+12:10:05 328 18120
+12:10:06 328 18120
+12:10:07 328 18216
+12:10:08 328 18216
+12:10:09 328 18216
+12:10:10 328 18216
+12:10:11 328 20044
+12:10:12 328 18504
+12:10:13 328 18504
+12:10:14 328 18504
+12:10:15 328 18504
+12:10:16 328 18504
+12:10:17 328 20044
+12:10:18 328 18504
+12:10:19 328 18504
+12:10:20 328 18504
+12:10:21 328 18504
+12:10:22 328 18504
+12:10:23 328 18504
+12:10:24 328 18600
+12:10:25 328 18600
+12:10:26 328 18600
+12:10:27 328 18600
+12:10:28 328 18600
+12:10:29 328 18600
+12:10:30 328 20140
+12:10:31 328 18600
+12:10:32 328 18600
+12:10:33 328 18600
+12:10:34 328 18600
+12:10:36 328 18600
+12:10:37 328 20140
+12:10:38 328 18600
+12:10:39 328 18600
+12:10:40 328 18600
+12:10:41 328 18600
+12:10:42 328 18600
+12:10:43 328 18600
+12:10:44 328 18600
+12:10:45 328 18600
+12:10:46 328 18600
+12:10:47 328 18600
+12:10:48 328 18600
+12:10:49 328 18600
+12:10:50 328 20140
+12:10:51 328 18600
+12:10:52 328 18600
+12:10:53 328 18600
+12:10:54 328 18600
+12:10:55 328 18600
+12:10:56 328 18788
+12:10:57 328 18788
+12:10:58 328 18960
+12:10:59 328 18960
+12:11:00 328 18960
+12:11:01 328 18960
+12:11:02 328 18960
+12:11:03 328 18960
+12:11:04 328 18960
+12:11:05 328 18960
+12:11:06 328 18960
+12:11:07 328 18960
+12:11:08 328 18960
+12:11:09 328 18960
+12:11:10 328 18960
+12:11:11 328 18960
+12:11:12 328 18960
+12:11:13 328 18960
+12:11:14 328 18960
+12:11:16 328 18960
+12:11:17 328 18960
+12:11:18 328 18960
+12:11:19 328 18960
+12:11:20 328 18960
+12:11:21 328 18960
+12:11:22 328 20500
+12:11:23 328 18960
+12:11:24 328 19056
+12:11:25 328 19056
+12:11:26 328 19056
+12:11:27 328 19056
+12:11:28 328 20596
+12:11:29 328 19056
+12:11:30 328 19056
+12:11:31 328 19056
+12:11:32 328 19056
+12:11:33 328 19056
+12:11:34 328 20596
+12:11:35 328 19056
+12:11:36 328 19056
+12:11:37 328 19056
+12:11:38 328 19056
+12:11:39 328 19056
+12:11:40 328 19056
+12:11:41 328 19056
+12:11:42 328 19056
+12:11:43 328 19056
+12:11:44 328 19056
+12:11:45 328 19152
+12:11:46 328 19248
+12:11:47 328 19248
+12:11:48 328 19248
+12:11:49 328 19248
+12:11:50 328 19248
+12:11:51 328 19248
+12:11:52 328 19248
+12:11:53 328 19248
+12:11:54 328 19248
+12:11:56 328 19248
+12:11:57 328 19248
+12:11:58 328 19248
+12:11:59 328 19248
+12:12:00 328 19248
+12:12:01 328 19248
+12:12:02 328 18888
+12:12:03 328 19144
+12:12:04 328 19152
+12:12:05 328 19152
+12:12:06 328 19152
+12:12:07 328 19152
+12:12:08 328 19152
+12:12:09 328 19152
+12:12:10 328 19152
+12:12:11 328 19152
+12:12:12 328 20692
+12:12:13 328 19152
+12:12:14 328 19152
+12:12:15 328 19152
+12:12:16 328 19152
+12:12:17 328 19240
+12:12:18 328 20780
+12:12:19 328 19240
+12:12:20 328 19528
+12:12:21 328 19528
+12:12:22 328 19528
+12:12:23 328 19528
+12:12:24 328 19528
+12:12:25 328 19528
+12:12:26 328 19532
+12:12:27 328 19916
+12:12:28 328 19916
+12:12:29 328 19916
+12:12:30 328 19916
+12:12:31 328 19916
+12:12:32 328 19916
+12:12:33 328 19916
+12:12:34 328 19916
+12:12:36 328 19916
+12:12:37 328 19916
+12:12:38 328 19916
+12:12:39 328 19916
+12:12:40 328 19916
+12:12:41 328 19916
+12:12:42 328 19916
+12:12:43 328 19916
+12:12:44 328 19916
+12:12:45 328 19916
+12:12:46 328 19916
+12:12:47 328 19916
+12:12:48 328 19916
+12:12:49 328 19916
+12:12:50 328 19916
+12:12:51 328 20012
+12:12:52 328 20012
+12:12:53 328 20012
+12:12:54 328 20012
+12:12:55 328 20012
+12:12:56 328 20012
+12:12:57 328 20012
+12:12:58 328 20012
+12:12:59 328 20012
+12:13:00 328 20012
+12:13:01 328 20012
+12:13:02 328 20012
+12:13:03 328 20012
+12:13:04 328 20012
+12:13:05 328 20012
+12:13:06 328 20012
+12:13:07 328 20012
+12:13:08 328 20012
+12:13:09 328 20012
+12:13:10 328 20012
+12:13:11 328 20012
+12:13:12 328 20012
+12:13:13 328 20012
+12:13:14 328 20012
+12:13:16 328 20012
+12:13:17 328 20012
+12:13:18 328 20012
+12:13:19 328 20016
+12:13:20 328 20012
+12:13:21 328 20012
+12:13:22 328 20012
+12:13:23 328 20012
+12:13:24 328 20012
+12:13:25 328 21552
+12:13:26 328 20012
+12:13:27 328 20012
+12:13:28 328 20012
+12:13:29 328 20012
+12:13:30 328 20012
+12:13:31 328 21552
+12:13:32 328 20012
+12:13:33 328 20012
+12:13:34 328 20012
+12:13:35 328 20012
+12:13:36 328 20012
+12:13:37 328 20012
+12:13:38 328 20012
+12:13:39 328 20012
+12:13:40 328 20012
+12:13:41 328 20012
+12:13:42 328 20012
+12:13:43 328 20012
+12:13:44 328 20012
+12:13:45 328 20012
+12:13:46 328 20012
+12:13:47 328 20012
+12:13:48 328 20012
+12:13:49 328 20012
+12:13:50 328 20012
+12:13:51 328 20012
+12:13:52 328 20012
+12:13:53 328 20012
+12:13:55 328 21552
+12:13:56 328 20012
+12:13:57 328 20012
+12:13:58 328 20020
+12:13:59 328 20132
+12:14:00 328 20164
+12:14:01 328 21704
+12:14:02 328 20176
+12:14:03 328 20308
+12:14:04 328 20404
+12:14:05 328 20412
+12:14:06 328 20700
+12:14:07 328 20700
+12:14:08 328 20732
+12:14:09 328 20732
+12:14:10 328 20732
+12:14:11 328 20732
+12:14:12 328 22272
+12:14:13 328 20732
+12:14:14 328 20732
+12:14:15 328 20732
+12:14:16 328 20732
+12:14:17 328 22272
+12:14:18 328 20744
+12:14:19 328 20844
+12:14:20 328 20844
+12:14:21 328 20844
+12:14:22 328 20844
+12:14:23 328 20844
+12:14:24 328 20844
+12:14:25 328 20844
+12:14:26 328 20912
+12:14:27 328 20912
+12:14:28 328 22452
+12:14:29 328 20912
+12:14:30 328 20912
+12:14:31 328 20912
+12:14:32 328 20912
+12:14:34 328 20912
+12:14:35 328 20912
+12:14:36 328 20912
+12:14:37 328 20912
+12:14:38 328 21168
+12:14:39 328 21296
+12:14:40 328 22836
+12:14:41 328 21296
+12:14:42 328 21296
+12:14:43 328 21296
+12:14:44 328 21296
+12:14:45 328 22836
+12:14:46 328 21296
+12:14:47 328 21296
+12:14:48 328 21296
+12:14:49 328 21296
+12:14:50 328 21300
+12:14:51 328 21296
+12:14:52 328 21296
+12:14:53 328 21296
+12:14:54 328 21296
+12:14:55 328 21296
+12:14:56 328 21296
+12:14:57 328 21296
+12:14:58 328 21296
+12:14:59 328 21296
+12:15:00 328 21296
+12:15:01 328 22932
+12:15:02 328 21392
+12:15:03 328 21392
+12:15:04 328 21392
+12:15:05 328 21392
+12:15:06 328 22932
+12:15:07 328 21392
+12:15:08 328 21400
+12:15:09 328 21400
+12:15:11 328 21496
+12:15:12 328 21592
+12:15:13 328 21592
+12:15:14 328 21592
+12:15:15 328 21592
+12:15:16 328 21592
+12:15:17 328 21592
+12:15:18 328 21592
+12:15:19 328 21596
+12:15:20 328 21596
+12:15:21 328 21596
+12:15:22 328 21868
+12:15:23 328 23408
+12:15:24 328 21868
+12:15:25 328 21868
+12:15:26 328 21876
+12:15:27 328 21880
+12:15:28 328 23420
+12:15:29 328 21892
+12:15:30 328 21892
+12:15:31 328 21892
+12:15:32 328 21892
+12:15:33 328 23432
+12:15:34 328 21892
+12:15:35 328 21892
+12:15:36 328 21892
+12:15:37 328 21892
+12:15:38 328 21892
+12:15:39 328 21892
+12:15:40 328 21892
+12:15:41 328 21916
+12:15:42 328 21928
+12:15:43 328 21952
+12:15:44 328 21952
+12:15:45 328 21952
+12:15:46 328 21968
+12:15:47 328 21968
+12:15:48 328 21972
+12:15:49 328 23512
+12:15:51 328 21972
+12:15:52 328 21972
+12:15:53 328 21972
+12:15:54 328 21972
+12:15:55 328 23512
+12:15:56 328 21972
+12:15:57 328 21972
+12:15:58 328 21972
+12:15:59 328 21972
+12:16:00 328 23512
+12:16:01 328 21972
+12:16:02 328 21984
+12:16:03 328 21984
+12:16:04 328 21984
+12:16:05 328 21988
+12:16:06 328 21984
+12:16:07 328 21984
+12:16:08 328 21984
+12:16:09 328 21984
+12:16:10 328 21984
+12:16:11 328 21984
+12:16:12 328 22008
+12:16:13 328 22008
+12:16:14 328 22016
+12:16:15 328 22128
+12:16:16 328 22128
+12:16:17 328 22128
+12:16:18 328 22128
+12:16:19 328 22224
+12:16:20 328 22224
+12:16:21 328 22512
+12:16:22 328 21964
+12:16:23 328 22316
+12:16:24 328 22316
+12:16:25 328 22316
+12:16:26 328 22316
+12:16:27 328 22316
+12:16:28 328 22316
+12:16:30 328 22316
+12:16:31 328 22316
+12:16:32 328 23856
+12:16:33 328 22316
+12:16:34 328 22316
+12:16:35 328 22316
+12:16:36 328 22316
+12:16:37 328 23856
+12:16:38 328 22316
+12:16:39 328 22316
+12:16:40 328 22316
+12:16:41 328 22316
+12:16:42 328 23856
+12:16:43 328 22316
+12:16:44 328 22316
+12:16:45 328 22316
+12:16:46 328 22316
+12:16:47 328 23856
+12:16:48 328 22316
+12:16:49 328 22316
+12:16:50 328 22316
+12:16:51 328 22316
+12:16:52 328 23856
+12:16:53 328 22316
+12:16:54 328 22316
+12:16:55 328 22320
+12:16:56 328 22416
+12:16:57 328 22424
+12:16:58 328 22420
+12:16:59 328 22420
+12:17:00 328 22428
+12:17:01 328 22428
+12:17:02 328 22428
+12:17:03 328 22428
+12:17:04 328 22728
+12:17:05 328 22760
+12:17:06 328 22760
+12:17:08 328 22760
+12:17:09 328 22760
+12:17:10 328 22760
+12:17:11 328 22760
+12:17:12 328 22760
+12:17:13 328 22760
+12:17:14 328 22760
+12:17:15 328 22760
+12:17:16 328 22760
+12:17:17 328 22760
+12:17:18 328 24336
+12:17:19 328 22796
+12:17:20 328 22800
+12:17:21 328 22816
+12:17:22 328 22816
+12:17:23 328 22820
+12:17:24 328 22820
+12:17:25 328 22820
+12:17:26 328 22828
+12:17:27 328 22828
+12:17:28 328 22832
+12:17:29 328 22832
+12:17:30 328 22832
+12:17:31 328 22832
+12:17:32 328 22832
+12:17:33 328 24372
+12:17:34 328 22832
+12:17:35 328 22832
+12:17:36 328 22832
+12:17:37 328 22968
+12:17:38 328 24892
+12:17:39 328 23436
+12:17:40 328 23436
+12:17:41 328 23436
+12:17:42 328 23436
+12:17:43 328 24976
+12:17:44 328 23436
+12:17:45 328 23436
+12:17:46 328 23436
+12:17:48 328 23436
+12:17:49 328 23436
+12:17:50 328 23436
+12:17:51 328 23436
+12:17:52 328 23436
+12:17:53 328 23532
+12:17:54 328 23532
+12:17:55 328 23548
+12:17:56 328 23548
+12:17:57 328 23552
+12:17:58 328 25380
+12:17:59 328 23840
+12:18:00 328 23840
+12:18:01 328 23840
+12:18:02 328 23840
+12:18:03 328 25380
+12:18:04 328 23840
+12:18:05 328 23840
+12:18:06 328 23840
+12:18:07 328 23840
+12:18:08 328 23840
+12:18:09 328 23840
+12:18:10 328 23840
+12:18:11 328 23840
+12:18:12 328 23840
+12:18:13 328 23840
+12:18:14 328 23840
+12:18:15 328 23840
+12:18:16 328 23840
+12:18:17 328 25380
+12:18:18 328 23840
+12:18:19 328 23840
+12:18:20 328 23840
+12:18:21 328 23840
+12:18:22 328 25380
+12:18:23 328 23840
+12:18:24 328 23840
+12:18:25 328 23844
+12:18:27 328 23844
+12:18:28 328 25384
+12:18:29 328 23852
+12:18:30 328 23852
+12:18:31 328 23888
+12:18:32 328 23888
+12:18:33 328 23888
+12:18:34 328 23896
+12:18:35 328 23896
+12:18:36 328 23896
+12:18:37 328 25436
+12:18:38 328 23896
+12:18:39 328 23904
+12:18:40 328 23904
+12:18:41 328 23908
+12:18:42 328 25448
+12:18:43 328 23908
+12:18:44 328 23908
+12:18:45 328 23908
+12:18:46 328 23928
+12:18:47 328 23928
+12:18:48 328 23940
+12:18:49 328 23960
+12:18:50 328 23960
+12:18:51 328 23960
+12:18:52 328 23960
+12:18:53 328 24012
+12:18:54 328 24108
+12:18:55 328 24108
+12:18:56 328 25744
+12:18:57 328 24204
+12:18:58 328 24204
+12:18:59 328 24204
+12:19:00 328 24204
+12:19:01 328 24204
+12:19:02 328 24204
+12:19:04 328 24204
+12:19:05 328 24204
+12:19:06 328 25744
+12:19:07 328 24204
+12:19:08 328 24216
+12:19:09 328 24220
+12:19:10 328 24236
+12:19:11 328 25776
+12:19:12 328 24236
+12:19:13 328 24236
+12:19:14 328 24248
+12:19:15 328 24288
+12:19:16 328 24288
+12:19:17 328 24288
+12:19:18 328 24384
+12:19:19 328 24384
+12:19:20 328 25924
+12:19:21 328 24384
+12:19:22 328 24384
+12:19:23 328 24384
+12:19:24 328 24384
+12:19:25 328 24384
+12:19:26 328 24384
+12:19:27 328 24384
+12:19:28 328 24384
+12:19:29 328 25924
+12:19:30 328 24384
+12:19:31 328 24384
+12:19:32 328 24384
+12:19:33 328 24384
+12:19:34 328 25924
+12:19:35 328 24384
+12:19:36 328 24384
+12:19:37 328 24384
+12:19:38 328 25924
+12:19:39 328 24384
+12:19:40 328 24384
+12:19:41 328 24384
+12:19:43 328 24384
+12:19:44 328 25924
+12:19:45 328 24384
+12:19:46 328 24480
+12:19:47 328 24580
+12:19:48 328 26216
+12:19:49 328 24676
+12:19:50 328 24676
+12:19:51 328 24676
+12:19:52 328 24676
+12:19:53 328 26216
+12:19:54 328 24676
+12:19:55 328 24676
+12:19:56 328 25060
+12:19:57 328 25456
+12:19:58 328 25456
+12:19:59 328 24812
+12:20:00 328 25392
+12:20:01 328 25392
+12:20:02 328 26932
+12:20:03 328 25392
+12:20:04 328 25392
+12:20:05 328 25392
+12:20:06 328 25392
+12:20:07 328 25392
+12:20:08 328 25404
+12:20:09 328 25404
+12:20:10 328 25412
+12:20:11 328 26952
+12:20:12 328 25412
+12:20:13 328 25412
+12:20:14 328 25412
+12:20:15 328 25416
+12:20:16 328 25416
+12:20:17 328 25416
+12:20:18 328 25416
+12:20:19 328 25416
+12:20:20 328 26956
+12:20:21 328 25416
+12:20:23 328 25416
+12:20:24 328 25416
+12:20:25 328 25416
+12:20:26 328 25416
+12:20:27 328 25468
+12:20:28 328 25924
+12:20:29 328 25924
+12:20:30 328 27464
+12:20:31 328 25924
+12:20:32 328 25924
+12:20:33 328 25924
+12:20:34 328 25924
+12:20:35 328 25924
+12:20:36 328 25924
+12:20:37 328 25924
+12:20:38 328 25924
+12:20:39 328 27464
+12:20:40 328 25924
+12:20:41 328 26160
+12:20:42 328 26216
+12:20:43 328 25576
+12:20:44 328 25576
+12:20:45 328 26484
+12:20:46 328 25576
+12:20:47 328 26488
+12:20:48 328 28028
+12:20:49 328 25576
+12:20:50 328 26488
+12:20:51 328 25576
+12:20:52 328 28024
+12:20:53 328 26488
+12:20:54 328 25576
+12:20:55 328 26488
+12:20:56 328 25576
+12:20:57 328 25832
+12:20:58 328 26492
+12:20:59 328 25576
+12:21:00 328 26492
+12:21:01 328 28032
+12:21:03 328 25576
+12:21:04 328 26492
+12:21:05 328 25576
+12:21:06 328 26496
+12:21:07 328 26492
+12:21:08 328 25576
+12:21:09 328 26492
+12:21:10 328 25576
+12:21:11 328 25832
+12:21:12 328 26492
+12:21:13 328 25576
+12:21:14 328 26492
+12:21:15 328 28032
+12:21:16 328 25696
+12:21:17 328 26612
+12:21:18 328 25960
+12:21:19 328 26216
+12:21:20 328 26216
+12:21:21 328 26216
+12:21:22 328 26216
+12:21:23 328 26216
+12:21:24 328 27756
+12:21:25 328 26216
+12:21:26 328 26216
+12:21:27 328 26216
+12:21:28 328 27756
+12:21:29 328 26216
+12:21:30 328 26216
+12:21:31 328 26216
+12:21:32 328 26216
+12:21:33 328 26216
+12:21:34 328 26600
+12:21:35 328 26600
+12:21:36 328 26600
+12:21:37 328 28140
+12:21:38 328 26600
+12:21:39 328 25960
+12:21:40 328 26216
+12:21:42 328 26216
+12:21:43 328 26216
+12:21:44 328 26880
+12:21:45 328 26284
+12:21:46 328 26540
+12:21:47 328 28080
+12:21:48 328 25960
+12:21:49 328 26880
+12:21:50 328 25960
+12:21:51 328 27756
+12:21:52 328 26880
+12:21:53 328 25960
+12:21:54 328 26880
+12:21:55 328 26284
+12:21:56 328 26284
+12:21:57 328 26540
+12:21:58 328 26540
+12:21:59 328 26540
+12:22:00 328 28080
+12:22:01 328 26540
+12:22:02 328 26540
+12:22:03 328 26540
+12:22:04 328 26540
+12:22:05 328 26540
+12:22:06 328 26540
+12:22:07 328 26540
+12:22:08 328 26540
+12:22:09 328 28080
+12:22:10 328 26540
+12:22:11 328 26540
+12:22:12 328 26540
+12:22:13 328 28080
+12:22:14 328 25960
+12:22:15 328 26540
+12:22:16 328 26540
+12:22:17 328 26540
+12:22:18 328 26540
+12:22:19 328 25960
+12:22:20 328 26540
+12:22:21 328 25960
+12:22:22 328 27756
+12:22:24 328 26540
+12:22:25 328 25960
+12:22:26 328 26540
+12:22:27 328 25960
+12:22:28 328 26216
+12:22:29 328 26540
+12:22:30 328 25960
+12:22:31 328 26540
+12:22:32 328 28080
+12:22:33 328 25960
+12:22:34 328 26540
+12:22:35 328 25960
+12:22:36 328 27756
+12:22:37 328 26880
+12:22:38 328 26284
+12:22:39 328 26540
+12:22:40 328 25960
+12:22:41 328 26808
+12:22:42 328 26880
+12:22:43 328 26284
+12:22:44 328 26880
+12:22:45 328 28420
+12:22:46 328 26284
+12:22:47 328 26880
+12:22:48 328 26284
+12:22:49 328 26880
+12:22:50 328 26880
+12:22:51 328 26284
+12:22:52 328 26880
+12:22:53 328 26284
+12:22:54 328 28080
+12:22:55 328 26880
+12:22:56 328 26284
+12:22:57 328 26880
+12:22:58 328 26284
+12:22:59 328 26540
+12:23:00 328 26880
+12:23:01 328 26284
+12:23:02 328 26880
+12:23:03 328 28420
+12:23:04 328 26284
+12:23:05 328 26880
+12:23:07 328 26284
+12:23:08 328 26880
+12:23:09 328 26880
+12:23:10 328 26284
+12:23:11 328 26884
+12:23:12 328 26284
+12:23:13 328 28080
+12:23:14 328 26884
+12:23:15 328 26284
+12:23:16 328 26884
+12:23:17 328 28424
+12:23:18 328 26284
+12:23:19 328 26884
+12:23:20 328 26284
+12:23:21 328 26884
+12:23:22 328 28424
+12:23:23 328 26284
+12:23:24 328 26884
+12:23:25 328 26924
+12:23:26 328 28464
+12:23:27 328 26924
+12:23:28 328 26924
+12:23:29 328 26924
+12:23:30 328 26924
+12:23:31 328 28464
+12:23:32 328 26924
+12:23:33 328 26924
+12:23:34 328 26924
+12:23:35 328 28464
+12:23:36 328 26924
+12:23:37 328 26924
+12:23:38 328 26924
+12:23:39 328 26608
+12:23:40 328 26608
+12:23:41 328 26864
+12:23:42 328 26864
+12:23:43 328 26864
+12:23:44 328 28404
+12:23:45 328 26864
+12:23:46 328 26864
+12:23:48 328 26048
+12:23:49 328 26972
+12:23:50 328 26972
+12:23:51 328 27012
+12:23:52 328 26360
+12:23:53 328 26960
+12:23:54 328 28500
+12:23:55 328 27000
+12:23:56 328 26356
+12:23:57 328 26936
+12:23:58 328 26680
+12:23:59 328 26680
+12:24:00 328 27280
+12:24:01 328 26680
+12:24:02 328 26936
+12:24:03 328 28476
+12:24:04 328 26680
+12:24:05 328 26936
+12:24:06 328 26936
+12:24:07 328 28476
+12:24:08 328 26936
+12:24:09 328 26088
+12:24:10 328 27012
+12:24:11 328 26412
+12:24:12 328 28208
+12:24:13 328 27012
+12:24:14 328 26412
+12:24:15 328 27012
+12:24:16 328 26412
+12:24:17 328 26412
+12:24:18 328 27012
+12:24:19 328 26412
+12:24:20 328 27012
+12:24:21 328 28552
+12:24:22 328 26412
+12:24:23 328 27012
+12:24:24 328 26412
+12:24:25 328 28868
+12:24:26 328 27336
+12:24:28 328 26736
+12:24:29 328 26992
+12:24:30 328 26992
+12:24:31 328 28532
+12:24:32 328 26992
+12:24:33 328 26992
+12:24:34 328 26992
+12:24:35 328 28532
+12:24:36 328 26992
+12:24:37 328 26992
+12:24:38 328 26992
+12:24:39 328 26992
+12:24:40 328 28532
+12:24:41 328 26992
+12:24:42 328 26992
+12:24:43 328 26992
+12:24:44 328 28532
+12:24:45 328 26992
+12:24:46 328 26992
+12:24:47 328 26992
+12:24:48 328 26992
+12:24:49 328 28532
+12:24:50 328 26992
+12:24:51 328 26992
+12:24:52 328 26992
+12:24:53 328 28532
+12:24:54 328 26992
+12:24:55 328 26992
+12:24:56 328 26992
+12:24:57 328 26992
+12:24:58 328 26992
+12:24:59 328 26992
+12:25:00 328 26992
+12:25:01 328 26992
+12:25:02 328 28532
+12:25:03 328 26992
+12:25:04 328 26992
+12:25:05 328 26992
+12:25:06 328 26992
+12:25:07 328 26992
+12:25:08 328 26992
+12:25:10 328 26992
+12:25:11 328 26992
+12:25:12 328 28532
+12:25:13 328 26992
+12:25:14 328 26992
+12:25:15 328 26992
+12:25:16 328 26992
+12:25:17 328 26992
+12:25:18 328 26992
+12:25:19 328 26992
+12:25:20 328 26992
+12:25:21 328 28532
+12:25:22 328 26992
+12:25:23 328 26992
+12:25:24 328 26992
+12:25:25 328 28532
+12:25:26 328 26992
+12:25:27 328 26992
+12:25:28 328 26992
+12:25:29 328 26992
+12:25:30 328 28532
+12:25:31 328 26992
+12:25:32 328 26992
+12:25:33 328 26992
+12:25:34 328 26992
+12:25:35 328 26992
+12:25:36 328 26992
+12:25:37 328 26992
+12:25:38 328 26992
+12:25:39 328 28532
+12:25:40 328 26992
+12:25:41 328 26992
+12:25:42 328 26992
+12:25:43 328 28532
+12:25:44 328 26992
+12:25:45 328 26992
+12:25:46 328 26992
+12:25:47 328 26992
+12:25:48 328 26992
+12:25:49 328 26992
+12:25:50 328 26992
+12:25:52 328 26992
+12:25:53 328 28532
+12:25:54 328 26992
