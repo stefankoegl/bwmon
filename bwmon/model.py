@@ -162,9 +162,9 @@ class MonitorEntryCollection(object):
         return x
 
     def get_datapoints(self):
-        """TODO
+        """Returns values for the visualization through the built-in HTTP  server
 
-        @return: TODO
+        @return: list of x (time) and y (bandwidth usage) values;
         """
         items = [self.get_history(cmdline) for bin, bout, cmdline in self.get_usage()]
         if not items:

@@ -51,22 +51,25 @@ class Aggregator(object):
 
 
     def add_notification(self, regex, in_threshold, out_threshold, interval, command):
-        """FIXME
+        """Add a notification setting
 
-        @param regex: TODO
-        @param in_threshold: TODO
-        @param out_threshold: TODO
-        @param interval: TODO
-        @param command: TODO
+        A notification entry consists of a regex that specifies for which
+        processes/applications it is valid and in/out thresholds
+
+        @param regex: regular expression that is matched against processes/applications
+        @param in_threshold: incoming bandwidth threshold in kB/s
+        @param out_threshold: outgoing bandwidth threshold in kB/s
+        @param interval: interval in seconds for which the average bandwidth is calculated
+        @param command: optional command that shall be executed when a notification is issued
         """
         self.notification_configs.append( (re.compile(regex), in_threshold, out_threshold, interval, command) )
 
 
     def set_app_config(self, app, regex_list):
-        """FIXME
+        """Add a config entry on how to group processes to Applications
 
-        @param app: TODO
-        @param regex_list: TODO
+        @param app: name of the formed application
+        @param regex_list: a list of regular expressions that are matched against the processes full commandline
         """
         self.app_configs[app] = regex_list
 
@@ -182,11 +185,11 @@ class NotificationHandler(object):
     def __init__(self, cmd, in_threshold, out_threshold, interval, notify_command):
         """Creates a new NotificationHandler object
 
-        @param cmd: TODO
-        @param in_threshold: TODO
-        @param out_threshold: TODO
-        @param interval: TODO
-        @param notify_command: TODO
+        @param cmd: commandline of the monitored process
+        @param in_threshold: incoming bandwidth threshold that is configured for the process
+        @param out_threshold: outgoing bandwidth threshold that is configured for the process
+        @param interval: interval that is configured for the process
+        @param notify_command: command that should be called when a notification is issued
         """
         self.cmd = cmd
         self.in_threshold = in_threshold
@@ -196,17 +199,20 @@ class NotificationHandler(object):
         self.notify_command = notify_command
 
     def report_data(self, in_value, out_value):
-        """TODO
+        """Report current usage data to the handler
 
-        @param in_value: TODO
-        @param out_value: TODO
+        @param in_value: currently utilized incoming bandwidth
+        @param out_value: currently utilized outgoing bandiwdht
         """
         self.in_data.append(in_value)
         self.out_data.append(out_value)
 
 
     def check_notify(self):
-        """TODO
+        """Check if a notification should be issued and issue it if necessary
+
+        The average in-/out-bandwidth for the configured interval is
+        calculated and checked against the thresholds
         """
         in_avg = avg(self.in_data.get())
         if self.in_threshold and in_avg > self.in_threshold:
@@ -217,11 +223,13 @@ class NotificationHandler(object):
             self.notify('out', self.out_threshold, out_avg)
 
     def notify(self, direction, threshold, value):
-        """TODO
+        """Issue a notification
 
-        @param direction: TODO
-        @param threshold: TODO
-        @param value: TODO
+        This is called by check_notify if a threshold has been exceeded
+
+        @param direction: direction (in or out) for which the threshold was exceeded
+        @param threshold: configured threshold for the given direction
+        @param value: actual average bandwidth that has exceeded the threshold
         """
         import sys
         if len(self.cmd) > 50:

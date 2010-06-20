@@ -14,10 +14,10 @@ def clear():
     sys.stdout.flush()
 
 def read_monitor_config(configfile):
-    """TODO
+    """Reads the monitor configuration file for the Aggregator
 
-    @param configfile: TODO
-    @return: TODO
+    @param configfile: path of the config file
+    @return: a list of Monitor or PipeMonitor objects
     """
     config = ConfigParser.ConfigParser()
     config.read(configfile)
@@ -65,10 +65,10 @@ def parse_bool(val):
 
 
 def read_notification_config(configfile):
-    """TODO
+    """Reads the notification config file for the Aggregator
 
-    @param configfile: TODO
-    @return: TODO
+    @param configfile: path to the config file
+    @return: a list of tuples representing the notification settings (process_regex, in_threshold, out_threshold, interval, command)
     """
     config = ConfigParser.ConfigParser()
     config.read(configfile)
@@ -78,13 +78,13 @@ def read_notification_config(configfile):
 
 
 class RingBuffer:
-    """TODO
+    """A ringbuffer
     """
 
     def __init__(self,size_max):
-        """TODO
+        """Initiates a new ringbuffer with the given size
 
-        @param size_max: TODO
+        @param size_max: maximum number of entries
         """
         self.max = size_max
         self.data = []
@@ -108,7 +108,7 @@ class RingBuffer:
 
 
 class RingBufferFull:
-    """TODO
+    """A full ringbuffer - not initialized directly
     """
 
     def __init__(self, n):

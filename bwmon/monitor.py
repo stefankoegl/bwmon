@@ -32,8 +32,8 @@ class Monitor(object):
         lookback value is False, this call already takes
         the first measurement from ip_conntrack.
 
-        @param lookback: TODO
-        @param ignorelocal: TODO
+        @param lookback: indicates if data already existing in ip_conntrack should be considered (True) or ignored (False)
+        @param ignorelocal: indicates if the Monitor should ignore loopback traffic (True) or include it in the calculations (False)
         """
         self.fd_map = {}
         self.sample_time = time.time()
