@@ -1,0 +1,26 @@
+
+                 bwmon: Application-level bandwidth monitoring
+                 ---------------------------------------------
+
+ bwmon is an open bandwidth monitoring solution for monitoring per-application
+ bandwidth usage. This can be utilized to better manage and monitor multiple
+ applications running on a single cloud host or a single application running
+ on multiple cloud hosts.
+
+ -- Features --
+
+   * Uses ip_conntrack to track connections
+   * Alternative, cross-platform "pipe" traffic monitor
+   * Easily customizable: Written in Python
+   * Combination of conntrack+pipe monitors possible
+   * Open Framework: Create new monitoring methods
+   * Support for SLA parameter input (bandwidth allocation)
+   * Support for SLA violation notification to external services
+   * Fully documented source code and user manual
+
+
+ -- More information --
+
+ Web: http://thpinfo.com/2010/bwmon/
+ Git: http://repo.or.cz/w/bwmon.git
+
