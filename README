@@ -18,6 +18,16 @@
    * Support for SLA violation notification to external services
    * Fully documented source code and user manual
 
+ -- News --
+
+   November 2012:
+   In recent kernels, there's no "ip_conntrack" kernel module. As
+   a replacement, bwmon now supports the "conntrack" command-line
+   utility from the "conntrack-utils" package.
+
+   If you get "KeyError: 'bytes'", this is a known problem, see:
+   http://marc.info/?l=netfilter&m=135194333402321&w=2
+
 
  -- More information --
 

@@ -147,8 +147,15 @@ def parse_ip_conntrack():
     """
     connections = {}
 
+    if not os.path.exists('/proc/net/ip_conntrack'):
+        # conntrack-utils (recent kernels, November 2012)
+        conntrack = os.popen('conntrack -L', 'r')
+    else:
+        # Old "ip_conntrack" kernel module (July 2010)
+        conntrack = open('/proc/net/ip_conntrack', 'r')
+
     # http://www.faqs.org/docs/iptables/theconntrackentries.html
-    for line in open('/proc/net/ip_conntrack'):
+    for line in conntrack:
         parts = line.split()
 
         # We only care about TCP and UDP connections
@@ -168,6 +175,8 @@ def parse_ip_conntrack():
 
         key = get_key(entry)
         connections[key] = entry
+
+    conntrack.close()
 
     return connections
 
