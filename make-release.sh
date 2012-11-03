@@ -1,7 +1,7 @@
 #!/bin/bash
 # Generic script for creating a source tarball
 # Released into the public domain.
-# Thomas Perl <thpinfo.com/about>; 2010-07-30
+# Thomas Perl <thp.io/about>; 2010-07-30
 
 NAME=bwmon
 VERSION=`python -c 'import bwmon; print bwmon.__version__'`

@@ -29,6 +29,6 @@
 
 from __future__ import absolute_import
 
-__version__ = '1.0'
-__website__ = 'http://thpinfo.com/2010/bwmon/'
+__version__ = '1.1'
+__website__ = 'http://thp.io/2010/bwmon/'
 

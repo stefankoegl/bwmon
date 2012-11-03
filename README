@@ -20,7 +20,7 @@
 
  -- News --
 
-   November 2012:
+   November 2012 (Version 1.1):
    In recent kernels, there's no "ip_conntrack" kernel module. As
    a replacement, bwmon now supports the "conntrack" command-line
    utility from the "conntrack-utils" package.
@@ -40,6 +40,6 @@
 
  -- More information --
 
- Web: http://thpinfo.com/2010/bwmon/
+ Web: http://thp.io/2010/bwmon/
  Git: http://repo.or.cz/w/bwmon.git
 
