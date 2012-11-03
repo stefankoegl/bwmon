@@ -155,10 +155,19 @@ class Monitor(object):
             for direction in ('in', 'out'):
                 k = keys[direction]
                 if k in self.conntrack:
-                    if key_in in self.last_conntrack:
-                        new_byte[direction] = int(self.conntrack[k]['bytes']) - int(self.last_conntrack[k]['bytes'])
-                    else:
-                        new_byte[direction] = int(self.conntrack[k]['bytes'])
+                    try:
+                        if key_in in self.last_conntrack:
+                            diff = (int(self.conntrack[k]['bytes']) -
+                                    int(self.last_conntrack[k]['bytes']))
+                        else:
+                            diff = int(self.conntrack[k]['bytes'])
+                    except KeyError:
+                        print >>sys.stderr, ("WARNING: No 'bytes' field in output (use '"
+                                "sysctl -w net.netfilter.nf_conntrack_acct=1"
+                                "' to enable accounting.")
+                        sys.exit(1)
+
+                    new_byte[direction] = diff
 
             current_in, current_out = entries[process['cmd']]
             new_in, new_out = (new_byte['in'], new_byte['out'])

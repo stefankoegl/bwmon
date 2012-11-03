@@ -25,8 +25,17 @@
    a replacement, bwmon now supports the "conntrack" command-line
    utility from the "conntrack-utils" package.
 
-   If you get "KeyError: 'bytes'", this is a known problem, see:
-   http://marc.info/?l=netfilter&m=135194333402321&w=2
+   Make sure to run this command to enable accounting for conntrack
+   (otherwise you might get a "KeyError: 'bytes'" traceback):
+
+       sysctl -w net.netfilter.nf_conntrack_acct=1
+
+   Sometimes you have to wait a bit after setting this option to
+   make sure old connections are removed from conntrack's output.
+
+   Related netfilter mailing list thread:
+
+       http://marc.info/?t=135194346800001&r=1&w=2
 
 
  -- More information --
